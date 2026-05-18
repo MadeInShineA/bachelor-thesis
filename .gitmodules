@@ -1,3 +1,6 @@
 [submodule "bachelor-thesis-report"]
 	path = bachelor-thesis-report
 	url = https://github.com/MadeInShineA/bachelor-thesis-report
+[submodule "bachelor-thesis-project"]
+	path = bachelor-thesis-project
+	url = https://github.com/MadeInShineA/bachelor-thesis-project.git
