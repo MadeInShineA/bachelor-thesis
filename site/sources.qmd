@@ -1,0 +1,32 @@
+---
+title: "Sources"
+bibliography: "../bachelor-thesis-report/bibliography.bib"
+---
+
+## Scientific Papers
+
+- @Alizadeh2025.12.22.695524
+
+## Software
+
+- @semester_project
+
+## Youtube videos
+
+- @FMRI1
+- @FMRI2
+- @FMRI3
+
+---
+
+## Other
+
+  - [Marimo website](https://marimo.io/){target="_blank"}
+  - [Quarto website](https://quarto.org/){target="_blank"}
+  - [Graphviz website](https://graphviz.org/){target="_blank"}
+  - [Excalidraw website](https://excalidraw.com/){target="_blank"}
+
+## References
+
+::: {#refs}
+:::

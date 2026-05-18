@@ -1,9 +1,9 @@
-
 project:
   type: website
   output-dir: _site
   render:
     - site/index.qmd
+    - site/sources.qmd
 
 website:
   title: "Bachelor Thesis"
@@ -13,6 +13,8 @@ website:
     left:
       - href: site/index.qmd
         text: Home
+      - href: site/sources.qmd
+        text: Sources
     tools:
       - icon: github
         href: https://github.com/MadeInShineA/bachelor-thesis
