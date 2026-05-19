@@ -1,45 +1,48 @@
 project:
-  type: website
-  output-dir: _site
-  render:
-    - site/index.qmd
-    - site/sources.qmd
+    type: website
+    output-dir: _site
+    render:
+        - site/index.qmd
+        - site/sources.qmd
+        - site/daily_journal.qmd
 
 website:
-  title: "Bachelor Thesis"
-  repo-url: https://github.com/MadeInShineA/bachelor-thesis/
-  repo-actions: [edit]
-  navbar:
-    left:
-      - href: site/index.qmd
-        text: Home
-      - href: site/sources.qmd
-        text: Sources
-    tools:
-      - icon: github
-        href: https://github.com/MadeInShineA/bachelor-thesis
-        target: _blank
-        text: Bachelor Thesis GitHub
+    title: "Bachelor Thesis"
+    repo-url: https://github.com/MadeInShineA/bachelor-thesis/
+    repo-actions: [edit]
+    navbar:
+        left:
+            - href: site/index.qmd
+              text: Home
+            - href: site/sources.qmd
+              text: Sources
+            - href: site/daily_journal.qmd
+              text: Daily Journal
+        tools:
+            - icon: github
+              href: https://github.com/MadeInShineA/bachelor-thesis
+              target: _blank
+              text: Bachelor Thesis GitHub
 
-  page-footer:
-    left: |
-      Made with [Quarto](https://quarto.org/){target="_blank"}
-    center:
-      - text: "Olivier Amacker Bachelor Thesis | © 2026"
-    right:
-      - icon: github
-        href: https://github.com/MadeInShineA/bachelor-thesis
-        target: _blank
-        aria-label: Bachelor Thesis GitHub
+    page-footer:
+        left: |
+            Made with [Quarto](https://quarto.org/){target="_blank"}
+        center:
+            - text: "Olivier Amacker Bachelor Thesis | © 2026"
+        right:
+            - icon: github
+              href: https://github.com/MadeInShineA/bachelor-thesis
+              target: _blank
+              aria-label: Bachelor Thesis GitHub
 
 format:
-  html:
-    respect-user-color-scheme: true
-    toc: true
-    toc-title: "Table of Content"
-    toc-depth: 4
-    theme:
-      light: [cosmo, site/theme.scss]
-      dark: [cosmo, site/dark_theme.scss]
-    code-copy: true
-    code-overflow: wrap
+    html:
+        respect-user-color-scheme: true
+        toc: true
+        toc-title: "Table of Content"
+        toc-depth: 4
+        theme:
+            light: [cosmo, site/theme.scss]
+            dark: [cosmo, site/dark_theme.scss]
+        code-copy: true
+        code-overflow: wrap
