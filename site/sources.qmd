@@ -6,16 +6,22 @@ bibliography: "../bachelor-thesis-report/bibliography.bib"
 ## Scientific Papers
 
 - @Alizadeh2025.12.22.695524
+- @Chatelain2026.01.09.698203
+- @denis2018verificarlocheckingfloatingpoint
 
 ## Software
 
-- @semester_project
+- @semester-project
+- @fuzzy-fmriprep
+- @fuzzy
 
 ## Youtube videos
 
 - @FMRI1
 - @FMRI2
 - @FMRI3
+- @fuzzy-video
+
 
 ---
 
