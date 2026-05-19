@@ -1,0 +1,20 @@
+---
+title: Daily Journal
+---
+
+## 12.05.2026
+- Initialized the main repository (see commit [here](https://github.com/MadeInShineA/bachelor-thesis/commit/470239d65c866045aa8a58641608495cf1a493e1){target="_blank"})
+
+## 14.05.2026
+- Initialized the report repository (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-report/commit/e98c34a0073836a643f68bc835485268b032624a){target="_blank"})
+
+## 15.05.2026
+- Welcome tour given by Masui san
+- BICR meeting
+- Created the main project website (see commit [here](https://github.com/MadeInShineA/bachelor-thesis/commit/f373c69ba41dea4fc163e97b9f497730e6441925){target="_blank"})
+
+## 18.05.2026
+- Updated the bibliography (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-report/commit/f1571617206d27923f4a6a124b14dbfdc362cfa1){target="_blank"})
+- Meeting with Ayumu and Okito san
+- Went to Seika town hall to announce myself
+- Fixed an issue where the bibliography inside the report submodule wasn't working on the main project website (see commit [here](https://github.com/MadeInShineA/bachelor-thesis/commit/9198310f30067ca20ebd0cfa825a8cc1101e8e97){target="_blank"})
