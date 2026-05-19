@@ -14,7 +14,13 @@ title: Daily Journal
 - Created the main project website (see commit [here](https://github.com/MadeInShineA/bachelor-thesis/commit/f373c69ba41dea4fc163e97b9f497730e6441925){target="_blank"})
 
 ## 18.05.2026
-- Updated the bibliography (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-report/commit/f1571617206d27923f4a6a124b14dbfdc362cfa1){target="_blank"})
+- Updated the bibliography (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-report/commit/f1571617206d27923f4a6a124b14dbfdc362cfa1){target="_blank"})
+- Created the source page on the main project website (see commit [here](https://github.com/MadeInShineA/bachelor-thesis/commit/6b3c7a96781bf5e99da97cd4dae5278d19656fbc){target="_blank"})
 - Meeting with Ayumu and Okito san
 - Went to Seika town hall to announce myself
 - Fixed an issue where the bibliography inside the report submodule wasn't working on the main project website (see commit [here](https://github.com/MadeInShineA/bachelor-thesis/commit/9198310f30067ca20ebd0cfa825a8cc1101e8e97){target="_blank"})
+
+## 19.05.2026
+- Started the Alizadeh 2025 paper summary (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/e13ecdb5699655774f1c103d2e33d4ec3d16e9e6){target="_blank"} and [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/97f9c290f5ce773861aebee8620b55759a8c1978){target="_blank"})
+- Updated the bibliography (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-report/commit/911e8a8f1cfbfdb74ae9126a31fff94edf1c07c7){target="_blank"} and [here](https://github.com/MadeInShineA/bachelor-thesis/commit/90f109b93c03812f0fb4904ae6a3ce45207bcd28){target="_blank"})
+- Added daily journal page to main project website (see commit [here](https://github.com/MadeInShineA/bachelor-thesis/commit/a3d776cc8b37bcf7292a1d95ce17501c6bd07e9a){target="_blank"})
