@@ -9,11 +9,15 @@ bibliography: "../bachelor-thesis-report/bibliography.bib"
 - @Chatelain2026.01.09.698203
 - @denis2018verificarlocheckingfloatingpoint
 
+---
+
 ## Software
 
 - @semester-project
 - @fuzzy-fmriprep
 - @fuzzy
+
+---
 
 ## Youtube videos
 
@@ -22,6 +26,12 @@ bibliography: "../bachelor-thesis-report/bibliography.bib"
 - @FMRI3
 - @fuzzy-video
 
+---
+
+## LLMS
+The following LLMs were used for concept explanations
+
+- Qwen 3.6-Plus
 
 ---
 
@@ -31,6 +41,8 @@ bibliography: "../bachelor-thesis-report/bibliography.bib"
   - [Quarto website](https://quarto.org/){target="_blank"}
   - [Graphviz website](https://graphviz.org/){target="_blank"}
   - [Excalidraw website](https://excalidraw.com/){target="_blank"}
+
+---
 
 ## References
 
