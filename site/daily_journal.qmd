@@ -24,3 +24,8 @@ title: Daily Journal
 - Started the Alizadeh 2025 paper summary (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/e13ecdb5699655774f1c103d2e33d4ec3d16e9e6){target="_blank"} and [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/97f9c290f5ce773861aebee8620b55759a8c1978){target="_blank"})
 - Updated the bibliography (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-report/commit/911e8a8f1cfbfdb74ae9126a31fff94edf1c07c7){target="_blank"} and [here](https://github.com/MadeInShineA/bachelor-thesis/commit/90f109b93c03812f0fb4904ae6a3ce45207bcd28){target="_blank"})
 - Added daily journal page to main project website (see commit [here](https://github.com/MadeInShineA/bachelor-thesis/commit/a3d776cc8b37bcf7292a1d95ce17501c6bd07e9a){target="_blank"})
+
+## 20.05.2026
+- Added a flake.nix with uv to the project repository (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/decda97877bba7faad491713cdebfe66c907806a){target="_blank"})
+- Finished Alizadeh 2025 paper summary v1 (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/ed8f0342a2b18430e95241bdd2942537c391178c){target"_blank"} and [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/813cd214d6a8bb164917ee544225c66983488ff8){target="_blank"})
+- Created fuzzy fMRIPrep 25.2.5 Dockerfile (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/7c6345b4544e1e9211e943be586408d1ebefd952){target="_blank"})
