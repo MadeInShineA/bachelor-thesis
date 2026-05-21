@@ -29,3 +29,10 @@ title: Daily Journal
 - Added a flake.nix with uv to the project repository (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/decda97877bba7faad491713cdebfe66c907806a){target="_blank"})
 - Finished Alizadeh 2025 paper summary v1 (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/ed8f0342a2b18430e95241bdd2942537c391178c){target"_blank"} and [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/813cd214d6a8bb164917ee544225c66983488ff8){target="_blank"})
 - Created fuzzy fMRIPrep 25.2.5 Dockerfile (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/7c6345b4544e1e9211e943be586408d1ebefd952){target="_blank"})
+
+## 21.05.2026
+- Started the Andy’s Brain fMRIPrep tutorial
+- Troubleshooted an issue regarding the fuzzy fmriprep container and fMRIPrep runs
+    - Found that without the `--anat-only` flag the run would crash at the `skullstrip_first_pass` step
+- Re read the Alizadeh 2025 paper summary to prepare for Monday meeting
+- Started setting up the ATR VPN
