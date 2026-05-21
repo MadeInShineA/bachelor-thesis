@@ -3,6 +3,20 @@ title: "Sources"
 bibliography: "../bachelor-thesis-report/bibliography.bib"
 ---
 
+## fMRIPrep Related
+- fMRIPrep [website](https://fmriprep.org/en/stable/){target="_blank"}
+- fMRIPrep [source code](https://github.com/nipreps/fmriprep){target="_blank"}
+- fMRIPrep Andy’s Brain Book [fMIRIPrep tutorial](https://andysbrainbook.readthedocs.io/en/latest/OpenScience/OS/fMRIPrep_Demo.html){target="_blank"}
+- FreeSurfer [website](https://surfer.nmr.mgh.harvard.edu/){target="_blank"}
+
+---
+
+## Datasets
+
+- [Flanker task (event-related)](https://openneuro.org/datasets/ds000102/versions/00001){target="_blank"} from [OpenNeuro](https://openneuro.org/){target="_blank"} used for fuzzy fMRIPrep testing
+
+---
+
 ## Scientific Papers
 
 - @Alizadeh2025.12.22.695524
@@ -29,7 +43,7 @@ bibliography: "../bachelor-thesis-report/bibliography.bib"
 ---
 
 ## LLMS
-The following LLMs were used for concept explanations
+The following LLMs were used for concept explanations and trouble-shooting
 
 - Qwen 3.6-Plus
 
