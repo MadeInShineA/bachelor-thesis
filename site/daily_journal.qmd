@@ -32,7 +32,14 @@ title: Daily Journal
 
 ## 21.05.2026
 - Started the Andy’s Brain fMRIPrep tutorial
-- Troubleshooted an issue regarding the fuzzy fmriprep container and fMRIPrep runs
+- Troubleshooted an issue regarding the fuzzy fMRIPrep container and fMRIPrep runs
     - Found that without the `--anat-only` flag the run would crash at the `skullstrip_first_pass` step
 - Re read the Alizadeh 2025 paper summary to prepare for Monday meeting
 - Started setting up the ATR VPN
+
+## 22.05.2026
+- Continued Andy’s Brain fMRIPrep tutorial
+- Fixed the fuzzy fMRIPrep `skullstrip_first_pass` issue (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/bced0ddf22858b6d0876c1f7cfb45da696b220cf){target="_blank"})
+    - What made the step fail was that `verificarlo` was outputting logs to `stderr`
+- Fixed typos and bugs in the Alizadeh 2025 paper summary (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/compare/bced0ddf22858b6d0876c1f7cfb45da696b220cf...1e7b4f2285222f87eecab43a5a632263e21e7846){target="_blank"})
+- Updated the bibliography (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-report/commit/f4981eb709067e51e8d1962b051ef38e9adbc74a){target="_blank"})
