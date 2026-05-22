@@ -30,6 +30,7 @@ bibliography: "../bachelor-thesis-report/bibliography.bib"
 - @semester-project
 - @fuzzy-fmriprep
 - @fuzzy
+- @verificarlo
 
 ---
 
