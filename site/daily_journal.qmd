@@ -10,7 +10,7 @@ title: Daily Journal
 
 ## 15.05.2026
 - Welcome tour given by Masui san
-- BICR meeting
+- CBI meeting
 - Created the main project website (see commit [here](https://github.com/MadeInShineA/bachelor-thesis/commit/f373c69ba41dea4fc163e97b9f497730e6441925){target="_blank"})
 
 ## 18.05.2026
@@ -41,5 +41,12 @@ title: Daily Journal
 - Continued Andy’s Brain fMRIPrep tutorial
 - Fixed the fuzzy fMRIPrep `skullstrip_first_pass` issue (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/bced0ddf22858b6d0876c1f7cfb45da696b220cf){target="_blank"})
     - What made the step fail was that `verificarlo` was outputting logs to `stderr`
+- CBI meeting
 - Fixed typos and bugs in the Alizadeh 2025 paper summary (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/compare/bced0ddf22858b6d0876c1f7cfb45da696b220cf...1e7b4f2285222f87eecab43a5a632263e21e7846){target="_blank"})
 - Updated the bibliography (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-report/commit/f4981eb709067e51e8d1962b051ef38e9adbc74a){target="_blank"})
+
+## 25.05.2026
+- Gave a last read to the Alizadeh 2025 paper summary for toray's meeting
+- Meeting with Ayumu and Okito san
+- Requested access for docker rights on the cluster
+- Started writing slurm and local parallel computing scripts (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/0bb5b5224eec4ef0803ffa1160afd47d26455217){target="_blank"})
