@@ -44,7 +44,8 @@ bibliography: "../bachelor-thesis-report/bibliography.bib"
 ---
 
 ## LLMS
-The following LLMs were used for concept explanations and trouble-shooting
+The following LLMs were used for concept explanations and trouble-shooting.
+They didn't write any code unless specified directly inside the according file.
 
 - Qwen 3.6-Plus
 
@@ -56,6 +57,7 @@ The following LLMs were used for concept explanations and trouble-shooting
   - [Quarto website](https://quarto.org/){target="_blank"}
   - [Graphviz website](https://graphviz.org/){target="_blank"}
   - [Excalidraw website](https://excalidraw.com/){target="_blank"}
+  - [Slurm website](https://www.schedmd.com/){target="_blank}
 
 ---
 
