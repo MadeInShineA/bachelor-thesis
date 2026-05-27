@@ -58,6 +58,7 @@ They didn't write any code unless specified directly inside the according file.
   - [Graphviz website](https://graphviz.org/){target="_blank"}
   - [Excalidraw website](https://excalidraw.com/){target="_blank"}
   - [Slurm website](https://www.schedmd.com/){target="_blank}
+  - [Numpy documentation](https://numpy.org/doc/stable/index.html){target="_blank"}
 
 ---
 
