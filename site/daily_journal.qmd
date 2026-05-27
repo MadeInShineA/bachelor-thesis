@@ -59,3 +59,8 @@ title: Daily Journal
 - Continued the parallel fmriprep script (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/4be5b256e10b8f0e1675a8573e52ee5636410337){target="_blank"})
 - Started the sequential_jobs script (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/9d33c11889ddecddee01970deb7f76f3e1f48599){target="_blank"})
 - Tried to make some reproduction runs on the cluster unsuccessfully
+
+## 27.05.2026
+- Fixed the differen run scripts (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/c09bfc7480fde0ee9a4762be3ea2a0d830b45171){target="_blank"})
+- Tested the run scripts and made fMRIPrep parallel test runs on several nodes
+- Started the NPVR simulation notebook (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/5374eb4f9acbe86ac1600c50c3fdbd19616d864f){target="_blank"} and notebook [here](./notebooks/npvr_simulation.html){target="_blank"})
