@@ -50,3 +50,12 @@ title: Daily Journal
 - Meeting with Ayumu and Okito san
 - Requested access for docker rights on the cluster
 - Started writing slurm and local parallel computing scripts (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/0bb5b5224eec4ef0803ffa1160afd47d26455217){target="_blank"})
+
+## 26.05.2026
+- Troubleshooted the `multiprocessing.Manager()` issue
+    - The Docker version was too old
+- Published Docker image to DockerHub (see [here](https://hub.docker.com/repository/docker/madeinshinea/fuzzy-fmriprep/general){target="_blank"})
+- Continued the slurm fuzzy fmriprep script (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/f21d42be379636bfca06e4396dae088797aa4877){target="_blank"})
+- Continued the parallel fmriprep script (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/4be5b256e10b8f0e1675a8573e52ee5636410337){target="_blank"})
+- Started the sequential_jobs script (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/9d33c11889ddecddee01970deb7f76f3e1f48599){target="_blank"})
+- Tried to make some reproduction runs on the cluster unsuccessfully
