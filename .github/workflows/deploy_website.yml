@@ -43,6 +43,9 @@ jobs:
       - name: Render Site
         run: quarto render
 
+      - name: Move notebooks to _site
+        run: cp -r site/notebooks/* _site/site/notebooks/
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
