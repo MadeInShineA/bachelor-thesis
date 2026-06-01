@@ -1,5 +1,7 @@
 project:
     type: website
+    resources:
+      - site/notebooks/
     output-dir: _site
     render:
         - site/index.qmd
