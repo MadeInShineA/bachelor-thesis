@@ -83,3 +83,5 @@ title: Daily Journal
 - Began a connectivity analysis pipeline overview document (see commit [here](https://github.com/MadeInShineA/bachelor-thesis/commit/e0a59fbddbba2c8a19306226504e0c8885f8adc5){target="_blank"})
 - Meeting with Prof. Esteban
 - Opened an issue in the Numerical-Variability-of-functional-MRI-Graph-Measures repository (see [here](https://github.com/mina94az/Numerical-Variability-of-functional-MRI-Graph-Measures/issues/1){target"_blank"})
+- Added a github action to the report repository to automatically release the report (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-report/compare/ef4e06fbe1e6947c71e48210d844824560f44632...899d2723dc6e335c784a7123a6b2712a31385958){target="_blank"})
+- Add the Download Thesis menu button
