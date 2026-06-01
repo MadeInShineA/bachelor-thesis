@@ -68,3 +68,12 @@ title: Daily Journal
 ## 28.05.2026
 - Finished the v1.0.0 of the NPVR simulation notebook (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/compare/16a7bf199faa5fb5dd275f31305a4768fff3b7ad...d09508233113ecfa0868be2c8c44a451564eb58e){target="_blank"} and notebook [here](./notebooks/npvr-simulation/){target="_blank"}))
 - Added 2 utils nu script to get the subjects by common laboratory and their filename (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/compare/d09508233113ecfa0868be2c8c44a451564eb58e...5fa350c0aa0cb07e8290fd81db25412f926acb5e){target="_blank"})
+
+## 29.05.2026
+- Wrote the necessary scripts to run the `parallel_jobs.sh` script with PBS (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/aad44cb81c7446dba313b62ffe234d27ad938012){target="_blank"})
+- CBI meeting
+- Fixed the `parallel_jobs.sh` directory creation and added a step to pull the Docker image if not present (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/fad84ed4dc2310735a5fae8433c3f39b792d7874){target="_blank"})
+- Modified the PBS `run_parallel_jpbs.sh` script to add a metadata file creation and fixed the parallel jobs work directory name (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/5be6e1a8352a535569567a28e7cc3a97097cad09){target="_blank"})
+- Fixed the output filenames the `get_sub_filename_by_common_lab.nu` script (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/7849fa28b55a207a739e375a1f321105bd20007d){target="_blank"})
+- Fixed different issues in the pbs `run_parallel_jobs.sh` script (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/de3c918ecd49532ab0dfd1b266b8cb8fbfdfdc2f){target="_blank"})
+- Ran 15 fMRIPrep runs on the cluster nodes
