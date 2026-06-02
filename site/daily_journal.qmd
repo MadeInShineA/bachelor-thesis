@@ -85,3 +85,6 @@ title: Daily Journal
 - Opened an issue in the Numerical-Variability-of-functional-MRI-Graph-Measures repository (see [here](https://github.com/mina94az/Numerical-Variability-of-functional-MRI-Graph-Measures/issues/1){target"_blank"})
 - Added a github action to the report repository to automatically release the report (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-report/compare/ef4e06fbe1e6947c71e48210d844824560f44632...899d2723dc6e335c784a7123a6b2712a31385958){target="_blank"})
 - Add the Download Thesis menu button
+
+## 02.06.2026
+- Started the `fuzzy_fmriprep_analysis` marimo notebook (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/compare/17911fc13bddd52d75fba31f802fdda7fe08e273...b01a0752d46dd9e3a32a20caa48051357c69b393){target="_blank"} and notebook [here](./notebooks/fuzzy-fmriprep-analysis.html){target="_blank"})
