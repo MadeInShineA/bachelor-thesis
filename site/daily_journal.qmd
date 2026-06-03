@@ -88,3 +88,10 @@ title: Daily Journal
 
 ## 02.06.2026
 - Started the `fuzzy_fmriprep_analysis` marimo notebook (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/compare/17911fc13bddd52d75fba31f802fdda7fe08e273...b01a0752d46dd9e3a32a20caa48051357c69b393){target="_blank"} and notebook [here](./notebooks/fuzzy-fmriprep-analysis.html){target="_blank"})
+    - Computed some FC matrices (currently very slow)
+
+## 03.06.2026
+- Continued the `fuzzy_fmriprep_analysis` notebook (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/compare/b01a0752d46dd9e3a32a20caa48051357c69b393...28f9025921128a200c346fb5ae39652f70b1adf4){target="_blank"} and notebook [here](./notebooks/fuzzy-fmriprep-analysis.html){target="_blank"})
+    - Changed the FC matrices computations to be in parallel
+    - Added threshold graphs to the notebok
+- Started a first draft of the project Gantt diagram (see commit [here](https://github.com/MadeInShineA/bachelor-thesis/commit/62409857692cf7e39719ddab056908460ad6668f){target="_blank"} and page [here](./index.qmd){target="_blank"})
