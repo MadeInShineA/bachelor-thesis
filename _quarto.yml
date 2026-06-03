@@ -17,7 +17,7 @@ website:
             - href: site/index.qmd
               text: Home
             - href: https://github.com/MadeInShineA/bachelor-thesis-report/releases/download/thesis-latest/bachelor_thesis.pdf
-              text: Download Thesis
+              text: Download Report
             - href: site/sources.qmd
               text: Sources
             - href: site/daily_journal.qmd
