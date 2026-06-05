@@ -49,6 +49,7 @@ The following LLMs were used for concept explanations and trouble-shooting.
 They didn't write any code unless specified directly inside the according file.
 
 - Qwen 3.6-Plus
+- OpenCode's Big Pickle
 
 ---
 

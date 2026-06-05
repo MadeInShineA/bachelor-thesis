@@ -102,3 +102,14 @@ title: Daily Journal
     - Computed and plotted NPVR
 - Contributed to the report thesis repository (see PR [here](https://github.com/ISC-HEI/isc-hei-typst-templates/pull/30){target="_blank"})
 - Began the report cover page (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-report/compare/899d2723dc6e335c784a7123a6b2712a31385958...8f1da9ee6585c68c6d5a1c23861e8215bd425060){target="_blank"})
+
+## 05.06.2026
+- Made the `fuzzy_fmriprep_analysis` notebook save some of it's output (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/compare/d42dd0f62b7675d350552e853d33d7b3595b75ad...1445c030162b51fdc764d74dbdb00edbd21a24d8){target="_blank"} and output [here](https://github.com/MadeInShineA/bachelor-thesis-project/tree/6567b64fac5efeb8ff2186c69e7c8af829bcecb1/res/fuzzy-fmriprep-analysis){target="_blank"})
+    - FC matrices
+    - Threshold graph plot
+    - Graph metrics
+    - NPVR variation plots
+- Ran several versions of the connectivity analysis pipeline (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/6567b64fac5efeb8ff2186c69e7c8af829bcecb1){target="_blank"})
+- CBI meeting
+- Fixed a bibliography issue in the school template (see PR [here](https://github.com/ISC-HEI/isc-hei-typst-templates/pull/31){target="_blank"})
+- Started the report abstract (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-report/commits/276a7694a85af77cd13e1facb2bc0db4b7e08c76/){target="_blank"})
