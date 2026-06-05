@@ -95,3 +95,10 @@ title: Daily Journal
     - Changed the FC matrices computations to be in parallel
     - Added threshold graphs to the notebok
 - Started a first draft of the project Gantt diagram (see commit [here](https://github.com/MadeInShineA/bachelor-thesis/commit/62409857692cf7e39719ddab056908460ad6668f){target="_blank"} and page [here](./index.qmd){target="_blank"})
+
+## 04.06.2026
+- Continued the `fuzzy_fmriprep_analysis` notebook (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/compare/28f9025921128a200c346fb5ae39652f70b1adf4...d42dd0f62b7675d350552e853d33d7b3595b75ad){target="_blank"} and notebook [here](./notebooks/fuzzy-fmriprep-analysis.html){target="_blank"})
+    - Computed graph metrics on the thresholded graphs
+    - Computed and plotted NPVR
+- Contributed to the report thesis repository (see PR [here](https://github.com/ISC-HEI/isc-hei-typst-templates/pull/30){target="_blank"})
+- Began the report cover page (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-report/compare/899d2723dc6e335c784a7123a6b2712a31385958...8f1da9ee6585c68c6d5a1c23861e8215bd425060){target="_blank"})
