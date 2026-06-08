@@ -113,3 +113,11 @@ title: Daily Journal
 - CBI meeting
 - Fixed a bibliography issue in the school template (see PR [here](https://github.com/ISC-HEI/isc-hei-typst-templates/pull/31){target="_blank"})
 - Started the report abstract (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-report/commits/276a7694a85af77cd13e1facb2bc0db4b7e08c76/){target="_blank"})
+
+## 08.06.2026
+- Continued the report abstract and acknowledgment (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-report/compare/276a7694a85af77cd13e1facb2bc0db4b7e08c76...55c7ee5db687d168746c4564e999ddb9ae84c19d){target="_blank"})
+- Fixed project python dependencies
+- Continued the `fuzzy_fmriprep_analysis` notebook (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/compare/c780e536fcf3e26cfdbfba960c0ee70f4cd55f78...5689e2ad4c78d22a7e906d6e17c70eaa9d8eedf1){target="_blank"} and notebook [here](./notebooks/fuzzy-fmriprep-analysis.html){target="_blank"})
+    - Added the NVPR per brain region plots
+    - Fixed an issue in the `calculate_npvr_data ` function
+    - Added NPVR calculation details
