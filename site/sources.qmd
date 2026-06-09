@@ -19,10 +19,12 @@ bibliography: "../bachelor-thesis-report/bibliography.bib"
 
 ## Scientific Papers
 
+- @fMRIPrep
 - @Alizadeh2025.12.22.695524
 - @Chatelain2026.01.09.698203
 - @denis2018verificarlocheckingfloatingpoint
 - @KOIKE2021102600
+- @SciPyProceedings_11
 
 ---
 
@@ -32,6 +34,7 @@ bibliography: "../bachelor-thesis-report/bibliography.bib"
 - @fuzzy-fmriprep
 - @fuzzy
 - @verificarlo
+- @Nilearn
 
 ---
 
