@@ -27,7 +27,7 @@ title: Daily Journal
 
 ## 20.05.2026
 - Added a flake.nix with uv to the project repository (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/decda97877bba7faad491713cdebfe66c907806a){target="_blank"})
-- Finished Alizadeh 2025 paper summary v1 (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/ed8f0342a2b18430e95241bdd2942537c391178c){target"_blank"} and [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/813cd214d6a8bb164917ee544225c66983488ff8){target="_blank"})
+- Finished Alizadeh 2025 paper summary v1 (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/ed8f0342a2b18430e95241bdd2942537c391178c){target="_blank"} and [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/813cd214d6a8bb164917ee544225c66983488ff8){target="_blank"})
 - Created fuzzy fMRIPrep 25.2.5 Dockerfile (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/7c6345b4544e1e9211e943be586408d1ebefd952){target="_blank"})
 
 ## 21.05.2026
@@ -87,24 +87,24 @@ title: Daily Journal
 - Add the Download Thesis menu button
 
 ## 02.06.2026
-- Started the `fuzzy_fmriprep_analysis` marimo notebook (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/compare/17911fc13bddd52d75fba31f802fdda7fe08e273...b01a0752d46dd9e3a32a20caa48051357c69b393){target="_blank"} and notebook [here](./notebooks/fuzzy-fmriprep-analysis.html){target="_blank"})
+- Started the `fuzzy_fmriprep_graph_metrics_analysis` marimo notebook (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/compare/17911fc13bddd52d75fba31f802fdda7fe08e273...b01a0752d46dd9e3a32a20caa48051357c69b393){target="_blank"} and notebook [here](./notebooks/fuzzy-fmriprep-graph-metrics-analysis.html){target="_blank"})
     - Computed some FC matrices (currently very slow)
 
 ## 03.06.2026
-- Continued the `fuzzy_fmriprep_analysis` notebook (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/compare/b01a0752d46dd9e3a32a20caa48051357c69b393...28f9025921128a200c346fb5ae39652f70b1adf4){target="_blank"} and notebook [here](./notebooks/fuzzy-fmriprep-analysis.html){target="_blank"})
+- Continued the `fuzzy_fmriprep_graph_metrics_analysis` notebook (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/compare/b01a0752d46dd9e3a32a20caa48051357c69b393...28f9025921128a200c346fb5ae39652f70b1adf4){target="_blank"} and notebook [here](./notebooks/fuzzy-fmriprep-graph-metrics-analysis.html){target="_blank"})
     - Changed the FC matrices computations to be in parallel
     - Added threshold graphs to the notebok
 - Started a first draft of the project Gantt diagram (see commit [here](https://github.com/MadeInShineA/bachelor-thesis/commit/62409857692cf7e39719ddab056908460ad6668f){target="_blank"} and page [here](./index.qmd){target="_blank"})
 
 ## 04.06.2026
-- Continued the `fuzzy_fmriprep_analysis` notebook (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/compare/28f9025921128a200c346fb5ae39652f70b1adf4...d42dd0f62b7675d350552e853d33d7b3595b75ad){target="_blank"} and notebook [here](./notebooks/fuzzy-fmriprep-analysis.html){target="_blank"})
+- Continued the `fuzzy_fmriprep_graph_metrics_analysis` notebook (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/compare/28f9025921128a200c346fb5ae39652f70b1adf4...d42dd0f62b7675d350552e853d33d7b3595b75ad){target="_blank"} and notebook [here](./notebooks/fuzzy-fmriprep-graph-metrics-analysis.html){target="_blank"})
     - Computed graph metrics on the thresholded graphs
     - Computed and plotted NPVR
 - Contributed to the report thesis repository (see PR [here](https://github.com/ISC-HEI/isc-hei-typst-templates/pull/30){target="_blank"})
 - Began the report cover page (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-report/compare/899d2723dc6e335c784a7123a6b2712a31385958...8f1da9ee6585c68c6d5a1c23861e8215bd425060){target="_blank"})
 
 ## 05.06.2026
-- Made the `fuzzy_fmriprep_analysis` notebook save some of it's output (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/compare/d42dd0f62b7675d350552e853d33d7b3595b75ad...1445c030162b51fdc764d74dbdb00edbd21a24d8){target="_blank"} and output [here](https://github.com/MadeInShineA/bachelor-thesis-project/tree/6567b64fac5efeb8ff2186c69e7c8af829bcecb1/res/fuzzy-fmriprep-analysis){target="_blank"})
+- Made the `fuzzy_fmriprep_graph_metrics_analysis` notebook save some of it's output (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/compare/d42dd0f62b7675d350552e853d33d7b3595b75ad...1445c030162b51fdc764d74dbdb00edbd21a24d8){target="_blank"} and output [here](https://github.com/MadeInShineA/bachelor-thesis-project/tree/6567b64fac5efeb8ff2186c69e7c8af829bcecb1/res/fuzzy-fmriprep-analysis){target="_blank"})
     - FC matrices
     - Threshold graph plot
     - Graph metrics
@@ -117,14 +117,24 @@ title: Daily Journal
 ## 08.06.2026
 - Continued the report abstract and acknowledgment (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-report/compare/276a7694a85af77cd13e1facb2bc0db4b7e08c76...55c7ee5db687d168746c4564e999ddb9ae84c19d){target="_blank"})
 - Fixed project python dependencies
-- Continued the `fuzzy_fmriprep_analysis` notebook (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/compare/c780e536fcf3e26cfdbfba960c0ee70f4cd55f78...1bb90ead7afd09bef632c46f4524a4ae957290a2){target="_blank"} and notebook [here](./notebooks/fuzzy-fmriprep-analysis.html){target="_blank"})
+- Continued the `fuzzy_fmriprep_graph_metrics_analysis` notebook (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/compare/c780e536fcf3e26cfdbfba960c0ee70f4cd55f78...1bb90ead7afd09bef632c46f4524a4ae957290a2){target="_blank"} and notebook [here](./notebooks/fuzzy-fmriprep-graph-metrics-analysis.html){target="_blank"})
     - Added the NVPR per brain region plots
     - Fixed an issue in the `calculate_npvr_data ` function
     - Added NPVR calculation details
 
 ## 09.06.2026
-- Continued the `fuzzy_fmriprep_analysis` notebook (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/compare/1bb90ead7afd09bef632c46f4524a4ae957290a2...59a523dab8d9a4517e8795d58771b380127d1893){target="_blank"} and notebook [here](./notebooks/fuzzy-fmriprep-analysis.html){target="_blank"})
+- Continued the `fuzzy_fmriprep_graph_metrics_analysis` notebook (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/compare/1bb90ead7afd09bef632c46f4524a4ae957290a2...59a523dab8d9a4517e8795d58771b380127d1893){target="_blank"} and notebook [here](./notebooks/fuzzy-fmriprep-graph-metrics-analysis.html){target="_blank"})
     - Made the graph metric calculation run in parallel
     - Fixed the v1 run metadata
-- Added QOL to the `fuzzy_fmriprep_analysis` notebook (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/b53d209849916bc370872ee9bd4d55d54697866f){target="_blank"})
+- Added QOL to the `fuzzy_fmriprep_graph_metrics_analysis` notebook (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/b53d209849916bc370872ee9bd4d55d54697866f){target="_blank"})
 - Changed the Docker run command inside `run_parallel_jobs.sh` to add replicabiliy parameters (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/61d78e56724e576057ba5166af94058ce643e1d7){target="_blank"})
+
+10.06.2026
+- Changed the Docker run command inside `run_parallel_jobs.sh` to add cifti output (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/d2b306d0c2b8c6f059ce64b6e343a9d9e9c01460){target="_blank"})
+- Cleaned up  the `fuzzy_fmriprep_graph_metrics_analysis` notebook (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/compare/d2b306d0c2b8c6f059ce64b6e343a9d9e9c01460...caa41c494b3c2d303ce5317f14924bdd4fce9bb1){target="_blank"} and notebook [here](./notebooks/fuzzy-fmriprep-graph-metrics-analysis.html){target="_blank"})
+    - Reversed the color of the threshold plots
+    - Made the notebook reusable
+    - Polished the overall code
+    - Renamed the notebook
+    - Chanded the output paths
+- Started the `fuzzy_fmriprep_fc_matrices_analysis` notebook (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commits/5b9a099adc9de4b03b4d30d2f4fe8074ea2f08da/){target="_blank"} and notebook [here](./notebooks/fuzzy-fmriprep-fc-matrices-analysis.html){target="_blank"})
