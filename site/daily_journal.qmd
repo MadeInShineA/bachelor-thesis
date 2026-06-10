@@ -73,7 +73,7 @@ title: Daily Journal
 - Wrote the necessary scripts to run the `parallel_jobs.sh` script with PBS (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/aad44cb81c7446dba313b62ffe234d27ad938012){target="_blank"})
 - CBI meeting
 - Fixed the `parallel_jobs.sh` directory creation and added a step to pull the Docker image if not present (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/fad84ed4dc2310735a5fae8433c3f39b792d7874){target="_blank"})
-- Modified the PBS `run_parallel_jpbs.sh` script to add a metadata file creation and fixed the parallel jobs work directory name (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/5be6e1a8352a535569567a28e7cc3a97097cad09){target="_blank"})
+- Modified the PBS `run_parallel_jobs.sh` script to add a metadata file creation and fixed the parallel jobs work directory name (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/5be6e1a8352a535569567a28e7cc3a97097cad09){target="_blank"})
 - Fixed the output filenames the `get_sub_filename_by_common_lab.nu` script (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/7849fa28b55a207a739e375a1f321105bd20007d){target="_blank"})
 - Fixed different issues in the pbs `run_parallel_jobs.sh` script (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/de3c918ecd49532ab0dfd1b266b8cb8fbfdfdc2f){target="_blank"})
 - Ran 15 fMRIPrep runs on the cluster nodes
@@ -121,3 +121,10 @@ title: Daily Journal
     - Added the NVPR per brain region plots
     - Fixed an issue in the `calculate_npvr_data ` function
     - Added NPVR calculation details
+
+## 09.06.2026
+- Continued the `fuzzy_fmriprep_analysis` notebook (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/compare/1bb90ead7afd09bef632c46f4524a4ae957290a2...59a523dab8d9a4517e8795d58771b380127d1893){target="_blank"} and notebook [here](./notebooks/fuzzy-fmriprep-analysis.html){target="_blank"})
+    - Made the graph metric calculation run in parallel
+    - Fixed the v1 run metadata
+- Added QOL to the `fuzzy_fmriprep_analysis` notebook (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/b53d209849916bc370872ee9bd4d55d54697866f){target="_blank"})
+- Changed the Docker run command inside `run_parallel_jobs.sh` to add replicabiliy parameters (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/61d78e56724e576057ba5166af94058ce643e1d7){target="_blank"})
