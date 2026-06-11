@@ -129,7 +129,7 @@ title: Daily Journal
 - Added QOL to the `fuzzy_fmriprep_graph_metrics_analysis` notebook (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/b53d209849916bc370872ee9bd4d55d54697866f){target="_blank"})
 - Changed the Docker run command inside `run_parallel_jobs.sh` to add replicabiliy parameters (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/61d78e56724e576057ba5166af94058ce643e1d7){target="_blank"})
 
-10.06.2026
+## 10.06.2026
 - Changed the Docker run command inside `run_parallel_jobs.sh` to add cifti output (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/d2b306d0c2b8c6f059ce64b6e343a9d9e9c01460){target="_blank"})
 - Cleaned up  the `fuzzy_fmriprep_graph_metrics_analysis` notebook (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/compare/d2b306d0c2b8c6f059ce64b6e343a9d9e9c01460...caa41c494b3c2d303ce5317f14924bdd4fce9bb1){target="_blank"} and notebook [here](./notebooks/fuzzy-fmriprep-graph-metrics-analysis.html){target="_blank"})
     - Reversed the color of the threshold plots
@@ -138,3 +138,7 @@ title: Daily Journal
     - Renamed the notebook
     - Chanded the output paths
 - Started the `fuzzy_fmriprep_fc_matrices_analysis` notebook (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commits/5b9a099adc9de4b03b4d30d2f4fe8074ea2f08da/){target="_blank"} and notebook [here](./notebooks/fuzzy-fmriprep-fc-matrices-analysis.html){target="_blank"})
+
+## 11.06.2026
+- Continued the `fuzzy_fmriprep_fc_matrices_analysis` notebook (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/compare/3eb768777e4af14dce517ca11930e15fd05f12d0...c27b6535560645255dcb732771104ea455be6d77){target="_blank"} and notebook [here](./notebooks/fuzzy-fmriprep-fc-matrices-analysis.html){target="_blank"})
+    - Added different plots from the previous FC matrices, as the current one are still running
