@@ -142,3 +142,8 @@ title: Daily Journal
 ## 11.06.2026
 - Continued the `fuzzy_fmriprep_fc_matrices_analysis` notebook (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/compare/3eb768777e4af14dce517ca11930e15fd05f12d0...c27b6535560645255dcb732771104ea455be6d77){target="_blank"} and notebook [here](./notebooks/fuzzy-fmriprep-fc-matrices-analysis.html){target="_blank"})
     - Added different plots from the previous FC matrices, as the current one are still running
+
+# 12.06.2026
+- Looked into what to do with the FC matrices extraction MCA perturbation
+- Started re-reading [this paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC12869322/){target="_blank"})
+- Wrote a small script to test OS numerical variability
