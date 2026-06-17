@@ -158,3 +158,8 @@ title: Daily Journal
     - Added the PCA feature plot for the wanted metrics
 - Contributed to the PCA dimentionality reduction github repository (see PR [here](https://github.com/Ayumu722/pca-based-feature-extraction/pull/2){target="_blank"})
     - Improved the PCA feature plot title and added x and y labels
+
+## 17.06.2026
+- Continued the `fuzzy_pca_dim_reduction_analysis` notebook (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/compare/3758cad1cf11f818dfcf9d04014c8b2b94425dcc...e3727228cb76f6f998ba7e09bc2ac2f3425dbf18){target="_blank"} and notebook [here](./notebooks/fuzzy-pca-dim-reduction-analysis.html){target="_blank"})
+    - Made the PCA feature extraction more modular
+    - Started plotting the PCA FC MDD vs HC brains
