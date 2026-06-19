@@ -163,3 +163,9 @@ title: Daily Journal
 - Continued the `fuzzy_pca_dim_reduction_analysis` notebook (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/compare/3758cad1cf11f818dfcf9d04014c8b2b94425dcc...e3727228cb76f6f998ba7e09bc2ac2f3425dbf18){target="_blank"} and notebook [here](./notebooks/fuzzy-pca-dim-reduction-analysis.html){target="_blank"})
     - Made the PCA feature extraction more modular
     - Started plotting the PCA FC MDD vs HC brains
+
+## 18.06.2026
+- Continued the `fuzzy_pca_dim_reduction_analysis` notebook (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/ffa0f531d8f25506e9208813310a18777b6cbeb0){target="_blank"} and notebook [here](./notebooks/fuzzy-pca-dim-reduction-analysis.html){target="_blank"})
+    - Started analyzing the `BMB` dataset
+- Realized a mistake in the current `fuzzy_pca_dim_reduction_analysis` notebook analysis pipeline
+    - I only plotted the FC that were unique between all the MDD vs HC PC instead of plotting all the FC of the selected PC
