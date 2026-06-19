@@ -169,3 +169,8 @@ title: Daily Journal
     - Started analyzing the `BMB` dataset
 - Realized a mistake in the current `fuzzy_pca_dim_reduction_analysis` notebook analysis pipeline
     - I only plotted the FC that were unique between all the MDD vs HC PC instead of plotting all the FC of the selected PC
+
+## 19.06.2026
+- Continued the `fuzzy_pca_dim_reduction_analysis` notebook (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/compare/ffa0f531d8f25506e9208813310a18777b6cbeb0...2c6aedf3927659dcb4b3ad5abb02ea651bc0db47){target="_blank"} and notebook [here](./notebooks/fuzzy-pca-dim-reduction-analysis.html){target="_blank"})
+    - Corrected the analysis pipeline
+    - Finished the first version of the notebook reproduction part.
