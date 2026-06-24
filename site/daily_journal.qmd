@@ -180,3 +180,9 @@ title: Daily Journal
     - Fixed an issue where the parcellation regions were not the correct one
     - Fixed an issue with the FC matrices element indexes
     - Improved the FC brain plot
+
+## 23.06.2026
+- Started the FC matrix extraction in the `fuzzy_pca_dim_reduction_analysis` notebook (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/c5573eda698650b7c49631fa22789b3b84becabd){target="_blank"} and notebook [here](./notebooks/fuzzy-pca-dim-reduction-analysis.html){target="_blank"})
+    - Only added the basic pipeline until the extraction
+- Started reading the [TS harmonization paper](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000042){target="_blank"}
+- Tried to create a fuzzy numpy docker container
