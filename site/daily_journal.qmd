@@ -186,3 +186,7 @@ title: Daily Journal
     - Only added the basic pipeline until the extraction
 - Started reading the [TS harmonization paper](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000042){target="_blank"}
 - Tried to create a fuzzy numpy docker container
+
+## 24.06.2026
+- Finished reading the [TS harmonization paper](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000042){target="_blank"}
+- Read the [TS inter-site differences](https://www.nature.com/articles/s41380-025-03134-6){target="_blank"}
