@@ -190,3 +190,6 @@ title: Daily Journal
 ## 24.06.2026
 - Finished reading the [TS harmonization paper](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000042){target="_blank"}
 - Read the [TS inter-site differences](https://www.nature.com/articles/s41380-025-03134-6){target="_blank"}
+
+## 25.06.2026
+- Finished the regular FC matrices extraction part of the the `fuzzy_pca_dim_reduction_analysis` notebook (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/d3a55cb5d9b391b88bb3f287229ff26ca5805e1d){target="_blank"} and notebook [here](./notebooks/fuzzy-pca-dim-reduction-analysis.html){target="_blank"})
