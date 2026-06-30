@@ -201,3 +201,8 @@ title: Daily Journal
 ## 29.06.2026
 - Continued the harmonization procedure in the `fuzzy_pca_dim_reduction_analysis` notebook (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/4519ab0dbdeee991ad498636ec8c24ace4950e14){target="_blank"} and notebook [here](./notebooks/fuzzy-pca-dim-reduction-analysis.html){target="_blank"})
 - Installed a local LLM ([this model](https://huggingface.co/unsloth/Qwen3.5-4B-GGUF){target="_blank"} and [Cherry studio](https://github.com/cherryhq/cherry-studio){target="blank"} to help troubleshooting
+
+## 30.06.2026
+- Looked into how the harmonization was done mathematically
+- Started a [Excalidraw](https://excalidraw.com/){target="_blank"} schema (see [here](https://excalidraw.com/#json=NDviFkoyqdx0cjhuDitnE,kjovnsS2aLeS_UgxsBofQw){target="_blank"}
+- Continued the harmonization procedure in the `fuzzy_pca_dim_reduction_analysis` notebook (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/1bbf5ec8ab2cfb5d6120ca6cd352d686a045a842){target="_blank"} and notebook [here](./notebooks/fuzzy-pca-dim-reduction-analysis.html){target="_blank"})
