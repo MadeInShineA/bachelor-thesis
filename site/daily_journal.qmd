@@ -192,4 +192,12 @@ title: Daily Journal
 - Read the [TS inter-site differences](https://www.nature.com/articles/s41380-025-03134-6){target="_blank"}
 
 ## 25.06.2026
-- Finished the regular FC matrices extraction part of the the `fuzzy_pca_dim_reduction_analysis` notebook (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/d3a55cb5d9b391b88bb3f287229ff26ca5805e1d){target="_blank"} and notebook [here](./notebooks/fuzzy-pca-dim-reduction-analysis.html){target="_blank"})
+- Finished the regular FC matrices extraction part of the `fuzzy_pca_dim_reduction_analysis` notebook (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/d3a55cb5d9b391b88bb3f287229ff26ca5805e1d){target="_blank"} and notebook [here](./notebooks/fuzzy-pca-dim-reduction-analysis.html){target="_blank"})
+
+## 26.06.2026
+- Fixed a mistake in the comparison of the extracted FC matrices and the harmonized ones in the `fuzzy_pca_dim_reduction_analysis` notebook (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/bfefa775d6fc55240b234fe9f76de6ebf605c6cf){target="_blank"} and notebook [here](./notebooks/fuzzy-pca-dim-reduction-analysis.html){target="_blank"})
+- Started the harmonization procedure in the `fuzzy_pca_dim_reduction_analysis` notebook (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/549dd0ec277a8c7884ffc30a9075dbe69b94ede2){target="_blank"} and notebook [here](./notebooks/fuzzy-pca-dim-reduction-analysis.html){target="_blank"})
+
+## 29.06.2026
+- Continued the harmonization procedure in the `fuzzy_pca_dim_reduction_analysis` notebook (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/4519ab0dbdeee991ad498636ec8c24ace4950e14){target="_blank"} and notebook [here](./notebooks/fuzzy-pca-dim-reduction-analysis.html){target="_blank"})
+- Installed a local LLM ([this model](https://huggingface.co/unsloth/Qwen3.5-4B-GGUF){target="_blank"} and [Cherry studio](https://github.com/cherryhq/cherry-studio){target="blank"} to help troubleshooting
