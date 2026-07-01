@@ -206,3 +206,7 @@ title: Daily Journal
 - Looked into how the harmonization was done mathematically
 - Started a [Excalidraw](https://excalidraw.com/){target="_blank"} schema (see [here](https://excalidraw.com/#json=NDviFkoyqdx0cjhuDitnE,kjovnsS2aLeS_UgxsBofQw){target="_blank"}
 - Continued the harmonization procedure in the `fuzzy_pca_dim_reduction_analysis` notebook (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/1bbf5ec8ab2cfb5d6120ca6cd352d686a045a842){target="_blank"} and notebook [here](./notebooks/fuzzy-pca-dim-reduction-analysis.html){target="_blank"})
+
+## 31.06.2026
+- Finished writing the code for the harmonization in the `fuzzy_pca_dim_reduction_analysis` notebook (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/7547251d4a84d59de1a0f58fb846e2068095e3d5){target="_blank"} and notebook [here](./notebooks/fuzzy-pca-dim-reduction-analysis.html){target="_blank"})
+    - It still needs testing
