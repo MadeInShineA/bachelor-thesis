@@ -143,17 +143,17 @@ title: Daily Journal
 - Continued the `fuzzy_fmriprep_fc_matrices_analysis` notebook (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/compare/3eb768777e4af14dce517ca11930e15fd05f12d0...c27b6535560645255dcb732771104ea455be6d77){target="_blank"} and notebook [here](./notebooks/fuzzy-fmriprep-fc-matrices-analysis.html){target="_blank"})
     - Added different plots from the previous FC matrices, as the current one are still running
 
-# 12.06.2026
+## 12.06.2026
 - Looked into what to do with the FC matrices extraction MCA perturbation
 - Started re-reading [this paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC12869322/){target="_blank"})
 - Wrote a small script to test OS numerical variability
 
-# 15.06.2026
+## 15.06.2026
 - Started the `fuzzy_pca_dim_reduction_analysis` notebook (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/509f683e92b3c643cdde24638d4b52d7753008c5){target="_blank"} and notebook [here](./notebooks/fuzzy-pca-dim-reduction-analysis.html){target="_blank"})
 - Contributed to the PCA dimentionality reduction github repository (see PR [here](https://github.com/Ayumu722/pca-based-feature-extraction/pull/1){target="_blank"})
     - Transformed the project into a Python package
 
-# 16.06.2026
+## 16.06.2026
 - Continued the `fuzzy_pca_dim_reduction_analysis` notebook (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commits/3758cad1cf11f818dfcf9d04014c8b2b94425dcc/){target="_blank"} and notebook [here](./notebooks/fuzzy-pca-dim-reduction-analysis.html){target="_blank"})
     - Added the PCA feature plot for the wanted metrics
 - Contributed to the PCA dimentionality reduction github repository (see PR [here](https://github.com/Ayumu722/pca-based-feature-extraction/pull/2){target="_blank"})
@@ -207,6 +207,9 @@ title: Daily Journal
 - Started a [Excalidraw](https://excalidraw.com/){target="_blank"} schema (see [here](https://excalidraw.com/#json=NDviFkoyqdx0cjhuDitnE,kjovnsS2aLeS_UgxsBofQw){target="_blank"}
 - Continued the harmonization procedure in the `fuzzy_pca_dim_reduction_analysis` notebook (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/1bbf5ec8ab2cfb5d6120ca6cd352d686a045a842){target="_blank"} and notebook [here](./notebooks/fuzzy-pca-dim-reduction-analysis.html){target="_blank"})
 
-## 31.06.2026
+## 01.06.2026
 - Finished writing the code for the harmonization in the `fuzzy_pca_dim_reduction_analysis` notebook (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/7547251d4a84d59de1a0f58fb846e2068095e3d5){target="_blank"} and notebook [here](./notebooks/fuzzy-pca-dim-reduction-analysis.html){target="_blank"})
     - It still needs testing
+
+## 02.06.2026
+- Fixed and verified the harmonization code in the `fuzzy_pca_dim_reduction_analysis` notebook (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/dfafeb13dd333285092d1a23a01acbc43462465d){target="_blank"} and notebook [here](./notebooks/fuzzy-pca-dim-reduction-analysis.html){target="_blank"})
