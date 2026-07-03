@@ -213,3 +213,6 @@ title: Daily Journal
 
 ## 02.06.2026
 - Fixed and verified the harmonization code in the `fuzzy_pca_dim_reduction_analysis` notebook (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/dfafeb13dd333285092d1a23a01acbc43462465d){target="_blank"} and notebook [here](./notebooks/fuzzy-pca-dim-reduction-analysis.html){target="_blank"})
+
+## 03.06.2026
+- Ran a first fuzzy PCA dimentionality reduction analysis on 2 runs, with the pipeline used for the reproduction (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/20ed022f5d819fe1446b9711575bfbc59ade3cdb){target="_blank"} and notebook [here](./notebooks/fuzzy-pca-dim-reduction-analysis.html){target="_blank"})
