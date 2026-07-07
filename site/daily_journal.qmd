@@ -217,5 +217,9 @@ title: Daily Journal
 ## 03.06.2026
 - Ran a first fuzzy PCA dimentionality reduction analysis on 2 runs, with the pipeline used for the reproduction (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/20ed022f5d819fe1446b9711575bfbc59ade3cdb){target="_blank"} and notebook [here](./notebooks/fuzzy-pca-dim-reduction-analysis.html){target="_blank"})
 
-## 07.06.2026
+## 06.07.2026
 - Ran 100 fuzzy PCA dimentionality reduction, made quite in depth analysis and started BMB extraction (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/compare/20ed022f5d819fe1446b9711575bfbc59ade3cdb...65941764529ec023d383d8cc3d3aa97d20ae6eb6){target="_blank"})
+
+## 07.07.2026
+- Created my Ai usage presentation slides (see slides [here](./presentations/ai_usage.qmd))
+- Finished gathering the BMB subjects and launched 2 fuzzy extraction runs
