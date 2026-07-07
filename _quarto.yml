@@ -7,6 +7,7 @@ project:
         - site/index.qmd
         - site/sources.qmd
         - site/daily_journal.qmd
+        - site/presentations/ai_usage.qmd
 
 website:
     title: "Bachelor Thesis"
@@ -18,6 +19,8 @@ website:
               text: Home
             - href: https://github.com/MadeInShineA/bachelor-thesis-report/releases/download/thesis-latest/bachelor_thesis.pdf
               text: Download Report
+            - href: site/presentations/ai_usage.qmd
+              text: AI usage presentation
             - href: site/sources.qmd
               text: Sources
             - href: site/daily_journal.qmd
@@ -46,7 +49,7 @@ format:
         toc-title: "Table of Content"
         toc-depth: 4
         theme:
-            light: [cosmo, site/theme.scss]
-            dark: [cosmo, site/dark_theme.scss]
+            light: [cosmo, site/assets/style/theme.scss]
+            dark: [cosmo, site/assets/style/dark_theme.scss]
         code-copy: true
         code-overflow: wrap

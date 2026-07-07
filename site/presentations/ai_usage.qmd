@@ -1,0 +1,108 @@
+---
+title: "AI Day Presentation"
+format:
+  revealjs:
+    theme: [default, ../assets/style/presentation.scss]
+    center: true
+    transition: fade
+    incremental: false
+    slide-number: true
+    preview-links: auto
+    navigation-mode: grid
+    # auto-play-media: true
+    footer: '<a href="../index.qmd" style="color: inherit; text-decoration: none;">Home</a> | <a href="../sources.qmd" style="color: inherit; text-decoration: none;">Sources</a> | AI Day Presentation © 2026'
+bibliography: ../../bachelor-thesis-report/bibliography.bib
+---
+
+
+# How do I use LLMs?
+:::: {.columns}
+
+::: {.column width="60%"}
+
+- My personal opinion on LLMs
+- The downsides of using LLMs
+- My personal usage of LLMs
+:::
+
+::: {.column width="40%"}
+
+
+
+![Visualisation of most LLMs usage](../assets/presentations/ai-usage/llm_usage.png){#fig-llm-usage}
+
+
+:::
+
+::::
+
+# My Personal Opinion On LLMs
+:::: {.columns}
+
+::: {.column width="60%"}
+- Not worth the hype and the money
+- Trained without respecting licenses and data protection laws
+- Is probably a bigger evil than we may think
+- Isn't that great at coding
+- Very hard to secure
+
+:::
+
+::: {.column width="40%"}
+
+
+![XKCD Machine Learning Comic](../assets/presentations/ai-usage/machine_learning_2x.png){#fig-xkcd}
+
+
+:::
+
+::::
+
+# The Downsides Of Using LLMs
+
+- Very hard to secure (see my blog post [here](https://olivier.amacker.dev/305.2-applied-cybersecurity/){target="_blank"})
+- Allows people to ship crappy code (see [this PR](https://github.com/facebook/docusaurus/pull/12105#pullrequestreview-4534633134){target="_blank"})
+- Spams open source developers with AI slope PR (see Matplotlib maintainer blog article [here](https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/){target="_blank"})
+- Devide the community regarding AI policy (see Zig no AI [policy](https://codeberg.org/ziglang/zig#user-content-strict-no-llm-no-ai-policy){target="_blank"})
+- Leads to cognitive debt (see @kosmyna2025brainchatgptaccumulationcognitive [here](https://arxiv.org/abs/2506.08872){target="_blank"})
+
+# The Downsides Of Using LLMs
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+- Isn't actually cheaper than regular junior devs (see blog article [here](https://www.labvent.co/blog/post/llm-vs-junior-dev-cost-2025/){target="blank"})
+- Reduces creativity (see @MOON2025100207 [here](https://www.sciencedirect.com/science/article/pii/S294988212500091X){target="_blank"})
+- Doesn't actually increase developer productivity (see @becker2025measuringimpactearly2025ai [here](http://arxiv.org/abs/2507.09089){target="_blank"})
+- Gives unreliable information (see @alansari2026largelanguagemodelshallucination [here](https://arxiv.org/abs/2510.06265){target="_blank"})
+
+:::
+
+::: {.column width="40%"}
+
+![Participants oppinions on LLms from @TERZIMEHIC2026100635](../assets/presentations/ai-usage/challenges_learners.png){#fig-ai-chall}
+
+:::
+
+:::
+
+# My personal usage of LLMs
+
+- I use exclusively open weight models
+- I take an extra step and self host fully open source models (public weight and training data) like [SmolLM3](https://huggingface.co/HuggingFaceTB/SmolLM3-3B){target="_blank"} with moderate quantization when the data I'm working with is proprietary
+- I mostly use LLMs to explain things with extra fact checking
+- I only use LLMs to write code I can easily double check (so only code I already did a couple of time)
+- I also sometimes use [OpenCode](https://opencode.ai/){target="_blank"} a [FOSS](https://fr.wikipedia.org/wiki/Free/Libre_Open_Source_Software){target="_blank"} Claude-Code alternative, which hosts free open weight models like [GLM-4.7](https://huggingface.co/zai-org/GLM-4.7){target="_blank"}
+
+
+# Aditional Resources
+Here is the slide deck link, if you need extra information
+[https://www.olivier.amacker.dev/bachelor-thesis/site/presentations/ai-usage.html](https://www.olivier.amacker.dev/bachelor-thesis/site/presentations/ai-usage.html){target="_blank"}
+
+![Slide deck QR code](../assets/presentations/ai-usage/qr-code.png){#fig-qr}
+
+# References
+
+::: {#refs}
+:::
