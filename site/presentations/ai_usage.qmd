@@ -91,9 +91,10 @@ bibliography: ../../bachelor-thesis-report/bibliography.bib
 
 # My Personal Usage Of LLMs
 
-- I use exclusively open weight models
+- I use exclusively open weight models like [Kimi K2.6](https://huggingface.co/moonshotai/Kimi-K2.6){target="_blank"}
 - I take an extra step and self-host fully open source models (public weights and training data) like [SmolLM3](https://huggingface.co/HuggingFaceTB/SmolLM3-3B){target="_blank"} with moderate quantization when the data I'm working with is proprietary
 - I mostly use LLMs to explain things with extra fact checking or to mess around
+- I use LLMs to correct my typo or grammar mistakes
 - I only use LLMs to write code I can easily double-check (so only code I've already written a couple of times)
 - I also sometimes use [OpenCode](https://opencode.ai/){target="_blank"} a [FOSS](https://fr.wikipedia.org/wiki/Free/Libre_Open_Source_Software){target="_blank"} Claude-Code alternative, which hosts free open weight models like [GLM-4.7](https://huggingface.co/zai-org/GLM-4.7){target="_blank"}
 
