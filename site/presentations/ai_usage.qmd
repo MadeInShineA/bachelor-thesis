@@ -1,5 +1,7 @@
 ---
-title: "AI Day Presentation"
+title: "AI Usage Presentation"
+author: "Olivier Amacker"
+date: 2026-07-08
 format:
   revealjs:
     theme: [default, ../assets/style/presentation.scss]
