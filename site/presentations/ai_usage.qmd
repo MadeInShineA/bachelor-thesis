@@ -12,7 +12,7 @@ format:
     preview-links: auto
     navigation-mode: grid
     # auto-play-media: true
-    footer: '<a href="../index.qmd" style="color: inherit; text-decoration: none;">Home</a> | <a href="../sources.qmd" style="color: inherit; text-decoration: none;">Sources</a> | AI Day Presentation © 2026'
+    footer: '<a href="../index.qmd" style="color: inherit; text-decoration: none;">Home</a> | <a href="../sources.qmd" style="color: inherit; text-decoration: none;">Sources</a> | AI Usage Presentation © 2026'
 bibliography: ../../bachelor-thesis-report/bibliography.bib
 ---
 
