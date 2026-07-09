@@ -223,3 +223,7 @@ title: Daily Journal
 ## 07.07.2026
 - Created my Ai usage presentation slides (see slides [here](./presentations/ai_usage.qmd))
 - Finished gathering the BMB subjects and launched 2 fuzzy extraction runs
+
+## 08.07.2026
+- Attended the AI usage workshop, and presented my view
+- Finished the BMB harmonization and started 10 new runs (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/compare/20ed022f5d819fe1446b9711575bfbc59ade3cdb...65941764529ec023d383d8cc3d3aa97d20ae6eb6){target="_blank"})
