@@ -19,8 +19,21 @@ website:
               text: Home
             - href: https://github.com/MadeInShineA/bachelor-thesis-report/releases/download/thesis-latest/bachelor_thesis.pdf
               text: Download Report
-            - href: site/presentations/ai_usage.qmd
-              text: AI usage presentation
+            - text: Notebooks
+              menu:
+                  - href: site/notebooks/npvr-simulation/index.html
+                    text: NPVR Simulation
+                  - href: site/notebooks/fuzzy-fmriprep-graph-metrics-analysis.html
+                    text: Fuzzy fMRIPrep Graph Metrics Analysis
+                  - href: site/notebooks/fuzzy-fmriprep-fc-matrices-analysis.html
+                    text: Fuzzy fMRIPrep FC Matrices Analysis
+                  - href: site/notebooks/fuzzy-pca-dim-reduction-analysis.html
+                    text: Fuzzy PCA Dim Reduction Analysis
+
+            - text: Presentations
+              menu:
+                  - href: site/presentations/ai_usage.qmd
+                    text: AI usage presentation
             - href: site/sources.qmd
               text: Sources
             - href: site/daily_journal.qmd
