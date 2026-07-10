@@ -13,7 +13,7 @@ The analysis is implemented as a set of [Marimo](https://marimo.io/) notebooks i
 - **`fuzzy_fmriprep_graph_metrics_analysis.py`** — Generates functional connectivity (FC) matrices from fuzzy-fMRIPrep outputs, thresholds them, and computes local and global graph metrics (degree centrality, clustering coefficient, betweenness centrality, eigenvector centrality, average shortest path length). It then calculates the Numerical-Population Variability Ratio (NPVR) to quantify numerical variability across Monte Carlo repetitions.
 - **`fuzzy_fmriprep_fc_matrices_analysis.py`** — Focuses on the FC matrices themselves, computing edge-wise NPVR and comparing confound-regression strategies (with all confounds vs. filtered confounds) through heatmaps, scatter plots, histograms, and regional brain maps.
 - **`fuzzy_pca_dim_reduction_analysis.py`** — Reproduces and extends a PCA-based feature-selection pipeline on the SRBP and BMB datasets, linking FC features to diagnosis, age, BDI, sex, site, and motion; it also serves as the foundation for perturbing FC matrix extraction.
-- **`nvpr_simulation.py`** — Simulates the impact of numerical variability on NPVR and Cohen's *d*, exploring how sample size and numerical-population variability ratios affect effect-size estimation.
+- **`npvr_simulation.py`** — Simulates the impact of numerical variability on NPVR and Cohen's *d*, exploring how sample size and numerical-population variability ratios affect effect-size estimation.
 
 ## Website
 
