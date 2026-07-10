@@ -236,4 +236,5 @@ title: Daily Journal
 - Cleaned the `npvr_simulation` notebook (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/compare/a02ee6bcdf34a9972e4a258d9e5543f348d46998...87dd38ec840b5a250075c72e1a75a877cec545fe){target="_blank})
 
 ## 10.07.2026
+- Updated the website home page (see commit [here](https://github.com/MadeInShineA/bachelor-thesis/commit/30db66bdf617f41140ce4f6d99e9ee5fe3741084){target="_blank"} and page [here](./index.qmd){target="_blank"})
 - Cleaned the different notebooks, README, etc... for the first submission (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/compare/87dd38ec840b5a250075c72e1a75a877cec545fe...9df99a1591ae73644c04be9ffd8bb6f65353dbff){target="_blank"})
