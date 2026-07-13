@@ -29,7 +29,7 @@ The website contains the following sections:
 
 ## Local Setup
 
-To set up the project website locally, clone the repository and either:
+To set up the project website locally, clone the repository, make sure [Git LFS](#git-lfs) files are pulled, and then either:
 
 ### Using Nix with Flakes enabled (recommended)
 
@@ -44,6 +44,19 @@ quarto render
 2. Run `quarto render`
 
 The rendered site will be available in the `_site/` directory.
+
+## Git LFS
+
+The rendered notebook HTML files in [`site/notebooks/`](site/notebooks/) can be very large because they embed figures and outputs. To keep the repository lean, some of them are tracked with [Git LFS](https://git-lfs.com/).
+
+Make sure Git LFS is installed and the files are pulled after cloning:
+
+```bash
+git lfs install
+git lfs pull
+```
+
+If a notebook link on the website shows a plain text pointer starting with `version https://git-lfs.github.com/spec/v1 ...`, the LFS content was not checked out before rendering. Run `git lfs pull` (or ensure your CI checkout step has `lfs: true`) and re-render the site.
 
 ## Submodules
 
