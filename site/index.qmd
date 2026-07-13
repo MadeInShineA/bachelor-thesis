@@ -82,6 +82,7 @@ gantt
     Prof. Esteban intermediate meeting :done, milestone, meet3, 2026-06-01, 0d
     Okito and Ayumu san third meeting :done, milestone, meet4, 2026-06-09, 0d
     Prof. Esteban and PhD. Chatelain meeting :done, milestone, meet5, 2026-06-11, 0d
+    Okito and Ayumu san fourth meeting :active, milestone, meet6, 2026-07-14, 0d
 
     section 1. Onboarding
     Familiarize with fMRI dataset       :done, p1t1, 2026-05-15, 2026-05-28
@@ -99,16 +100,12 @@ gantt
     SRPB PCA reproduction & analysis    :done, p3t2, 2026-06-15, 2026-07-03
     SRPB FC extraction                  :done, p3t3, 2026-06-23, 2026-06-25
     SRPB harmonization                  :done, p3t4, 2026-06-26, 2026-07-02
-    BMB data collection & extraction    :active, p3t5, 2026-07-06, 2026-07-10
-    BMB harmonization                   :active, p3t6, 2026-07-06, 2026-07-10
-    Compare perturbation vs site bias   :active, p3t8, 2026-07-09, 2026-08-06
-    Test feature robustness             :p3t9, 2026-07-20, 2026-08-06
-    Milestone Analysis Complete         :milestone, m3, 2026-08-06, 0d
+    BMB data collection & extraction    :done, p3t5, 2026-07-06, 2026-07-10
+    BMB harmonization                   :done, p3t6, 2026-07-06, 2026-07-10
 
     section 4. Documentation
-    Produce scripts and notebooks       :p4t1, 2026-07-20, 2026-08-20
-    Write evaluation report             :p4t2, 2026-08-01, 2026-08-31
-    Prepare defense materials           :p4t3, 2026-08-15, 2026-08-31
+    First code cleaning         :done, p4t1, 2026-07-10, 1d
+    Project website first version :done, p4t2, 2026-05-16, 2026-07-11
     Milestone Final Defense             :milestone, m4, 2026-08-31, 0d
 ```
 </div>
