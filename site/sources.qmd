@@ -54,6 +54,9 @@ They didn't write any code unless specified directly inside the according file.
 - Qwen3.6-Plus
 - Qwen3.7-Plus
 - OpenCode's Big Pickle
+- OpenCode's Kimi k2.7 Code
+- Kimi K2.6
+
 
 ---
 
