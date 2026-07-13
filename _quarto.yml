@@ -17,8 +17,8 @@ website:
         left:
             - href: site/index.qmd
               text: Home
-            - href: https://github.com/MadeInShineA/bachelor-thesis-report/releases/download/thesis-latest/bachelor_thesis.pdf
-              text: Download Report
+            - href: ./site/assets/report/bachelor-thesis.pdf
+              text: Report
             - text: Notebooks
               menu:
                   - href: site/notebooks/npvr-simulation/index.html
