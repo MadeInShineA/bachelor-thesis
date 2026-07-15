@@ -244,3 +244,7 @@ title: Daily Journal
 - Updated sources + thesis title + home page gantt + report page (see commits [here](https://github.com/MadeInShineA/bachelor-thesis/compare/f4d12ec9091c7967fc24f34c9d10aa51844e57d3...403a5c928b5ac44bfcc367118168dd302a1027f2){target="_blank"})
 - Scheduled a meeting with Okito and Ayumu san (tomorrow 11am)
 - Read several paper on MCA perturbations and data augmentation
+
+## 14.07.2026
+- Meeting with Ayumu and Okito san
+- Tried to fix the images at the end of the `fuzzy_pca_dim_reduction_analysis` notebook not showing in the exported HTML file unsucessfully
