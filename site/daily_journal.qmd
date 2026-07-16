@@ -248,3 +248,8 @@ title: Daily Journal
 ## 14.07.2026
 - Meeting with Ayumu and Okito san
 - Tried to fix the images at the end of the `fuzzy_pca_dim_reduction_analysis` notebook not showing in the exported HTML file unsucessfully
+
+## 15.07.2026
+- Fixed the images issue in the `fuzzy_pca_dim_reduction_analysis` notebook (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/eb6c3aa8fcb55c6583ce890ea1b54eeff6d2d29a){target="_blank"} and notebook [here](./notebooks/fuzzy-pca-dim-reduction-analysis.html){target="_blank"})
+- Started improving the numerical stability of the `pca-based-feature-extraction` Python package (see commits [here](https://github.com/MadeInShineA/pca-based-feature-extraction/compare/01250358678b2f6de420abff097c5a8051fe3f88...8ed793e3909d8c46638167935a72de9b3e84cf9d){target="_blank"})
+- Started updating the `fuzzy_pca_dim_reduction_analysis` notebook PC extraction with the more robust code (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/6e1a543944ce878f03d1f674ed47a2fa02de0c76){target="_blank"})
