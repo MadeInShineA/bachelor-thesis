@@ -25,6 +25,7 @@
           packages = with pkgs; [
             quarto
             git-lfs
+            codebook
           ];
 
         };
