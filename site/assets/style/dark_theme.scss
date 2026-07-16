@@ -42,7 +42,7 @@ $light: rgb(32.4,32.4,34.2);
 /*$navbar-bg: shade-color($gray-800, 30%);*/
 $footer-bg: $gray-900;
 $navbar-bg: shade-color($gray-800, 10%);
- 
+
 
 // Code blocks
 $code-block-bg-alpha: -.9;
@@ -109,7 +109,7 @@ color: #D1DBE5;
   border: none;
   border-bottom: 2px solid #ffffff !important;
   color: #ffffff !important;
-  background-color: transparent;  
+  background-color: transparent;
 }
 
 .hello-quarto-banner .nav-link {
@@ -173,7 +173,7 @@ details > summary {
   font-size: 1em;
   font-weight: bold;
   color: $white;
-  background-color: #ff0039; 
+  background-color: #ff0039;
 }
 
 #quarto-announcement a {
@@ -193,4 +193,8 @@ img.footer-logo {
     stroke: black!important
   }
 
+}
+
+.sidebar {
+    overflow-y: clip !important
 }
