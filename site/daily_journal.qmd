@@ -253,3 +253,8 @@ title: Daily Journal
 - Fixed the images issue in the `fuzzy_pca_dim_reduction_analysis` notebook (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/eb6c3aa8fcb55c6583ce890ea1b54eeff6d2d29a){target="_blank"} and notebook [here](./notebooks/fuzzy-pca-dim-reduction-analysis.html){target="_blank"})
 - Started improving the numerical stability of the `pca-based-feature-extraction` Python package (see commits [here](https://github.com/MadeInShineA/pca-based-feature-extraction/compare/01250358678b2f6de420abff097c5a8051fe3f88...8ed793e3909d8c46638167935a72de9b3e84cf9d){target="_blank"})
 - Started updating the `fuzzy_pca_dim_reduction_analysis` notebook PC extraction with the more robust code (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/6e1a543944ce878f03d1f674ed47a2fa02de0c76){target="_blank"})
+
+## 16.07.2026
+- Finished a first version of the `pca-based-feature-extraction` robust extraction (see commits [here](https://github.com/MadeInShineA/pca-based-feature-extraction/compare/8ed793e3909d8c46638167935a72de9b3e84cf9d...36791a5ac16ece69f1f62d06393371dd6ab1a1eb){target="_blank"})
+- Ran the entire `fuzzy_pca_dim_reduction_analysis` notebook pipeline with the new PC extraction
+- Added [Codebook](https://github.com/blopker/codebook){target="_blank"} to the different `flake.nix`
