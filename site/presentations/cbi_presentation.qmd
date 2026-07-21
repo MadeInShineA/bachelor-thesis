@@ -1,0 +1,41 @@
+---
+title: "CBI Presentation"
+author: "Olivier Amacker"
+date: 2026-07-24
+format:
+  revealjs:
+    theme: [default, ../assets/style/presentation.scss]
+    center: true
+    transition: fade
+    incremental: false
+    slide-number: true
+    preview-links: auto
+    navigation-mode: grid
+    # auto-play-media: true
+    footer: '<a href="../index.qmd" style="color: inherit; text-decoration: none;">Home</a> | <a href="../sources.qmd" style="color: inherit; text-decoration: none;">Sources</a> | CBI Presentation © 2026'
+bibliography: ../../bachelor-thesis-report/bibliography.bib
+---
+
+# Acronyms
+
+{{< list-of-acronyms >}}
+
+# What is the goal of this presentation?
+
+- Explain what I have done so far
+- Showcase my main results
+
+# What have I done so far?
+
+ - Reproduction of the @Alizadeh2025.12.22.695524 paper
+ - Perturbating **fMRIPrep runs** and assess the FC matrices changes
+ - Petrurbating **FC matrices extraction** and assess the PCA features extraction changes
+
+ The {{< acr AI >}} environment allows you to write technical content. 
+ Our templates utilize {{< acr CLI >}} for configuration.
+
+
+# References
+
+::: {#refs}
+:::
