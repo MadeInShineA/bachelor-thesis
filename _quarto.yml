@@ -15,10 +15,14 @@ filters:
 
 acronyms:
     keys:
-        - shortname: AI
-          longname: Artificial Intelligence
-        - shortname: CLI
-          longname: Command Line Interface
+        - shortname: CBI
+          longname: Computational Brain Imaging
+        - shortname: FC
+          longname: Functional Connectivity
+        - shortname: PCA
+          longname: Principal Component Analysis
+        - shortname: NPVR
+          longname: Numerical Variability Population Ratio
 
 website:
     title: "Bachelor Thesis"

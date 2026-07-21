@@ -16,26 +16,71 @@ format:
 bibliography: ../../bachelor-thesis-report/bibliography.bib
 ---
 
-# Acronyms
-
-{{< list-of-acronyms >}}
-
-# What is the goal of this presentation?
+# What Is The Goal Of This Presentation?
 
 - Explain what I have done so far
 - Showcase my main results
 
-# What have I done so far?
+# What Have I Done So Far?
 
- - Reproduction of the @Alizadeh2025.12.22.695524 paper
- - Perturbating **fMRIPrep runs** and assess the FC matrices changes
- - Petrurbating **FC matrices extraction** and assess the PCA features extraction changes
+ - Reproduced the @Alizadeh2025.12.22.695524 paper
+ - Perturbed fMRIPrep runs and assessed the {{< acr FC >}} matrices changes
+ - Perturbed {{< acr FC >}} matrices extraction and assessed the {{< acr PCA >}} features extraction changes
 
- The {{< acr AI >}} environment allows you to write technical content. 
- Our templates utilize {{< acr CLI >}} for configuration.
+# Reproduction Of The @Alizadeh2025.12.22.695524 Paper (1/X)
 
+The code used for this section is available online: [https://olivier.amacker.dev/bachelor-thesis/site/notebooks/npvr-simulation/](https://olivier.amacker.dev/bachelor-thesis/site/notebooks/npvr-simulation/){target="_blank"}
+
+![NPVR notebook QR code](../assets/presentations/cbi-presentation/npvr-simulation/qr-code.svg){#fig-npvr-qr}
+
+# Reproduction Of The @Alizadeh2025.12.22.695524 Paper (2/X)
+
+The goal of this paper is to quantify the {{< acr NPVR >}} across multiple fMRIPrep runs made with MCA floating point arithmetic perturbations.
+
+Here is the formula for the NPVR:
+
+$$NPVR = \frac{\sigma_{num}}{\sigma_{pop}}$$
+
+Where $\sigma_{num}$ is the numerical variability and $\sigma_{pop}$ is the population variability.
+
+# Reproduction Of The @Alizadeh2025.12.22.695524 Paper (3/X)
+
+::: {layout="[ [1, 1, 1], [1, 1, 1] ]"}
+
+![Population distribution (mine)](../assets/presentations/cbi-presentation/npvr-simulation/populations_plot.png){#fig-npvr-populations width="100%" height="150px"}
+
+![Relation between the NPVR and the Cohen's d (mine)](../assets/presentations/cbi-presentation/npvr-simulation/npvr_sample_size_cohens_delta_variation.png){#fig-npvr-sample-size width="100%" height="150px"}
+
+![Relation between pop and num var (mine)](../assets/presentations/cbi-presentation/npvr-simulation/npvr_dpop_dnum_variation.png){#fig-dnum-variation width="100%" height="150px"}
+
+![Population distribution (paper)](../assets/presentations/cbi-presentation/npvr-simulation-original/population.png){#fig-original-population width="100%" height="150px"}
+
+![Relation between the NPVR and the Cohen's d (paper)](../assets/presentations/cbi-presentation/npvr-simulation-original/cohens.png){#fig-original-cohens width="100%" height="150px"}
+
+![Relation between pop and num var (paper)](../assets/presentations/cbi-presentation/npvr-simulation-original/NPVR.png){#fig-original-npvr width="100%" height="150px"}
+
+:::
+
+# Reproduction Of The @Alizadeh2025.12.22.695524 Paper (4/X)
+
+Regarding the Relation between the NPVR and the Cohen's d differences, a Pull Request was open and merged into the paper's repository (see [here](https://github.com/mina94az/Numerical-Variability-of-functional-MRI-Graph-Measures/pull/3){target="_blank"})
 
 # References
 
 ::: {#refs}
 :::
+
+# Annex
+Here is how the NPVR is calculated in details:
+
+$$
+  \sigma_{num}^2 = \frac{1}{m} \sum_{j=1}^m \left[ \frac{1}{n-1} \sum_{i=1}^n \left( x_{i,j} - \bar x_{.,j}\right)^2\right]
+$$
+
+$$
+  \sigma_{pop}^2 = \frac{1}{n} \sum_{i=1}^n \left[ \frac{1}{m-1} \sum_{j=1}^m \left( x_{i,j} - \bar x_{i,.}\right)^2\right]
+$$
+
+$$
+  NPVR = \frac{\sigma_{num}}{\sigma_{pop}}
+$$
