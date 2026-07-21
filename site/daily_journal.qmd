@@ -258,3 +258,6 @@ title: Daily Journal
 - Finished a first version of the `pca-based-feature-extraction` robust extraction (see commits [here](https://github.com/MadeInShineA/pca-based-feature-extraction/compare/8ed793e3909d8c46638167935a72de9b3e84cf9d...36791a5ac16ece69f1f62d06393371dd6ab1a1eb){target="_blank"})
 - Ran the entire `fuzzy_pca_dim_reduction_analysis` notebook pipeline with the new PC extraction
 - Added [Codebook](https://github.com/blopker/codebook){target="_blank"} to the different `flake.nix`
+
+## 17.07.2026
+- Troubleshoot issues when running the complete `fuzzy_pca_dim_reduction_analysis` pipeline
