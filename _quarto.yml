@@ -1,13 +1,24 @@
 project:
     type: website
     resources:
-      - site/notebooks/
+        - site/notebooks/
     output-dir: _site
     render:
         - site/index.qmd
         - site/sources.qmd
         - site/daily_journal.qmd
         - site/presentations/ai_usage.qmd
+        - site/presentations/cbi_presentation.qmd
+
+filters:
+    - acronyms
+
+acronyms:
+    keys:
+        - shortname: AI
+          longname: Artificial Intelligence
+        - shortname: CLI
+          longname: Command Line Interface
 
 website:
     title: "Bachelor Thesis"
@@ -34,6 +45,8 @@ website:
               menu:
                   - href: site/presentations/ai_usage.qmd
                     text: AI usage presentation
+                  - href: site/presentations/cbi_presentation.qmd
+                    text: CBI presentation
             - href: site/sources.qmd
               text: Sources
             - href: site/daily_journal.qmd
