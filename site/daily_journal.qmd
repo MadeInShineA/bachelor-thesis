@@ -261,3 +261,7 @@ title: Daily Journal
 
 ## 17.07.2026
 - Troubleshoot issues when running the complete `fuzzy_pca_dim_reduction_analysis` pipeline
+
+## 21.07.2026
+- Finished fixing the complete `fuzzy_pca_dim_reduction_analysis` pipeline and ran the complete pipeline (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/55daa7801729204c3e314556c649b12b9a1b7b6a){target="_blank"})
+- Started the CBI presentation (see commits [here](https://github.com/MadeInShineA/bachelor-thesis/compare/b13a0c245985f3282f200fca70040d3faf3c0723...ee6334d966e034aaa24a5256868e4678e770dd34){target="_blank"} and slides [here](https://olivier.amacker.dev/bachelor-thesis/site/presentations/cbi_presentation.html#/title-slide){target="_blank"})
