@@ -23,6 +23,14 @@ acronyms:
           longname: Principal Component Analysis
         - shortname: NPVR
           longname: Numerical Variability Population Ratio
+        - shortname: MCA
+          longname: Monte Carlo Algorithm
+        - shortname: MRI
+          longname: Magnetic Resonance Imaging
+        - shortname: PR
+          longname: Pull Request
+        - shortname: QR
+          longname: Quick Response
 
 website:
     title: "Bachelor Thesis"

@@ -20,50 +20,156 @@ bibliography: ../../bachelor-thesis-report/bibliography.bib
 
 - Explain what I have done so far
 - Showcase my main results
+- Explain what the next steps could be
 
 # What Have I Done So Far?
 
- - Reproduced the @Alizadeh2025.12.22.695524 paper
- - Perturbed fMRIPrep runs and assessed the {{< acr FC >}} matrices changes
- - Perturbed {{< acr FC >}} matrices extraction and assessed the {{< acr PCA >}} features extraction changes
+ - Reproduced the @Alizadeh2025.12.22.695524 paper regarding {{< acr NPVR >}} of {{<acr MRI >}} graph metrics
+ - Perturbed fMRIPrep (@fMRIPrep) runs via Verificarlo (@denis2018verificarlocheckingfloatingpoint) and assessed the {{< acr FC >}} matrices changes
+ - Perturbed {{< acr FC >}} matrices calculation and assessed the {{< acr PCA >}} features extraction changes
 
-# Reproduction Of The @Alizadeh2025.12.22.695524 Paper (1/X)
+# @Alizadeh2025.12.22.695524 Paper Goals
 
-The code used for this section is available online: [https://olivier.amacker.dev/bachelor-thesis/site/notebooks/npvr-simulation/](https://olivier.amacker.dev/bachelor-thesis/site/notebooks/npvr-simulation/){target="_blank"}
+The paper has 2 goals:
 
-![NPVR notebook QR code](../assets/presentations/cbi-presentation/npvr-simulation/qr-code.svg){#fig-npvr-qr}
+ - Demonstrate on simulated data that {{< acr NPVR >}} increase uncertainty in Cohen's d estimates, with stronger effects at small n.
+ - Assess how {{< acr MCA >}} perturbations via Verificarlo of fMRIPrep runs impact the {{< acr NPVR >}} of various graph metrics.
 
-# Reproduction Of The @Alizadeh2025.12.22.695524 Paper (2/X)
-
-The goal of this paper is to quantify the {{< acr NPVR >}} across multiple fMRIPrep runs made with MCA floating point arithmetic perturbations.
-
-Here is the formula for the NPVR:
+Here is the formula for the {{< acr NPVR >}}:
 
 $$NPVR = \frac{\sigma_{num}}{\sigma_{pop}}$$
 
 Where $\sigma_{num}$ is the numerical variability and $\sigma_{pop}$ is the population variability.
 
-# Reproduction Of The @Alizadeh2025.12.22.695524 Paper (3/X)
+
+# @Alizadeh2025.12.22.695524 Paper Reproduction Code
+
+The code used for this section is available online: [https://olivier.amacker.dev/bachelor-thesis/site/notebooks/npvr-simulation/](https://olivier.amacker.dev/bachelor-thesis/site/notebooks/npvr-simulation/){target="_blank"}
+
+![NPVR notebook {{< acr QR >}} code](../assets/presentations/cbi-presentation/npvr-simulation/qr-code.svg){#fig-npvr-qr}
+
+# @Alizadeh2025.12.22.695524 Paper NPVR Results Comparison
 
 ::: {layout="[ [1, 1, 1], [1, 1, 1] ]"}
 
 ![Population distribution (mine)](../assets/presentations/cbi-presentation/npvr-simulation/populations_plot.png){#fig-npvr-populations width="100%" height="150px"}
 
-![Relation between the NPVR and the Cohen's d (mine)](../assets/presentations/cbi-presentation/npvr-simulation/npvr_sample_size_cohens_delta_variation.png){#fig-npvr-sample-size width="100%" height="150px"}
+![Relation between the NPVR and the Cohen's $d$ (mine)](../assets/presentations/cbi-presentation/npvr-simulation/npvr_sample_size_cohens_delta_variation.png){#fig-npvr-sample-size width="100%" height="150px"}
 
 ![Relation between pop and num var (mine)](../assets/presentations/cbi-presentation/npvr-simulation/npvr_dpop_dnum_variation.png){#fig-dnum-variation width="100%" height="150px"}
 
 ![Population distribution (paper)](../assets/presentations/cbi-presentation/npvr-simulation-original/population.png){#fig-original-population width="100%" height="150px"}
 
-![Relation between the NPVR and the Cohen's d (paper)](../assets/presentations/cbi-presentation/npvr-simulation-original/cohens.png){#fig-original-cohens width="100%" height="150px"}
+![Relation between the NPVR and the Cohen's $d$ (paper)](../assets/presentations/cbi-presentation/npvr-simulation-original/cohens.png){#fig-original-cohens width="100%" height="150px"}
 
 ![Relation between pop and num var (paper)](../assets/presentations/cbi-presentation/npvr-simulation-original/NPVR.png){#fig-original-npvr width="100%" height="150px"}
 
 :::
 
-# Reproduction Of The @Alizadeh2025.12.22.695524 Paper (4/X)
+# @Alizadeh2025.12.22.695524 Paper {{< acr PR >}}
 
-Regarding the Relation between the NPVR and the Cohen's d differences, a Pull Request was open and merged into the paper's repository (see [here](https://github.com/mina94az/Numerical-Variability-of-functional-MRI-Graph-Measures/pull/3){target="_blank"})
+Regarding the Relation between the NPVR and the Cohen's $d$ differences, a {{< acr PR >}} was open and merged into the paper's repository (see [here](https://github.com/mina94az/Numerical-Variability-of-functional-MRI-Graph-Measures/pull/3){target="_blank"})
+
+![Hard coded values for the 2nd graph](../assets/presentations/cbi-presentation/npvr-simulation/npvr_pr.png){#fig-npvr-pr height="100px"}
+
+# @Alizadeh2025.12.22.695524 Paper Graph Metrics
+
+Here are the different graph metrics that were computed once with and once without confounds regression
+
+4 local graph metrics were computed:
+
+  - Degree centrality
+  - Clustering coefficient
+  - Betweenness centrality
+  - Eigenvector centrality
+
+2 global metrics:
+
+  - Small-worldness
+  - Average shortest path length
+
+  
+# @Alizadeh2025.12.22.695524 Paper Reproduction Code
+
+The code used for this section is available online: [https://olivier.amacker.dev/bachelor-thesis/site/notebooks/fuzzy-fmriprep-graph-metrics-analysis.html](https://olivier.amacker.dev/bachelor-thesis/site/notebooks/fuzzy-fmriprep-graph-metrics-analysis.html){target="_blank"}
+
+![Graph Metrics notebook {{< acr QR >}} code](../assets/presentations/cbi-presentation/graph-metrics/qr_code.svg){#fig-graph-metrics-qr}
+
+
+# @Alizadeh2025.12.22.695524 Paper Graph Metrics Results Comparison
+
+::: {layout="[1, 1]"}
+
+![Graph metrics {{< acr NPVR >}} per threshold (mine)](../assets/presentations/cbi-presentation/graph-metrics/graph_metrics_npvr.png){#fig-graph-metrics-threshold width="100%" height="500px"}
+
+![Graph metrics {{< acr NPVR >}} per threshold (paper)](../assets/presentations/cbi-presentation/graph-metrics-original/graph_metrics_npvr.png){#fig-original-graph-metrics-threshold width="100%" height="500px"}
+
+:::
+
+# @Alizadeh2025.12.22.695524 Paper Graph Metrics Results Comparison
+
+::: {layout="[1, 1]"}
+
+![Variation of the NPVR between without and with confound (mine)](../assets/presentations/cbi-presentation/graph-metrics/graph_metrics_npvr_confound_difference.png){#fig-npvr-populations width="100%" height="500px"}
+
+![Variation of the NPVR between without and with confound (paper)](../assets/presentations/cbi-presentation/graph-metrics-original/graph_metrics_npvr_confound_difference.png){#fig-npvr-sample-size width="100%" height="500"}
+:::
+
+
+# @Alizadeh2025.12.22.695524 Paper Graph Metrics Results Comparison
+
+::: {layout="[1, 1]"}
+
+![Betweenness centrality {{< acr NPVR >}} values across brain regions and thresholds (mine)](../assets/presentations/cbi-presentation/graph-metrics/npvr_across_brain_regions_betweenness_centrality.png){#fig-npvr-populations width="100%" height="500px"}
+
+![{{< acr NPVR >}} values across brain regions and thresholds (paper)](../assets/presentations/cbi-presentation/graph-metrics-original/npvr_across_brain_regions.png){#fig-npvr-sample-size width="100%" height="500"}
+:::
+
+# @Alizadeh2025.12.22.695524 Paper Graph Metrics Results Comparison
+
+::: {layout="[1, 1]"}
+
+![Clustering coefficient {{< acr NPVR >}} values across brain regions and thresholds (mine)](../assets/presentations/cbi-presentation/graph-metrics/npvr_across_brain_regions_clustering_coefficient.png){#fig-npvr-populations width="100%" height="500px"}
+
+![{{< acr NPVR >}} values across brain regions and thresholds (paper)](../assets/presentations/cbi-presentation/graph-metrics-original/npvr_across_brain_regions.png){#fig-npvr-sample-size width="100%" height="500"}
+:::
+
+# @Alizadeh2025.12.22.695524 Paper Graph Metrics Results Comparison
+
+::: {layout="[1, 1]"}
+
+![Eigenvector centrality {{< acr NPVR >}} values across brain regions and thresholds (mine)](../assets/presentations/cbi-presentation/graph-metrics/npvr_across_brain_regions_eigenvector_centrality.png){#fig-npvr-populations width="100%" height="500px"}
+
+![{{< acr NPVR >}} values across brain regions and thresholds (paper)](../assets/presentations/cbi-presentation/graph-metrics-original/npvr_across_brain_regions.png){#fig-npvr-sample-size width="100%" height="500"}
+:::
+
+# @Alizadeh2025.12.22.695524 Paper Graph Metrics Results Comparison
+
+::: {layout="[1, 1]"}
+
+![Degree centrality {{< acr NPVR >}} values across brain regions and thresholds (mine)](../assets/presentations/cbi-presentation/graph-metrics/npvr_across_brain_regions_degree_centrality.png){#fig-npvr-populations width="100%" height="500px"}
+
+![{{< acr NPVR >}} values across brain regions and thresholds (paper)](../assets/presentations/cbi-presentation/graph-metrics-original/npvr_across_brain_regions.png){#fig-npvr-sample-size width="100%" height="500"}
+:::
+
+# Perturbated FMRIPrep Runs {{< acr FC >}} Matrices Analysis Goals
+
+The goal of this section was to take the {{< acr MCA >}} perturbation via Verificarlo of fMRIPrep runs from the previous section, and examine the impact of the perturbations on the {{< acr FC >}} matrices
+
+# Perturbed FMRIPrep Runs {{< acr FC >}} Matrices Analysis Code
+
+The code used for this section is available online: [https://olivier.amacker.dev/bachelor-thesis/site/notebooks/fuzzy-fmriprep-fc-matrices-analysis.html](https://olivier.amacker.dev/bachelor-thesis/site/notebooks/fuzzy-fmriprep-fc-matrices-analysis.html){target="_blank"}
+
+![Fuzzy {{< acr FC >}} matrices notebook {{< acr QR >}} code](../assets/presentations/cbi-presentation/fuzzy-fc-matrices/qr_code.svg){#fig-npvr-qr}
+
+# Perturbated FMRIPrep Runs {{< acr FC >}} Matrices Analysis Results
+
+::: {layout="[1, 1]"}
+
+![{{< acr NPVR >}} across {{< acr FC >}} matrices edge](../assets/presentations/cbi-presentation/fuzzy-fc-matrices/npvr_heatmap.png){#fig-npvr-populations width="100%" height="500px"}
+
+![{{< acr NPVR >}} across {{< acr FC >}} matrices edge difference bewteen with and without global confound regression](../assets/presentations/cbi-presentation/fuzzy-fc-matrices/npvr_delta_heatmap.png){#fig-npvr-sample-size width="100%" height="500"}
+:::
 
 # References
 
