@@ -26,16 +26,6 @@
             git-lfs
             codebook
           ];
-
-          # Automatically handles the Quarto acronyms extension on shell startup
-          shellHook = ''
-            if [ ! -d "_extensions/rchaput/acronyms" ]; then
-              echo "Installing rchaput/acronyms extension..."
-              quarto add rchaput/acronyms --no-prompt
-            else
-              echo "Acronyms extension is already present."
-            fi
-          '';
         };
       }
     );

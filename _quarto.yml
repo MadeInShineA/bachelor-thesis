@@ -10,28 +10,6 @@ project:
         - site/presentations/ai_usage.qmd
         - site/presentations/cbi_presentation.qmd
 
-filters:
-    - acronyms
-
-acronyms:
-    keys:
-        - shortname: CBI
-          longname: Computational Brain Imaging
-        - shortname: FC
-          longname: Functional Connectivity
-        - shortname: PCA
-          longname: Principal Component Analysis
-        - shortname: NPVR
-          longname: Numerical Variability Population Ratio
-        - shortname: MCA
-          longname: Monte Carlo Algorithm
-        - shortname: MRI
-          longname: Magnetic Resonance Imaging
-        - shortname: PR
-          longname: Pull Request
-        - shortname: QR
-          longname: Quick Response
-
 website:
     title: "Bachelor Thesis"
     repo-url: https://github.com/MadeInShineA/bachelor-thesis/
