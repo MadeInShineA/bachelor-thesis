@@ -45,9 +45,9 @@ However, there are several settings introducing noise instability in those pipel
 
 We can artificially introduce numerical perturbations inside the floating point arithmetic with the help of tools like [Verificarlo](https://github.com/verificarlo/verificarlo){target="_blank"}(@denis2018verificarlocheckingfloatingpoint) and [Fuzzy](https://github.com/verificarlo/fuzzy){target="_blank"} and assess how the desired pipeline's results change to make sure it is stable. 
 
-Verificarlo is a compiler wrapper that instruments floating-point operations at the LLVM level.
+Verificarlo is a compiler wrapper that instruments floating point operations at the LLVM level.
 
-Fuzzy is a Docker-based ecosystem that provides pre-instrumented versions of common numerical libraries so you can evaluate a pipeline's stability without recompiling your own code.
+Fuzzy is a Docker ecosystem that provides pre instrumented versions of common numerical libraries so you can evaluate a pipeline's stability without recompiling your own code.
 
 
 # Was This Done Before?
