@@ -267,6 +267,10 @@ title: Daily Journal
 - Started the CBI presentation (see commits [here](https://github.com/MadeInShineA/bachelor-thesis/compare/b13a0c245985f3282f200fca70040d3faf3c0723...ee6334d966e034aaa24a5256868e4678e770dd34){target="_blank"} and slides [here](https://olivier.amacker.dev/bachelor-thesis/site/presentations/cbi_presentation.html#/title-slide){target="_blank"})
 
 ## 22.07.2026
-- Continued the CBI presentation (see commit [here](https://github.com/MadeInShineA/bachelor-thesis/commit/01688fdb12048891a3d5d4f87a39983f97dab151){target="_blank"} slides [here](https://olivier.amacker.dev/bachelor-thesis/site/presentations/cbi_presentation.html#/title-slide){target="_blank"})
+- Continued the CBI presentation (see commit [here](https://github.com/MadeInShineA/bachelor-thesis/commit/01688fdb12048891a3d5d4f87a39983f97dab151){target="_blank"} and slides [here](https://olivier.amacker.dev/bachelor-thesis/site/presentations/cbi_presentation.html#/title-slide){target="_blank"})
 - Ran the old PC extraction (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commits/8e8250c4973cfd649fb0d5b462eb52906e34243b/){target="_blank"})
 - Modified the `fuzzy_pca_dim_reduction_analysis` plot_pcs functions to take as argument FC connections metric to plot (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commits/7f64cf4d877eae5833f990eae917c7211c644841/){target="_blank"})
+
+## 23.07.2026
+- Continued the CBI presentation (see commit [here](https://github.com/MadeInShineA/bachelor-thesis/commit/4f2dca57e3997b59c7650dc55ee17d1fd7bdd377){target="_blank"} and slides [here](https://olivier.amacker.dev/bachelor-thesis/site/presentations/cbi_presentation.html#/title-slide){target="_blank"})
+- Added noise consensus plots + Added BMB regular FC matrix extraction + Add Fuzzy perturbations analysis (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/compare/7f64cf4d877eae5833f990eae917c7211c644841...ba9ea241596df3180d1f52458eb45d459155184c){target="_blank"})
