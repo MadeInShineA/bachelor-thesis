@@ -204,7 +204,7 @@ multiple independent datasets and imaging sites, overcoming the instability issu
 
 The PCA feature selection works as follows:
 
-- A PCA is computed on all subjects' FC vectors (n × m) to reduce dimensionality to n principal components.
+- A PCA is computed on all subjects' FC vector to reduce dimensionality to n principal components.
 - PCs are tested for association with variables of interest:
   - Binary categorical (e.g., diagnosis, sex): two-sample t-test
   - Multi-level categorical (e.g., imaging site): one-way ANOVA
@@ -216,6 +216,7 @@ The PCA feature selection works as follows:
 # What Did I Change In The PCA Feature Selection Code?
 
 I made several changes to the PCA feature selection code:
+
  - Transformed the repository from regular Python code to a Python package (see PR [here](https://github.com/Ayumu722/pca-based-feature-extraction/pull/1){target="_blank"})
  - Improved the PC plots (see PR [here](https://github.com/Ayumu722/pca-based-feature-extraction/pull/3){target="_blank"})
  - Added a more stable option for the PC selection (see PR [here](https://github.com/Ayumu722/pca-based-feature-extraction/pull/5){target="_blank"})
@@ -233,10 +234,10 @@ To conduct this analysis, I performed the following steps:
 
 - Reproduced the PCA feature selection on the complete SRPB dataset (which was split into training and test sets)
 - Reproduced the PCA feature selection on the BMB dataset (a new dataset)
-- Ran 100 perturbation runs of the SRPB dataset FC matrix extraction (perturbing the `np.corrcoef` function)
-- Ran 15 perturbation runs of the BMB dataset FC matrix extraction
+- Ran 100 perturbated runs of the SRPB dataset FC matrix extraction (perturbing the `np.corrcoef` function)
+- Ran 15 perturbated runs of the BMB dataset FC matrix extraction
 
-The PCA feature selection was performed on each of the perturbation runs
+The PCA feature selection was performed on each of the perturbated runs
 
 # PCA Feature Selection Stability Results
 
@@ -303,6 +304,14 @@ It would be interesting to perturb more steps of the FC matrices extraction othe
 The subject was very interesting and I'm very grateful to all of you and Prof. Esteban for giving me this opportunity.
 
 I also want to thank Dr. Chatelain for his help on the Fuzzy related things.
+
+# Additional Resources
+
+This slide deck is available at this address: 
+<br>
+[https://olivier.amacker.dev/bachelor-thesis/site/presentations/cbi_presentation.html](https://olivier.amacker.dev/bachelor-thesis/site/presentations/cbi_presentation.html)
+
+![Slide deck QR code](../assets/presentations/cbi-presentation/slide_qr_code.svg){#fig-slide-qr height="100px"}
 
 # References
 
