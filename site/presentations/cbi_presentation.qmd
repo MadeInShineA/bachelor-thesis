@@ -239,6 +239,10 @@ To conduct this analysis, I performed the following steps:
 
 The PCA feature selection was performed on each of the perturbated runs
 
+# What was the effect of the `np.corrcoef` perturbation?
+
+![Effect of the `np.corrcoef` perturbation on $\text{16 542 474 500}$ edges](../assets/presentations/cbi-presentation/fuzzy-pca-analysis/fuzzy-np-corrcoef-effect.png)
+
 # PCA Feature Selection Stability Results
 
 :::{layout="[[1,1], [1, 1]]"}
