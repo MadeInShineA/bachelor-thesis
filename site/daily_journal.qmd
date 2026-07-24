@@ -273,4 +273,8 @@ title: Daily Journal
 
 ## 23.07.2026
 - Continued the CBI presentation (see commit [here](https://github.com/MadeInShineA/bachelor-thesis/commit/4f2dca57e3997b59c7650dc55ee17d1fd7bdd377){target="_blank"} and slides [here](https://olivier.amacker.dev/bachelor-thesis/site/presentations/cbi_presentation.html#/title-slide){target="_blank"})
-- Added noise consensus plots + Added BMB regular FC matrix extraction + Add Fuzzy perturbations analysis (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/compare/7f64cf4d877eae5833f990eae917c7211c644841...ba9ea241596df3180d1f52458eb45d459155184c){target="_blank"})
+- Added noise consensus plots + Added BMB regular FC matrix extraction + Added Fuzzy perturbations analysis (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/compare/7f64cf4d877eae5833f990eae917c7211c644841...ba9ea241596df3180d1f52458eb45d459155184c){target="_blank"})
+
+## 24.07.2026
+- Finished the CBI presentation slides (see commits [here](https://github.com/MadeInShineA/bachelor-thesis/compare/eb806e65d8fa1f61662eb06bb94a54ef4584026a...7ffdd27cb085394d364f2a4d859a6bf8cfef4825){target="_blank"} and slides [here](https://olivier.amacker.dev/bachelor-thesis/site/presentations/cbi_presentation.html#/title-slide){target="_blank"})
+- Presented my work at the CBI meeting
