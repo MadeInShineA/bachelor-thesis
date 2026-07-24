@@ -38,10 +38,12 @@ jobs:
           token: ${{secrets.GITHUB_TOKEN}}
 
       - name: Install Nix
-        uses: DeterminateSystems/nix-installer-action@v13
+        uses: DeterminateSystems/nix-installer-action@v16
 
       - name: Setup Nix cache
-        uses: DeterminateSystems/magic-nix-cache-action@v6
+        uses: DeterminateSystems/magic-nix-cache-action@v9
+        with:
+          flakehub: false
 
       - name: Render Site
         run: nix develop --command quarto render
