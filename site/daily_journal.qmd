@@ -280,7 +280,7 @@ title: Daily Journal
 - Presented my work at the CBI meeting
 
 ## 27.07.2026
-- Refined the report abstract and acknowledgment sections (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-report/compare/583de1313133dd546ad86c1c37013e39ab244fe3...21cfa17d2470feffbbfb93d73fecae5c2ddbc1eb){target="_blank"} and report [here](../assets/report/bachelor-thesis.pdf){target="_blank"})
+- Refined the report abstract and acknowledgment sections (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-report/compare/583de1313133dd546ad86c1c37013e39ab244fe3...21cfa17d2470feffbbfb93d73fecae5c2ddbc1eb){target="_blank"} and report [here](./assets/report/bachelor-thesis.pdf){target="_blank"})
 - Added the `select_perturbated_pca_features` to `pca-based-feature-extraction` repository (see commits [here](https://github.com/MadeInShineA/pca-based-feature-extraction/compare/01250358678b2f6de420abff097c5a8051fe3f88...585c8b45ebb54ac38cf84bc2949d212d98137cc0){target="_blank"})
 - Added the `select_pca_features_single_precision` to `pca-based-feature-extraction` repository (see commits [here](https://github.com/MadeInShineA/pca-based-feature-extraction/commit/b20c04c600339523a24a6b46f776785c6f47765b){target="_blank"})
 - Added the `select_pca_features_single_precision` calculation to the `fuzzy_pca_dim_reduction_analysis` notebook (see commit [here](ad3cc17468b331d5f00452b3bb9fbd77d359f145){target="_blank"})
@@ -288,3 +288,6 @@ title: Daily Journal
 ## 28.07.2026
 - Started the report introduction (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-report/commit/4b55c76cd1189969c2b2714dafe03dd7421423f6){target="_blank"})
 - Ran the perturbated FC plots and consensus (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/a8f58daa769b3be3d4269080b12b638c8bbfc3df){target="_blank"})
+
+## 29.07.2026
+- Cleaned the `fuzzy_pca_dim_reduction_analysis` notebook (see commit [here](){target="_blank"} and notebook [here](./notebooks/fuzzy-pca-dim-reduction-analysis.html){target="_blank"})

@@ -68,7 +68,7 @@ The diagram below has been updated from the original proposed workplan to reflec
 <div id="gantt">
 ```{mermaid}
 gantt
-    title Updated Workplan (as of 24-07-2026)
+    title Updated Workplan (as of 29-07-2026)
     dateFormat  YYYY-MM-DD
     axisFormat  %d/%m
     excludes weekends
@@ -83,7 +83,6 @@ gantt
     Okito and Ayumu san third meeting :done, milestone, meet4, 2026-06-09, 0d
     Prof. Esteban and PhD. Chatelain meeting :done, milestone, meet5, 2026-06-11, 0d
     Okito and Ayumu san fourth meeting :done, milestone, meet6, 2026-07-14, 0d
-    CBI presentation                  :done, milestone, meet7, 2026-07-24, 0d
 
     section 1. Onboarding
     Familiarize with fMRI dataset       :done, p1t1, 2026-05-15, 2026-05-28
@@ -106,12 +105,17 @@ gantt
     Robust PCA extraction               :done, p3t7, 2026-07-15, 2026-07-21
     Complete pipeline run & debug       :done, p3t8, 2026-07-16, 2026-07-21
     Noise consensus & fuzzy perturbations impact :done, p3t9, 2026-07-23, 1d
+    PCA perturbations & single precision analysis :done, p3t10, 2026-07-27, 2026-07-28
+    Fuzzy PCA Notebook cleaning                             :done, p3t11, 2026-07-29, 1d
 
     section 4. Presentations & Documentation
     AI usage presentation               :done, p4t0, 2026-07-07, 2026-07-08
-    CBI presentation                    :done, p4t1, 2026-07-21, 2026-07-24
+    CBI presentation preparation        :done, p4t1, 2026-07-21, 2026-07-23
+    CBI presentation                    :done, milestone, meet7, 2026-07-24, 0d
     First code cleaning                 :done, p4t2, 2026-07-10, 1d
     Project first version               :done, p4t3, 2026-05-16, 2026-07-11
+    Project second version              :active, p4t4, 2026-07-11, 2026-07-29
+    Report writing (abstract, intro)    :done, p4t5, 2026-07-27, 2026-07-28
     Milestone Final Defense             :milestone, m4, 2026-08-31, 0d
 ```
 </div>
