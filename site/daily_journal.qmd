@@ -290,4 +290,4 @@ title: Daily Journal
 - Ran the perturbated FC plots and consensus (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/a8f58daa769b3be3d4269080b12b638c8bbfc3df){target="_blank"})
 
 ## 29.07.2026
-- Cleaned the `fuzzy_pca_dim_reduction_analysis` notebook (see commit [here](){target="_blank"} and notebook [here](./notebooks/fuzzy-pca-dim-reduction-analysis.html){target="_blank"})
+- Cleaned the `fuzzy_pca_dim_reduction_analysis` notebook (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/ff2d2fca729c929c52d874329188c7b7a90480d2){target="_blank"} and notebook [here](./notebooks/fuzzy-pca-dim-reduction-analysis.html){target="_blank"})
