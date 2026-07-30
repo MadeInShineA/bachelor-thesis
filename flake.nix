@@ -25,6 +25,7 @@
             quarto
             git-lfs
             codebook
+            git-archive-all
           ];
         };
       }
