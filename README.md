@@ -6,16 +6,18 @@
 [![Built With Nix](https://img.shields.io/badge/Built_With-Nix-5277C3.svg?logo=nixos&labelColor=73C3D5)](https://www.nixos.org/)
 [![Built With Quarto](https://img.shields.io/badge/Built_With-Quarto-39729E.svg?logo=quarto&labelColor=75AADB&logoColor=white)](https://quarto.org/)
 
-This repository contains the source of my bachelor thesis website and serves as the entry point for the project.
+This repository contains the source of my bachelor thesis website and serves as the entry point for the project. The implementation lives in the [`bachelor-thesis-project`](bachelor-thesis-project/) submodule and the report in [`bachelor-thesis-report`](bachelor-thesis-report/) (see [Submodules](#submodules)).
 
-The thesis benchmarks the numerical stability of functional MRI connectivity biomarkers by introducing controlled floating-point perturbations through a custom `fuzzy-fmriprep` Docker container built with [Verificarlo](https://github.com/verificarlo/verificarlo) and the [Fuzzy](https://github.com/verificarlo/fuzzy) libmath library.
+The thesis reproduces the results of _Alizadeh et al. 2025_ ([biorxiv](https://www.biorxiv.org/content/10.64898/2025.12.22.695524)), which introduces the Numerical-Population Variability Ratio (NPVR) for functional connectivity (FC) matrices and graph-theoretical metrics, using a custom `fuzzy-fmriprep` Docker container built with [Verificarlo](https://github.com/verificarlo/verificarlo) and the [Fuzzy](https://github.com/verificarlo/fuzzy) libmath library to perturb the entire [fMRIPrep](https://fmriprep.org/) preprocessing pipeline, and a synthetic NPVR simulation exploring how sample size and numerical-to-population variability ratios affect effect-size estimation.
 
-The analysis is implemented as a set of [Marimo](https://marimo.io/) notebooks in [`bachelor-thesis-project/notebooks/`](bachelor-thesis-project/notebooks/):
+It then goes further in two directions: examining FC matrix edge NPVR directly, and assessing the numerical stability of the PCA-based feature extraction introduced by _Yamashita et al. 2026_ ([doi:10.1162/IMAG.a.1121](https://doi.org/10.1162/IMAG.a.1121)) by perturbing the `np.corrcoef` function used to build the FC matrices and forcing the PCA inputs to 32-bit floating-point precision.
 
-- **`fuzzy_fmriprep_graph_metrics_analysis.py`** — Generates functional connectivity (FC) matrices from fuzzy-fMRIPrep outputs, thresholds them, and computes local and global graph metrics (degree centrality, clustering coefficient, betweenness centrality, eigenvector centrality, average shortest path length). It then calculates the Numerical-Population Variability Ratio (NPVR) to quantify numerical variability across Monte Carlo repetitions.
-- **`fuzzy_fmriprep_fc_matrices_analysis.py`** — Focuses on the FC matrices themselves, computing edge-wise NPVR and comparing confound-regression strategies (with all confounds vs. filtered confounds) through heatmaps, scatter plots, histograms, and regional brain maps.
-- **`fuzzy_pca_dim_reduction_analysis.py`** — Reproduces and extends a PCA-based feature-selection pipeline on the SRBP and BMB datasets, linking FC features to diagnosis, age, BDI, sex, site, and motion; it also serves as the foundation for perturbing FC matrix extraction.
-- **`npvr_simulation.py`** — Simulates the impact of numerical variability on NPVR and Cohen's *d*, exploring how sample size and numerical-population variability ratios affect effect-size estimation.
+The analysis is implemented as a set of [Marimo](https://marimo.io/) notebooks in [`bachelor-thesis-project/notebooks/`](bachelor-thesis-project/notebooks/). See the [project README](bachelor-thesis-project/README.md) for full details on running them.
+
+- **`fuzzy_fmriprep_graph_metrics_analysis.py`**: Generates FC matrices from fuzzy-fMRIPrep outputs, thresholds them, and computes local and global graph metrics, then resolves the **NPVR** across Monte Carlo repetitions.
+- **`fuzzy_fmriprep_fc_matrices_analysis.py`**: Focuses on the FC matrices themselves, computing edge-wise **NPVR** and comparing confound-regression strategies through heatmaps, scatter plots, histograms, and regional brain maps.
+- **`fuzzy_pca_dim_reduction_analysis.py`**: Reproduces and extends a PCA-based feature-selection pipeline on the **SRPB** and **BMB** public datasets, linking FC features to diagnosis (HC vs. MDD), age, BDI, sex, site, and motion. It perturbs FC matrix extraction (`np.corrcoef`) and forces PCA inputs to 32-bit floating-point, then compares regular vs. fuzzy PCA feature-selection results with consensus maps and a robustness analysis.
+- **`npvr_simulation.py`**: A synthetic simulation reproducing Figure 1 from Alizadeh et al. 2025, exploring how sample size and numerical-population variability ratios affect NPVR and Cohen's _d_.
 
 ## Website
 
@@ -26,39 +28,38 @@ The website contains the following sections:
 - [**Home**](https://madeinshinea.github.io/bachelor-thesis/): Overview and current status of the project
 - [**Download Report**](https://github.com/MadeInShineA/bachelor-thesis-report/releases/download/thesis-latest/bachelor_thesis.pdf): Download the PDF of the bachelor thesis report
 - [**AI Usage Presentation**](https://madeinshinea.github.io/bachelor-thesis/presentations/ai_usage.html): Presentation on how AI tools were used during the project
+- [**CBI Presentation**](https://madeinshinea.github.io/bachelor-thesis/presentations/cbi_presentation.html): Presentation given at the CBI meeting
 - [**Sources**](https://madeinshinea.github.io/bachelor-thesis/sources.html): References and source materials used in the project
 - [**Daily Journal**](https://madeinshinea.github.io/bachelor-thesis/daily_journal.html): Chronological log of project progress and activities
 
 ## Local Setup
 
-To set up the project website locally, clone the repository, make sure [Git LFS](#git-lfs) files are pulled, and then either:
+After cloning the repository and initializing the submodules (see [Submodules](#submodules)), you need the following dependencies to build the website:
+
+- [Quarto](https://quarto.org/docs/get-started/) to render the site.
+- [Git LFS](https://git-lfs.com/) because the rendered notebook HTML files in [`site/notebooks/`](site/notebooks/) can be very large because they embed figures and outputs, so some of them are tracked with Git LFS to keep the repository lean.
 
 ### Using Nix with Flakes enabled (recommended)
 
+All dependencies (Quarto, Git LFS, and a few extras) are provided by the [Nix flake](flake.nix), so you only need Nix itself:
+
 ```bash
 nix develop
+git lfs pull
 quarto render
 ```
 
 ### Without Nix
 
-1. Install [Quarto](https://quarto.org/docs/get-started/)
-2. Run `quarto render`
-
-The rendered site will be available in the `_site/` directory.
-
-## Git LFS
-
-The rendered notebook HTML files in [`site/notebooks/`](site/notebooks/) can be very large because they embed figures and outputs. To keep the repository lean, some of them are tracked with [Git LFS](https://git-lfs.com/).
-
-Make sure Git LFS is installed and the files are pulled after cloning:
+Install Quarto and Git LFS manually, then pull the LFS files and render:
 
 ```bash
 git lfs install
 git lfs pull
+quarto render
 ```
 
-If a notebook link on the website shows a plain text pointer starting with `version https://git-lfs.github.com/spec/v1 ...`, the LFS content was not checked out before rendering. Run `git lfs pull` (or ensure your CI checkout step has `lfs: true`) and re-render the site.
+The rendered site will be available in the `_site/` directory.
 
 ## Submodules
 
