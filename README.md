@@ -8,16 +8,16 @@
 
 This repository contains the source of my bachelor thesis website and serves as the entry point for the project. The implementation lives in the [`bachelor-thesis-project`](bachelor-thesis-project/) submodule and the report in [`bachelor-thesis-report`](bachelor-thesis-report/) (see [Submodules](#submodules)).
 
-The thesis reproduces the results of _Alizadeh et al. 2025_ ([biorxiv](https://www.biorxiv.org/content/10.64898/2025.12.22.695524)), which introduces the Numerical-Population Variability Ratio (NPVR) for functional connectivity (FC) matrices and graph-theoretical metrics, using a custom `fuzzy-fmriprep` Docker container built with [Verificarlo](https://github.com/verificarlo/verificarlo) and the [Fuzzy](https://github.com/verificarlo/fuzzy) libmath library to perturb the entire [fMRIPrep](https://fmriprep.org/) preprocessing pipeline, and a synthetic NPVR simulation exploring how sample size and numerical-to-population variability ratios affect effect-size estimation.
+The thesis reproduces the results of _Alizadeh et al. 2025_ ([biorxiv](https://www.biorxiv.org/content/10.64898/2025.12.22.695524)), which introduces the Numerical-Population Variability Ratio (NPVR), first through a synthetic NPVR simulation exploring how sample size and numerical-to-population variability ratios affect effect-size estimation, then for functional connectivity (FC) matrices and graph-theoretical metrics using a custom `fuzzy-fmriprep` Docker container built with [Verificarlo](https://github.com/verificarlo/verificarlo) and the [Fuzzy](https://github.com/verificarlo/fuzzy) libmath library to perturb the entire [fMRIPrep](https://fmriprep.org/) preprocessing pipeline.
 
 It then goes further in two directions: examining FC matrix edge NPVR directly, and assessing the numerical stability of the PCA-based feature extraction introduced by _Yamashita et al. 2026_ ([doi:10.1162/IMAG.a.1121](https://doi.org/10.1162/IMAG.a.1121)) by perturbing the `np.corrcoef` function used to build the FC matrices and forcing the PCA inputs to 32-bit floating-point precision.
 
 The analysis is implemented as a set of [Marimo](https://marimo.io/) notebooks in [`bachelor-thesis-project/notebooks/`](bachelor-thesis-project/notebooks/). See the [project README](bachelor-thesis-project/README.md) for full details on running them.
 
+- **`npvr_simulation.py`**: A synthetic simulation reproducing Figure 1 from Alizadeh et al. 2025, exploring how sample size and numerical-population variability ratios affect NPVR and Cohen's _d_.
 - **`fuzzy_fmriprep_graph_metrics_analysis.py`**: Generates FC matrices from fuzzy-fMRIPrep outputs, thresholds them, and computes local and global graph metrics, then resolves the **NPVR** across Monte Carlo repetitions.
 - **`fuzzy_fmriprep_fc_matrices_analysis.py`**: Focuses on the FC matrices themselves, computing edge-wise **NPVR** and comparing confound-regression strategies through heatmaps, scatter plots, histograms, and regional brain maps.
 - **`fuzzy_pca_dim_reduction_analysis.py`**: Reproduces and extends a PCA-based feature-selection pipeline on the **SRPB** and **BMB** public datasets, linking FC features to diagnosis (HC vs. MDD), age, BDI, sex, site, and motion. It perturbs FC matrix extraction (`np.corrcoef`) and forces PCA inputs to 32-bit floating-point, then compares regular vs. fuzzy PCA feature-selection results with consensus maps and a robustness analysis.
-- **`npvr_simulation.py`**: A synthetic simulation reproducing Figure 1 from Alizadeh et al. 2025, exploring how sample size and numerical-population variability ratios affect NPVR and Cohen's _d_.
 
 ## Website
 
