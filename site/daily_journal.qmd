@@ -46,7 +46,7 @@ title: Daily Journal
 - Updated the bibliography (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-report/commit/f4981eb709067e51e8d1962b051ef38e9adbc74a){target="_blank"})
 
 ## 25.05.2026
-- Gave a last read to the Alizadeh 2025 paper summary for toray's meeting
+- Gave a last read to the Alizadeh 2025 paper summary for today's meeting
 - Meeting with Ayumu and Okito san
 - Requested access for docker rights on the cluster
 - Started writing slurm and local parallel computing scripts (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/0bb5b5224eec4ef0803ffa1160afd47d26455217){target="_blank"})
@@ -61,7 +61,7 @@ title: Daily Journal
 - Tried to make some reproduction runs on the cluster unsuccessfully
 
 ## 27.05.2026
-- Fixed the differen run scripts (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/c09bfc7480fde0ee9a4762be3ea2a0d830b45171){target="_blank"})
+- Fixed the different run scripts (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/c09bfc7480fde0ee9a4762be3ea2a0d830b45171){target="_blank"})
 - Tested the run scripts and made fMRIPrep parallel test runs on several nodes
 - Started the NPVR simulation notebook (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/5374eb4f9acbe86ac1600c50c3fdbd19616d864f){target="_blank"} and notebook [here](./notebooks/npvr-simulation/){target="_blank"})
 
@@ -137,7 +137,7 @@ title: Daily Journal
     - Made the notebook reusable
     - Polished the overall code
     - Renamed the notebook
-    - Chanded the output paths
+    - Changed the output paths
 - Started the `fuzzy_fmriprep_fc_matrices_analysis` notebook (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commits/5b9a099adc9de4b03b4d30d2f4fe8074ea2f08da/){target="_blank"} and notebook [here](./notebooks/fuzzy-fmriprep-fc-matrices-analysis.html){target="_blank"})
 
 ## 11.06.2026
@@ -152,13 +152,13 @@ title: Daily Journal
 
 ## 15.06.2026
 - Started the `fuzzy_pca_dim_reduction_analysis` notebook (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/509f683e92b3c643cdde24638d4b52d7753008c5){target="_blank"} and notebook [here](./notebooks/fuzzy-pca-dim-reduction-analysis.html){target="_blank"})
-- Contributed to the PCA dimentionality reduction github repository (see PR [here](https://github.com/Ayumu722/pca-based-feature-extraction/pull/1){target="_blank"})
+- Contributed to the PCA dimensionality reduction github repository (see PR [here](https://github.com/Ayumu722/pca-based-feature-extraction/pull/1){target="_blank"})
     - Transformed the project into a Python package
 
 ## 16.06.2026
 - Continued the `fuzzy_pca_dim_reduction_analysis` notebook (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commits/3758cad1cf11f818dfcf9d04014c8b2b94425dcc/){target="_blank"} and notebook [here](./notebooks/fuzzy-pca-dim-reduction-analysis.html){target="_blank"})
     - Added the PCA feature plot for the wanted metrics
-- Contributed to the PCA dimentionality reduction github repository (see PR [here](https://github.com/Ayumu722/pca-based-feature-extraction/pull/2){target="_blank"})
+- Contributed to the PCA dimensionality reduction github repository (see PR [here](https://github.com/Ayumu722/pca-based-feature-extraction/pull/2){target="_blank"})
     - Improved the PCA feature plot title and added x and y labels
 
 ## 17.06.2026
@@ -209,18 +209,18 @@ title: Daily Journal
 - Started a [Excalidraw](https://excalidraw.com/){target="_blank"} schema (see [here](https://excalidraw.com/#json=NDviFkoyqdx0cjhuDitnE,kjovnsS2aLeS_UgxsBofQw){target="_blank"}
 - Continued the harmonization procedure in the `fuzzy_pca_dim_reduction_analysis` notebook (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/1bbf5ec8ab2cfb5d6120ca6cd352d686a045a842){target="_blank"} and notebook [here](./notebooks/fuzzy-pca-dim-reduction-analysis.html){target="_blank"})
 
-## 01.06.2026
+## 01.07.2026
 - Finished writing the code for the harmonization in the `fuzzy_pca_dim_reduction_analysis` notebook (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/7547251d4a84d59de1a0f58fb846e2068095e3d5){target="_blank"} and notebook [here](./notebooks/fuzzy-pca-dim-reduction-analysis.html){target="_blank"})
     - It still needs testing
 
-## 02.06.2026
+## 02.07.2026
 - Fixed and verified the harmonization code in the `fuzzy_pca_dim_reduction_analysis` notebook (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/dfafeb13dd333285092d1a23a01acbc43462465d){target="_blank"} and notebook [here](./notebooks/fuzzy-pca-dim-reduction-analysis.html){target="_blank"})
 
-## 03.06.2026
-- Ran a first fuzzy PCA dimentionality reduction analysis on 2 runs, with the pipeline used for the reproduction (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/20ed022f5d819fe1446b9711575bfbc59ade3cdb){target="_blank"} and notebook [here](./notebooks/fuzzy-pca-dim-reduction-analysis.html){target="_blank"})
+## 03.07.2026
+- Ran a first fuzzy PCA dimensionality reduction analysis on 2 runs, with the pipeline used for the reproduction (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/20ed022f5d819fe1446b9711575bfbc59ade3cdb){target="_blank"} and notebook [here](./notebooks/fuzzy-pca-dim-reduction-analysis.html){target="_blank"})
 
 ## 06.07.2026
-- Ran 100 fuzzy PCA dimentionality reduction, made quite in depth analysis and started BMB extraction (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/compare/20ed022f5d819fe1446b9711575bfbc59ade3cdb...65941764529ec023d383d8cc3d3aa97d20ae6eb6){target="_blank"})
+- Ran 100 fuzzy PCA dimensionality reduction, made quite in depth analysis and started BMB extraction (see commits [here](https://github.com/MadeInShineA/bachelor-thesis-project/compare/20ed022f5d819fe1446b9711575bfbc59ade3cdb...65941764529ec023d383d8cc3d3aa97d20ae6eb6){target="_blank"})
 
 ## 07.07.2026
 - Created my Ai usage presentation slides (see slides [here](./presentations/ai_usage.qmd))
@@ -247,7 +247,7 @@ title: Daily Journal
 
 ## 14.07.2026
 - Meeting with Ayumu and Okito san
-- Tried to fix the images at the end of the `fuzzy_pca_dim_reduction_analysis` notebook not showing in the exported HTML file unsucessfully
+- Tried to fix the images at the end of the `fuzzy_pca_dim_reduction_analysis` notebook not showing in the exported HTML file unsuccessfully
 
 ## 15.07.2026
 - Fixed the images issue in the `fuzzy_pca_dim_reduction_analysis` notebook (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/eb6c3aa8fcb55c6583ce890ea1b54eeff6d2d29a){target="_blank"} and notebook [here](./notebooks/fuzzy-pca-dim-reduction-analysis.html){target="_blank"})
@@ -292,8 +292,8 @@ title: Daily Journal
 ## 29.07.2026
 - Cleaned the `fuzzy_pca_dim_reduction_analysis` notebook (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/ff2d2fca729c929c52d874329188c7b7a90480d2){target="_blank"} and notebook [here](./notebooks/fuzzy-pca-dim-reduction-analysis.html){target="_blank"})
 
-## 30.07.2027
+## 30.07.2026
 - Final cleaning of the `fuzzy_pca_dim_reduction_analysis` notebook (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/3a843dee23a0c6aebeefea27df86c5aa35898d41){target="_blank"} and notebook [here](./notebooks/fuzzy-pca-dim-reduction-analysis.html){target="_blank"})
 
-## 31.07.2027
+## 31.07.2026
 - Submitted the code of the project
