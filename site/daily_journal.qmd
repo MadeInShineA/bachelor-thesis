@@ -294,3 +294,6 @@ title: Daily Journal
 
 ## 30.07.2027
 - Final cleaning of the `fuzzy_pca_dim_reduction_analysis` notebook (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/3a843dee23a0c6aebeefea27df86c5aa35898d41){target="_blank"} and notebook [here](./notebooks/fuzzy-pca-dim-reduction-analysis.html){target="_blank"})
+
+## 31.07.2027
+- Submitted the code of the project
