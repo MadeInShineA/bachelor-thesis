@@ -15,9 +15,9 @@ It then goes further in two directions: examining FC matrix edge NPVR directly, 
 The analysis is implemented as a set of [Marimo](https://marimo.io/) notebooks in [`bachelor-thesis-project/notebooks/`](bachelor-thesis-project/notebooks/). See the [project README](bachelor-thesis-project/README.md) for full details on running them.
 
 - **`npvr_simulation.py`**: A synthetic simulation reproducing Figure 1 from Alizadeh et al. 2025, exploring how sample size and numerical-population variability ratios affect NPVR and Cohen's _d_.
-- **`fuzzy_fmriprep_graph_metrics_analysis.py`**: Generates FC matrices from fuzzy-fMRIPrep outputs, thresholds them, and computes local and global graph metrics, then resolves the **NPVR** across Monte Carlo repetitions.
-- **`fuzzy_fmriprep_fc_matrices_analysis.py`**: Focuses on the FC matrices themselves, computing edge-wise **NPVR** and comparing confound-regression strategies through heatmaps, scatter plots, histograms, and regional brain maps.
-- **`fuzzy_pca_dim_reduction_analysis.py`**: Reproduces and extends a PCA-based feature-selection pipeline on the **SRPB** and **BMB** public datasets, linking FC features to diagnosis (HC vs. MDD), age, BDI, sex, site, and motion. It perturbs FC matrix extraction (`np.corrcoef`) and forces PCA inputs to 32-bit floating-point, then compares regular vs. fuzzy PCA feature-selection results with consensus maps and a robustness analysis.
+- **`fuzzy_fmriprep_graph_metrics_analysis.py`**: Generates FC matrices from fuzzy-fMRIPrep outputs, thresholds them, and computes local and global graph metrics, then resolves the NPVR across Monte Carlo repetitions.
+- **`fuzzy_fmriprep_fc_matrices_analysis.py`**: Focuses on the FC matrices themselves, computing edge-wise NPVR and comparing confound-regression strategies through heatmaps, scatter plots, histograms, and regional brain maps.
+- **`fuzzy_pca_dim_reduction_analysis.py`**: Reproduces and extends a PCA-based feature-selection pipeline on the SRPB and BMB public datasets, linking FC features to diagnosis (HC vs. MDD), age, BDI, sex, site, and motion. It perturbs FC matrix extraction (`np.corrcoef`) and forces PCA inputs to 32-bit floating-point, then compares regular vs. fuzzy PCA feature-selection results with consensus maps and a robustness analysis.
 
 ## Website
 
