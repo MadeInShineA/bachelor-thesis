@@ -112,7 +112,7 @@ gantt
     First code cleaning                 :done, p4t2, 2026-07-10, 1d
     Project first version               :done, p4t3, 2026-05-16, 2026-07-11
     Project second version              :done, p4t4, 2026-07-11, 2026-07-30
-    Project code submission             :done, milestone, p4t5, 2026-07-31
+    Project code submission             :done, milestone, p4t5, 2026-07-31, 0d
     Report writing (abstract, intro)    :done, p4t6, 2026-07-27, 2026-07-28
     Milestone Final Defense             :milestone, m4, 2026-08-31, 0d
 ```
