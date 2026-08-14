@@ -20,6 +20,8 @@ website:
               text: Home
             - href: ./site/assets/report/bachelor-thesis.pdf
               text: Report
+            - href: ./site/assets/executive-summary/executive-summary.pdf
+              text: Executive summary
             - text: Notebooks
               menu:
                   - href: site/notebooks/npvr-simulation/index.html
