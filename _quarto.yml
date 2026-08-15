@@ -22,6 +22,15 @@ website:
               text: Report
             - href: ./site/assets/executive-summary/executive-summary.pdf
               text: Executive summary
+            - href: ./site/assets/poster/poster.pdf
+              text: Poster
+            - text: Presentations
+              menu:
+                  - href: site/presentations/ai_usage.qmd
+                    text: AI usage presentation
+                  - href: site/presentations/cbi_presentation.qmd
+                    text: CBI presentation
+
             - text: Notebooks
               menu:
                   - href: site/notebooks/npvr-simulation/index.html
@@ -32,13 +41,6 @@ website:
                     text: Fuzzy fMRIPrep FC Matrices Analysis
                   - href: site/notebooks/fuzzy-pca-dim-reduction-analysis.html
                     text: Fuzzy PCA Dim Reduction Analysis
-
-            - text: Presentations
-              menu:
-                  - href: site/presentations/ai_usage.qmd
-                    text: AI usage presentation
-                  - href: site/presentations/cbi_presentation.qmd
-                    text: CBI presentation
             - href: site/sources.qmd
               text: Sources
             - href: site/daily_journal.qmd

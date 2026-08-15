@@ -35,12 +35,12 @@ Together, these notebooks provide a systematic exploration of numerical variabil
   </thead>
   <tbody>
     <tr>
-      <td><strong>Notebooks</strong></td>
-      <td><a href="notebooks/npvr-simulation/index.html">NPVR</a> - <a href="notebooks/fuzzy-fmriprep-graph-metrics-analysis.html">Graph Metrics</a> - <a href="notebooks/fuzzy-fmriprep-fc-matrices-analysis.html">FC Matrices</a> - <a href="notebooks/fuzzy-pca-dim-reduction-analysis.html">PCA</a></td>
+        <td><strong>Presentations</strong></td>
+        <td><a href="presentations/ai_usage.qmd">AI usage presentation</a> - <a href="presentations/cbi_presentation.html">CBI presentation</a></td>
     </tr>
     <tr>
-      <td><strong>Presentations</strong></td>
-      <td><a href="presentations/ai_usage.qmd">AI usage presentation</a> - <a href="presentations/cbi_presentation.html">CBI presentation</a></td>
+      <td><strong>Notebooks</strong></td>
+      <td><a href="notebooks/npvr-simulation/index.html">NPVR</a> - <a href="notebooks/fuzzy-fmriprep-graph-metrics-analysis.html">Graph Metrics</a> - <a href="notebooks/fuzzy-fmriprep-fc-matrices-analysis.html">FC Matrices</a> - <a href="notebooks/fuzzy-pca-dim-reduction-analysis.html">PCA</a></td>
     </tr>
     <tr>
       <td><strong>Daily Journal</strong></td>
@@ -50,12 +50,18 @@ Together, these notebooks provide a systematic exploration of numerical variabil
       <td><strong>Sources</strong></td>
       <td><a href="sources.qmd">See Sources</a></td>
     </tr>
+    <tr>
+      <td><strong>Documents</strong></td>
+      <td><a href="assets/executive-summary/executive-summary.pdf">Executive Summary</a> - <a href="assets/poster/poster.pdf">Poster</a></td>
+    </tr>
   </tbody>
 </table>
 
 ## Resources
 
 - [Download the latest report (PDF)](https://github.com/MadeInShineA/bachelor-thesis-report/releases/download/thesis-latest/bachelor_thesis.pdf){target="_blank"}
+- [View the Executive Summary (PDF)](assets/executive-summary/executive-summary.pdf){target="_blank"}
+- [View the Poster (PDF)](assets/poster/poster.pdf){target="_blank"}
 - [View the source code on GitHub](https://github.com/MadeInShineA/bachelor-thesis){target="_blank"}
 
 ## Planification
