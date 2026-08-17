@@ -295,5 +295,53 @@ title: Daily Journal
 ## 30.07.2026
 - Final cleaning of the `fuzzy_pca_dim_reduction_analysis` notebook (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/3a843dee23a0c6aebeefea27df86c5aa35898d41){target="_blank"} and notebook [here](./notebooks/fuzzy-pca-dim-reduction-analysis.html){target="_blank"})
 
-## 31.07.2026
-- Submitted the code of the project
+## 01.08.2026
+- Fixed the index gantt diagram title (see commit [here](https://github.com/MadeInShineA/bachelor-thesis/commit/66bf1ce773d280ca653dc389e3d74f393d0a2a8d){target="_blank"})
+
+## 03.08.2026
+- Continued the report introduction, started the state of the art section and improved the abstract (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-report/commit/5b7337ea9b0932844bb96f289102ffe3d3ede325){target="_blank"})
+
+## 04.08.2026
+- Continued the state of the art section (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-report/commit/75860969666b2e8b264c1ade0ea00729ad317ce9){target="_blank"})
+- Started the development and methodology section (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-report/commit/ed5caeee5862d9a2777eb9abe2a5148f5203b0aa){target="_blank"})
+
+## 05.08.2026
+- Wrote the first version of the reproduction of Alizadeh et al., 2026 section (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-report/commit/d0e801da3765fa502a96566c2cf3b08b6dad120b){target="_blank"})
+
+## 06.08.2026
+- Continued the methodology section (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-report/commit/3f4ca7fb752d8b3b12308c8d7c836b1b425b1d9b){target="_blank"})
+
+## 11.08.2026
+- Continued the methodology section (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-report/commit/a16e89186c1e0a635eaef31b72eb532889321712){target="_blank"})
+- Started the result section (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-report/commit/b76d60399549cddef5e4d6babf6a13b2edaf6f40){target="_blank"})
+
+## 12.08.2026
+- Fixed `calculate_npvr_difference` in graph metrics notebook and added NPVR across brain regions (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/b0c597c){target="_blank"})
+- Fixed the global signal regression assessment in the project (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/e29cf0b){target="_blank"})
+
+## 13.08.2026
+- Fixed the global signal regression assessment in the project (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-project/commit/e29cf0b){target="_blank"})
+- Continued the result section (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-report/commit/a7cf40de03ff0728729927f9b9fc5af601f29932){target="_blank"})
+- First draft of the report (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-report/commit/0b3935fbb4b25732b062ea0b3af4ab933325b222){target="_blank"})
+- Small cleanup of the website (see commit [here](https://github.com/MadeInShineA/bachelor-thesis/commit/bff6632298bd416293a18cfe053abf65573e8028){target="_blank"})
+
+## 14.08.2026
+- First draft of the executive summary (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-report/commit/276fe7ceff9d5d8c57b003957272a59eb5c50ec9){target="_blank"})
+- Changed wording in executive summary (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-report/commit/405ec07e77b433810592ee22eaeca4c702830039){target="_blank"})
+
+## 15.08.2026
+- Updated poster figure DPI to 600 (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-report/commit/13fa66246e7e14743f62b7337cc3494187fa39c2){target="_blank"})
+
+## 16.08.2026
+- Rewrote the abstract (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-report/commit/e811d55d75a3c3bc3e357fdad83a46fc05921bc5){target="_blank"})
+- Corrected NPVR statistics in abstracts (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-report/commit/e48865bc15dbd4b49b269427b84c0c6595df0a0f){target="_blank"})
+
+## 17.08.2026
+- Updated template submodule (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-report/commit/740876cc46b9adb390a1ddf11b600f52d9733962){target="_blank"})
+- Changed wording about the global signal confound effect and upgraded abstract (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-report/commit/5320796653a7ff6e3827b44f78e8701325bacbd0){target="_blank"})
+- Updated sources (see commit [here](https://github.com/MadeInShineA/bachelor-thesis/commit/64858409854e4991cc4394c1eb62bd4f95262a73){target="_blank"})
+- Removed "bachelor thesis" from figure (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-report/commit/b09b79fa6febce178eb570f06b2b74a87b06511f){target="_blank"})
+- Refined introduction wording and citation formatting throughout thesis (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-report/commit/39818425535b4adc0297645650fa7512854aa213){target="_blank"})
+- Added marek2018 reference and improved wording throughout thesis (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-report/commit/0bdbd83d84872e447f9e4ebbc09c991009d64e3f){target="_blank"})
+- Fixed upload workflow (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-report/commit/1111174f2394f37ae62705ce25e5971bfa54c423){target="_blank"})
+- Final cleaning of the report (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-report/commit/cfcde97e27058bab20104b9fed217fb1a89a8750){target="_blank"})
