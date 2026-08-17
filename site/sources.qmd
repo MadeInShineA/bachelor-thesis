@@ -6,7 +6,7 @@ bibliography: "../bachelor-thesis-report/bibliography.bib"
 ## fMRIPrep Related
 - fMRIPrep [website](https://fmriprep.org/en/stable/){target="_blank"}
 - fMRIPrep [source code](https://github.com/nipreps/fmriprep){target="_blank"}
-- fMRIPrep Andy’s Brain Book [fMIRIPrep tutorial](https://andysbrainbook.readthedocs.io/en/latest/OpenScience/OS/fMRIPrep_Demo.html){target="_blank"}
+- fMRIPrep Andy's Brain Book [fMIRIPrep tutorial](https://andysbrainbook.readthedocs.io/en/latest/OpenScience/OS/fMRIPrep_Demo.html){target="_blank"}
 - FreeSurfer [website](https://surfer.nmr.mgh.harvard.edu/){target="_blank"}
 
 ---
@@ -14,6 +14,10 @@ bibliography: "../bachelor-thesis-report/bibliography.bib"
 ## Datasets
 
 - [Flanker task (event-related)](https://openneuro.org/datasets/ds000102/versions/00001){target="_blank"} from [OpenNeuro](https://openneuro.org/){target="_blank"} used for fuzzy fMRIPrep testing
+The two following datasets were used for PCA-based feature extraction.
+
+- [SRPB dataset](https://bicr-resource.atr.jp/srpbsopen/){target="_blank"} @Tanaka2021
+- [BMB (Brain/MINDS Beyond) dataset](https://mridata-brainminds-beyond.atr.jp/dataset/bmbpt/){target="_blank"} @KOIKE2021102600
 
 ---
 
@@ -25,6 +29,20 @@ bibliography: "../bachelor-thesis-report/bibliography.bib"
 - @denis2018verificarlocheckingfloatingpoint
 - @KOIKE2021102600
 - @SciPyProceedings_11
+- @10.1162/IMAG.a.1121
+- @10.1371/journal.pbio.3000042
+- @xu2018
+- @xifra2025
+- @gonzalezpepe2026fuzzypytorchrapidnumerical
+- @mirhakimi2025numericaluncertaintylinearregistration
+- @kiar2021
+- @Parker1997MonteCA
+- @Schaefer2018
+- @Tanaka2021
+- @Glasser2016
+- @nettekoven2024
+- @Tian2020
+- @Yeo2011
 
 ---
 
@@ -33,6 +51,7 @@ bibliography: "../bachelor-thesis-report/bibliography.bib"
 - @semester-project
 - @fuzzy-fmriprep
 - @fuzzy
+- @greg_kiar_2026_20906259
 - @verificarlo
 - @Nilearn
 
@@ -47,28 +66,24 @@ bibliography: "../bachelor-thesis-report/bibliography.bib"
 
 ---
 
-## LLMS
-The following LLMs were used for concept explanations and trouble-shooting.
-They didn't write any code unless specified directly inside the according file.
-
-- Qwen3.6-Plus
-- Qwen3.7-Plus
-- OpenCode's Big Pickle
-- OpenCode's Kimi k2.7 Code
-- Kimi K2.6
-
-
----
-
 ## Other
 
   - [Marimo website](https://marimo.io/){target="_blank"}
   - [Quarto website](https://quarto.org/){target="_blank"}
   - [Graphviz website](https://graphviz.org/){target="_blank"}
-  - [Excalidraw website](https://excalidraw.com/){target="_blank"}
+  - [Excalidraw website](https://excaldraw.com/){target="_blank"}
   - [Slurm website](https://www.schedmd.com/){target="_blank}
   - [Numpy documentation](https://numpy.org/doc/stable/index.html){target="_blank"}
   - [Nushell website](https://www.nushell.sh/){target="_blank"}
+
+### AI Usage
+
+The following LLMs were used for concept explanations, trouble-shooting, and to reformulate sentences and correct typographical and grammatical errors during the writing of this report. They didn't write any code or text from scratch unless specified directly inside the according file.
+
+- Opencode (GLM 5.2, Qwen 3.7 Plus, and others)
+- Qwen3.6-Plus
+- Qwen3.7-Plus
+- Kimi K2.6
 
 ---
 
