@@ -168,9 +168,9 @@ The code used for this section is available [here](https://olivier.amacker.dev/b
 
 ::: {layout="[1, 1]"}
 
-![Degree centrality NPVR values across brain regions and thresholds (mine)](../assets/presentations/cbi-presentation/graph-metrics/npvr_across_brain_regions_degree_centrality.png){#fig-brain-regions-npvr height="550px"}
+![Degree centrality NPVR values across brain regions and thresholds (mine)](../assets/presentations/cbi-presentation/graph-metrics/npvr_across_brain_regions.png){#fig-brain-regions-npvr height="550px"}
 
-![NPVR values across brain regions and thresholds (paper)](../assets/presentations/cbi-presentation/graph-metrics-original/npvr_across_brain_regions_modified.png){#fig-brain-region-npvr-paper height="550px"}
+![NPVR values across brain regions and thresholds (paper)](../assets/presentations/cbi-presentation/graph-metrics-original/npvr_across_brain_regions.png){#fig-brain-region-npvr-paper height="550px"}
 :::
 
 # Perturbed fMRIPrep Runs FC Matrices Analysis Goals
