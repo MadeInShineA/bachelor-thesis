@@ -9,6 +9,7 @@ project:
         - site/daily_journal.qmd
         - site/presentations/ai_usage.qmd
         - site/presentations/cbi_presentation.qmd
+        - site/presentations/final_presentation.qmd
 
 website:
     title: "Bachelor Thesis"
@@ -30,6 +31,8 @@ website:
                     text: AI usage presentation
                   - href: site/presentations/cbi_presentation.qmd
                     text: CBI presentation
+                  - href: site/presentations/final_presentation.qmd
+                    text: Final presentation
 
             - text: Notebooks
               menu:

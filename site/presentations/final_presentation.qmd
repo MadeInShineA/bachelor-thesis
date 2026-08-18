@@ -1,0 +1,410 @@
+---
+title: "Final Presentation"
+author: "Olivier Amacker"
+date: 2026-07-24
+format:
+  revealjs:
+    theme: [default, ../assets/style/presentation.scss]
+    center: true
+    transition: fade
+    incremental: false
+    slide-number: true
+    preview-links: auto
+    navigation-mode: grid
+    # auto-play-media: true
+    footer: '<a href="../index.qmd" style="color: inherit; text-decoration: none;">Home</a> | <a href="../sources.qmd" style="color: inherit; text-decoration: none;">Sources</a> | Final Presentation © 2026'
+bibliography: ../../bachelor-thesis-report/bibliography.bib
+---
+
+# The Problem With Current fMRI Pipelines
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+Currently the fMRI pipelines are becoming more and more computationally heavy leveraging a lot of high dimension calculations.
+
+However, there are several settings introducing noise instability in those pipelines:
+  
+- The OS running the pipeline and its version
+- The actual hardware (CPU architecture)
+- Parallelization strategies
+
+:::
+
+::: {.column width="40%"}
+
+![Example of the same program giving different results depending on the OS](../assets/presentations/final-presentation/os_result_difference.png){#fig-os-results}
+
+:::
+
+::::
+
+# Approach
+
+
+We can artificially introduce numerical perturbations via Monte Carlo Arithmetic (MCA)(@Parker1997MonteCA) and assess how the desired pipeline's results change to make sure it is stable.
+
+MCA introduces controlled random perturbations to floating-point operations during execution. By repeatedly running the same pipeline, we can quantify how numerical variability propagates.
+
+Tools that implement this:
+
+- [Verificarlo](https://github.com/verificarlo/verificarlo){target="_blank"}(@denis2018verificarlocheckingfloatingpoint): compiler wrapper that instruments floating point operations at the LLVM level
+
+- [Fuzzy](https://github.com/verificarlo/fuzzy){target="_blank"}(@greg_kiar_2026_20906259): Docker ecosystem with pre-instrumented versions of common numerical libraries (NumPy, SciPy) so you can evaluate a pipeline's stability without recompiling
+
+
+# Previous Work in Neuroimaging
+
+Numerical variability has been studied across several neuroimaging domains:
+
+- Functional imaging: @Alizadeh2025.12.22.695524 evaluated the Numerical Population Variability Ratio (NPVR) of graph metrics (0.1-0.2 range), varying across brain regions and thresholds
+- Structural imaging: @Chatelain2026.01.09.698203 found numerical variation reached ~1/3 of population variability in Parkinson's
+- Diffusion imaging: @kiar2021 showed different computational environments produce substantially different connectivity results
+
+Numerical variability as augmentation: @gonzalezpepe2026fuzzypytorchrapidnumerical showed controlled perturbations can serve as data augmentation for deep learning
+
+However, stability conclusions cannot be generalized across pipelines due to heterogeneous methodologies. Benchmarking each pipeline is essential.
+
+
+# Contributions
+
+This thesis, conducted in collaboration with Advanced Telecommunications Research Institute International (ATR), investigated the numerical stability of fMRI connectivity biomarkers.
+
+This work was divided into three complementary parts:
+
+1. Reproduce the @Alizadeh2025.12.22.695524 analysis of MRI graph metrics using the Numerical Population Variability Ratio (NPVR)
+2. Extend the analysis to edge-wise FC matrix stability, including the effect of global signal regression
+3. Assess the numerical stability of PCA-based feature selection (@10.1162/IMAG.a.1121) under perturbations
+
+# Code Availability
+
+All code developed during this thesis is publicly available:
+
+- Main repository: [github.com/madeinshinea/bachelor-thesis](https://github.com/madeinshinea/bachelor-thesis)
+- Project website: [olivier.amacker.dev/bachelor-thesis](https://olivier.amacker.dev/bachelor-thesis)
+- Custom fuzzy-fMRIPrep Docker container: [hub.docker.com/r/madeinshinea/fuzzy-fmriprep](https://hub.docker.com/r/madeinshinea/fuzzy-fmriprep)
+
+The development environment was managed via [Nix](https://nixos.org/) and [uv](https://docs.astral.sh/uv/) for reproducibility.
+
+A daily journal documenting the project progress is available [here](https://olivier.amacker.dev/bachelor-thesis/site/daily_journal.html)
+
+![daily journal QR code](../assets/presentations/final-presentation/daily_journal_qr_code.svg){#fig-daily-journal-qr height="100px"}
+
+
+# @Alizadeh2025.12.22.695524 Paper Goals
+
+The paper has two goals:
+
+ - Demonstrate on artificial data that NPVR increases uncertainty in Cohen's $d$ estimates, with stronger effects at small sample sizes.
+ - Assess how numerical perturbations via Verificarlo of fMRIPrep runs impact the NPVR of various graph metrics.
+
+Here is the formula for the NPVR:
+
+$$NPVR = \frac{\sigma_{num}}{\sigma_{pop}}$$
+
+Where $\sigma_{num}$ is the numerical variability and $\sigma_{pop}$ is the population variability.
+
+# @Alizadeh2025.12.22.695524 Reproduction Resources
+
+A summary of this paper is available [here](https://github.com/MadeInShineA/bachelor-thesis-project/blob/7f64cf4d877eae5833f990eae917c7211c644841/resources/alizadeh-2025-paper-summary/Alizadeh2025_paper_summary.md){target="_blank"}
+
+![@Alizadeh2025.12.22.695524 paper summary QR code](../assets/presentations/final-presentation/paper_summary_qr_code.svg){#fig-paper-summary-qr height="100px"}
+
+The code used for this section is available [here](https://olivier.amacker.dev/bachelor-thesis/site/notebooks/npvr-simulation/){target="_blank"}
+
+![NPVR notebook QR code](../assets/presentations/final-presentation/npvr-simulation/qr-code.svg){#fig-npvr-qr height="100px"}
+
+# Artificial NPVR Results Comparison
+
+::: {layout="[ [1, 1, 1], [1, 1, 1] ]"}
+
+![Population distribution (paper)](../assets/presentations/final-presentation/npvr-simulation-original/population.png){#fig-original-population height="200px"}
+
+![Relation between the NPVR and the Cohen's $d$ (paper)](../assets/presentations/final-presentation/npvr-simulation-original/cohens.png){#fig-original-cohens height="200px"}
+
+![Relation between pop and num var (paper)](../assets/presentations/final-presentation/npvr-simulation-original/NPVR.png){#fig-original-npvr height="200px"}
+
+![Population distribution (mine)](../assets/presentations/final-presentation/npvr-simulation/populations_plot.png){#fig-npvr-populations height="200px"}
+
+![Relation between the NPVR and the Cohen's $d$ (mine)](../assets/presentations/final-presentation/npvr-simulation/npvr_sample_size_cohens_delta_variation.png){#fig-npvr-sample-size height="200px"}
+
+![Relation between pop and num var (mine)](../assets/presentations/final-presentation/npvr-simulation/npvr_dpop_dnum_variation.png){#fig-dnum-variation height="200px"}
+
+:::
+
+# NPVR Simulation Bug Fix
+
+Regarding the Relation between the NPVR and the Cohen's $d$ differences, a PR was opened and merged into the paper's repository (see [here](https://github.com/mina94az/Numerical-Variability-of-functional-MRI-Graph-Measures/pull/3){target="_blank"})
+
+![Hard coded values for the 2nd graph](../assets/presentations/final-presentation/npvr-simulation/npvr_pr.png){#fig-npvr-pr height="100px"}
+
+# @Alizadeh2025.12.22.695524 Graph Metrics
+
+Here are the different graph metrics that were computed once with and once without confounds regression
+
+The FC matrices were computed using the Schaefer 2018 parcellation with 100 cortical regions and 7 functional networks.
+
+Four local graph metrics were computed:
+
+  - Degree centrality
+  - Clustering coefficient
+  - Betweenness centrality
+  - Eigenvector centrality
+
+Two global metrics:
+
+  - Small-worldness
+  - Average shortest path length
+
+  
+# Graph Metrics Reproduction Code
+
+The code used for this section is available [here](https://olivier.amacker.dev/bachelor-thesis/site/notebooks/fuzzy-fmriprep-graph-metrics-analysis.html){target="_blank"}
+
+![Graph Metrics notebook QR code](../assets/presentations/final-presentation/graph-metrics/qr_code.svg){#fig-graph-metrics-qr height="100px"}
+
+
+# Graph Metrics Reproduction Methodology
+
+This reproduction differed from the original study in several ways:
+
+- Different dataset: Used the [BMB dataset](https://mridata-brainminds-beyond.atr.jp/dataset/bmbpt/) (@KOIKE2021102600) instead of the original [PPMI dataset](https://www.ppmi-info.org/access-data-specimens/download-data) (@marek2018)
+- More confounds: Applied 15 confounds (vs original 6), adding global signal, CSF, white matter, and 6 aCompCor components
+- Custom Docker container: Built a custom fMRIPrep 25.2.5 container (vs Fuzzy's 23.2.1)
+- Small-worldness was excluded due to computational constraints
+
+
+# Graph Metrics Results Comparison
+
+::: {layout="[1, 1]"}
+
+![Graph metrics NPVR per threshold (paper)](../assets/presentations/final-presentation/graph-metrics-original/graph_metrics_npvr.png){#fig-original-graph-metrics-threshold height="550px"}
+
+![Graph metrics NPVR per threshold (mine)](../assets/presentations/final-presentation/graph-metrics/graph_metrics_npvr.png){#fig-graph-metrics-threshold height="550px"}
+
+:::
+
+# Graph Metrics Results Comparison
+
+::: {layout="[1, 1]"}
+
+![Variation of the NPVR between without and with confound (paper)](../assets/presentations/final-presentation/graph-metrics-original/graph_metrics_npvr_confound_difference.png){#fig-npvr-variation-paper height="550px"}
+
+![Variation of the NPVR between without and with confound (mine)](../assets/presentations/final-presentation/graph-metrics/graph_metrics_npvr_confound_difference.png){#fig-npvr-variation height="550px"}
+:::
+
+
+# Graph Metrics Results Comparison
+
+::: {layout="[1, 1]"}
+
+![NPVR values across brain regions and thresholds (paper)](../assets/presentations/final-presentation/graph-metrics-original/npvr_across_brain_regions.png){#fig-brain-region-npvr-paper height="550px"}
+
+![Degree centrality NPVR values across brain regions and thresholds (mine)](../assets/presentations/final-presentation/graph-metrics/npvr_across_brain_regions.png){#fig-brain-regions-npvr height="550px"}
+:::
+
+# Perturbed fMRIPrep Runs FC Matrices Analysis Goals
+
+The goal of this section was to take the numerically perturbed fMRIPrep runs and assess how the NPVR changes across the 4950 edges (upper triangle of the 100×100 FC matrix).
+
+This looks into the FC matrices directly rather than derived graph metrics.
+
+# Perturbed fMRIPrep Runs FC Matrices Analysis Code
+
+The code used for this section is available [here](https://olivier.amacker.dev/bachelor-thesis/site/notebooks/fuzzy-fmriprep-fc-matrices-analysis.html){target="_blank"}
+
+![Fuzzy FC matrices notebook QR code](../assets/presentations/final-presentation/fuzzy-fc-matrices/qr_code.svg){#fig-fuzzy-fc-matrices-qr height="100px"}
+
+# Perturbed fMRIPrep Runs FC Matrices Analysis Results
+
+::: {layout="[[1, 1], [1, 1]]"}
+
+![NPVR heatmap across FC matrix edges with all confounds](../assets/presentations/final-presentation/fuzzy-fc-matrices/npvr_heatmap.png){#fig-fc-edge-npvr height="200px"}
+
+
+![NPVR delta heatmap (with vs without global confound)](../assets/presentations/final-presentation/fuzzy-fc-matrices/npvr_delta_heatmap.png){#fig-fc-edge-npvr-paper height="200px"}
+
+![NPVR histogram across FC matrix edges with all confounds](../assets/presentations/final-presentation/fuzzy-fc-matrices/npvr_histogram.png){#fig-fc-edge-npvr height="200px"}
+
+![NPVR delta histogram (with vs without global confound)](../assets/presentations/final-presentation/fuzzy-fc-matrices/npvr_delta_histogram.png){#fig-fc-edge-npvr-paper height="200px"}
+:::
+
+# @10.1162/IMAG.a.1121 PCA Feature Selection Stability Analysis
+
+The goal of this paper is to develop a PCA-based feature selection method that robustly extracts reliable FC biomarkers
+for major depressive disorder (MDD), schizophrenia (SCZ), and autism spectrum disorder (ASD) across 
+multiple independent datasets and imaging sites, overcoming the instability issues of conventional supervised feature selection approaches.
+
+# Original PCA Feature Selection Explanation
+
+The PCA feature selection works as follows:
+
+- A PCA is computed on all subjects' FC vector to reduce dimensionality to n principal components.
+- PCs are tested for association with variables of interest:
+  - Binary categorical (e.g., diagnosis, sex): two-sample t-test
+  - Multi-level categorical (e.g., imaging site): one-way ANOVA
+  - Continuous (e.g., age, BDI, head motion): Pearson's correlation
+- Select PCs significantly associated with the target after FDR-BH correction (q < 0.05)
+- Test FC weights using a chi-squared test with FDR-BH correction (q < 0.05)
+- Keep only FCs that survive the correction as the final biomarkers
+
+# PCA Feature Selection Improvements
+
+I made several changes to the PCA feature selection code:
+
+ - Transformed the repository from regular Python code to a Python package (see PR [here](https://github.com/Ayumu722/pca-based-feature-extraction/pull/1){target="_blank"})
+ - Improved the PC plots (see PR [here](https://github.com/Ayumu722/pca-based-feature-extraction/pull/3){target="_blank"})
+
+
+# PCA Feature Selection Stability Analysis Code
+
+The code used for this section is available [here](https://olivier.amacker.dev/bachelor-thesis/site/notebooks/fuzzy-pca-dim-reduction-analysis.html){target="_blank"}
+
+![Fuzzy PCA analysis notebook QR code](../assets/presentations/final-presentation/fuzzy-pca-analysis/fuzzy_pca_analysis_qr_code.svg){#fig-fuzzy-pca-qr height="100px"}
+
+# PCA Feature Selection Stability Analysis Procedure
+
+To conduct this analysis, I performed the following steps:
+
+- Reproduced the PCA feature selection on the complete SRPB dataset (@Tanaka2021) and on the BMB dataset (a new dataset)
+- Perturbation 1: Ran 100 (SRPB) and 15 (BMB) perturbed FC matrix extractions via MCA-instrumented `np.corrcoef`
+- Perturbation 2: Reduced PCA inputs precision from 64-bit [double precision](https://en.wikipedia.org/wiki/Double-precision_floating-point_format) to 32-bit [single precision](https://en.wikipedia.org/wiki/Single-precision_floating-point_format)
+
+The PCA feature selection was applied to each perturbed run to assess stability
+
+# Effect of np.corrcoef Perturbation
+
+![Effect of the `np.corrcoef` perturbation on $\text{16 542 474 500}$ edges](../assets/presentations/final-presentation/fuzzy-pca-analysis/fuzzy-np-corrcoef-effect.png)
+
+# PCA Feature Selection Stability Results
+
+:::{layout="[1, 1]"}
+
+![SRPB original diagnostic FC plot](../assets/presentations/final-presentation/fuzzy-pca-analysis/srpb_original_fc_plot.png){#fig-srpb-original-fc-graph height="500px"}
+
+![SRPB 100% consensus diagnostic fuzzy FC plot](../assets/presentations/final-presentation/fuzzy-pca-analysis/srpb_fc_100_consensus.png){#fig-srpb-fuzzy-consensus-fc-graph height="500px"}
+
+:::
+
+# PCA Feature Selection Stability Results
+
+:::{layout="[[1, 1], [1, 1]]"}
+![SRPB original FC edge per network plot](../assets/presentations/final-presentation/fuzzy-pca-analysis/srpb_edge_per_network_original.png){#fig-srpb-original-fc-edge height="200px"}
+
+![SRPB 100% consensus FC edge per network plot](../assets/presentations/final-presentation/fuzzy-pca-analysis/srpb_edge_per_network_100_consensus.png){#fig-srpb-fuzzy-fc-edge height="200px"}
+
+
+![SRPB original FC inter connections plot](../assets/presentations/final-presentation/fuzzy-pca-analysis/srpb_inter_connections_original.png){#fig-srpb-original-fc-inter height="200px"}
+
+![SRPB 100% consensus FC inter connections plot](../assets/presentations/final-presentation/fuzzy-pca-analysis/srpb_inter_connections_100_consensus.png){#fig-srpb-fuzzy-consensus-fc-inter height="200px"}
+
+:::
+
+# PCA Feature Selection Stability Results
+
+:::{layout="[[1, 1], [1, 1]]"}
+
+![BMB original diagnostic FC plot](../assets/presentations/final-presentation/fuzzy-pca-analysis/bmb_original_fc_plot.png){#fig-bmb-original-fc-graph height="500px"}
+
+![BMB 100% consensus diagnostic fuzzy FC plot](../assets/presentations/final-presentation/fuzzy-pca-analysis/bmb_fc_100_consensus.png){#fig-bmb-fuzzy-consensus-fc-graph height="500px"}
+
+:::
+
+# PCA Feature Selection Stability Results
+
+:::{layout="[[1, 1], [1, 1]]"}
+![BMB original edge per network plot](../assets/presentations/final-presentation/fuzzy-pca-analysis/bmb_edge_per_network_original.png){#fig-bmb-original-edge-graph height="200px"}
+
+![BMB 100% consensus edge per network plot](../assets/presentations/final-presentation/fuzzy-pca-analysis/bmb_edge_per_network_100_consensus.png){#fig-bmb-fuzzy-consensus-edge-graph height="200px"}
+
+
+![BMB original FC inter connections plot](../assets/presentations/final-presentation/fuzzy-pca-analysis/bmb_inter_connections_original.png){#fig-bmb-original-inter height="200px"}
+
+![BMB 100% consensus FC inter connections plot](../assets/presentations/final-presentation/fuzzy-pca-analysis/bmb_inter_connections_100_consensus.png){#fig-bmb-fuzzy-consensus-inter height="200px"}
+
+:::
+
+# Conclusion
+
+This thesis investigated numerical stability of fMRI connectivity biomarkers across three complementary analyses:
+
+1. Graph metrics NPVR: Reproduced Alizadeh et al. on the [BMB dataset](https://mridata-brainminds-beyond.atr.jp/dataset/bmbpt/) with 15 confounds (vs original 6). Found broadly consistent trends but higher NPVR values. Confound regression effect was more variable across thresholds and metrics
+
+2. Edge-wise FC matrix NPVR: ~11% mean NPVR across 4950 edges. Without global signal confound, NPVR more than doubles
+
+3. PCA feature extraction: Fully robust under combined MCA perturbation of `np.corrcoef` and 32-bit PCA precision
+
+Key takeaway: While FC matrices and derived graph metrics show measurable numerical variability, the PCA-based biomarker extraction pipeline is highly numerically stable.
+
+# Future Directions
+
+- Assess individual confound contributions to NPVR
+- Perturb the cross-site harmonization step
+- Perturb confound regression process itself
+
+# Acknowledgement
+
+I want to thank the following people and institution:
+
+- Prof. Dr Oscar Esteban, for giving me the opportunity to conduct this Bachelor Thesis abroad, as well as for his guidance and supervision
+- Dr Okito Yamashita and Dr Ayumu Yamashita, for their dedication and continuous feedback throughout this project
+- Dr Yohan Chatelain, for his help on the Fuzzy perturbations
+- The ATR, for providing the necessary resources and environment to carry out this work
+- My family and friends, for their emotional support and encouragement during this journey
+
+# Additional Resources
+
+This slide deck is available at this address: 
+<br>
+[https://olivier.amacker.dev/bachelor-thesis/site/presentations/cbi_presentation.html](https://olivier.amacker.dev/bachelor-thesis/site/presentations/cbi_presentation.html)
+
+![Slide deck QR code](../assets/presentations/final-presentation/slide_qr_code.svg){#fig-slide-qr height="100px"}
+
+# References
+
+::: {#refs}
+:::
+
+# Annex
+Here is how the NPVR is calculated in details:
+
+$$
+  \sigma_{num}^2 = \frac{1}{m} \sum_{j=1}^m \left[ \frac{1}{n-1} \sum_{i=1}^n \left( x_{i,j} - \bar x_{.,j}\right)^2\right]
+$$
+
+$$
+  \sigma_{pop}^2 = \frac{1}{n} \sum_{i=1}^n \left[ \frac{1}{m-1} \sum_{j=1}^m \left( x_{i,j} - \bar x_{i,.}\right)^2\right]
+$$
+
+$$
+  NPVR = \frac{\sigma_{num}}{\sigma_{pop}}
+$$
+
+
+# Confounds Used For The Fuzzy FC Matrices Analysis
+
+```Json
+{
+    "confound_columns": [
+        "trans_x",
+        "trans_y",
+        "trans_z",
+        "rot_x",
+        "rot_y",
+        "rot_z",
+        "global_signal",
+        "csf",
+        "white_matter",
+        "a_comp_cor_00",
+        "a_comp_cor_01",
+        "a_comp_cor_02",
+        "a_comp_cor_03",
+        "a_comp_cor_04",
+        "a_comp_cor_05"
+    ],
+    "filtered_out_confound_columns": [
+        "global_signal"
+    ]
+}
+```
