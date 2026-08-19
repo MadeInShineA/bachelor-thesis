@@ -19,12 +19,14 @@ website:
         left:
             - href: site/index.qmd
               text: Home
-            - href: ./site/assets/report/bachelor-thesis.pdf
-              text: Report
-            - href: ./site/assets/executive-summary/executive-summary.pdf
-              text: Executive summary
-            - href: ./site/assets/poster/poster.pdf
-              text: Poster
+            - text: Deliverables
+              menu:
+                  - href: ./site/assets/report/bachelor-thesis.pdf
+                    text: Report
+                  - href: ./site/assets/executive-summary/executive-summary.pdf
+                    text: Executive summary
+                  - href: ./site/assets/poster/poster.pdf
+                    text: Poster
             - text: Presentations
               menu:
                   - href: site/presentations/ai_usage.qmd
