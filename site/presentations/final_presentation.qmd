@@ -16,6 +16,14 @@ format:
 bibliography: ../../bachelor-thesis-report/bibliography.bib
 ---
 
+# Slide Deck
+
+This slide deck is available at this address:
+<br>
+[https://olivier.amacker.dev/bachelor-thesis/site/presentations/cbi_presentation.html](https://olivier.amacker.dev/bachelor-thesis/site/presentations/cbi_presentation.html)
+
+![Slide deck QR code](../assets/presentations/final-presentation/slide_qr_code.svg){#fig-slide-qr height="100px"}
+
 # The Problem With Current fMRI Pipelines
 
 :::: {.columns}
@@ -25,7 +33,7 @@ bibliography: ../../bachelor-thesis-report/bibliography.bib
 Currently the fMRI pipelines are becoming more and more computationally heavy leveraging a lot of high dimension calculations.
 
 However, there are several settings introducing noise instability in those pipelines:
-  
+
 - The OS running the pipeline and its version
 - The actual hardware (CPU architecture)
 - Parallelization strategies
@@ -87,11 +95,6 @@ All code developed during this thesis is publicly available:
 
 The development environment was managed via [Nix](https://nixos.org/) and [uv](https://docs.astral.sh/uv/) for reproducibility.
 
-A daily journal documenting the project progress is available [here](https://olivier.amacker.dev/bachelor-thesis/site/daily_journal.html)
-
-![daily journal QR code](../assets/presentations/final-presentation/daily_journal_qr_code.svg){#fig-daily-journal-qr height="100px"}
-
-
 # @Alizadeh2025.12.22.695524 Paper Goals
 
 The paper has two goals:
@@ -107,11 +110,11 @@ Where $\sigma_{num}$ is the numerical variability and $\sigma_{pop}$ is the popu
 
 # @Alizadeh2025.12.22.695524 Reproduction Resources
 
-A summary of this paper is available [here](https://github.com/MadeInShineA/bachelor-thesis-project/blob/7f64cf4d877eae5833f990eae917c7211c644841/resources/alizadeh-2025-paper-summary/Alizadeh2025_paper_summary.md){target="_blank"}
+A written summary of this paper is available [on GitHub](https://github.com/MadeInShineA/bachelor-thesis-project/blob/7f64cf4d877eae5833f990eae917c7211c644841/resources/alizadeh-2025-paper-summary/Alizadeh2025_paper_summary.md){target="_blank"} (or scan the QR code below).
 
 ![@Alizadeh2025.12.22.695524 paper summary QR code](../assets/presentations/final-presentation/paper_summary_qr_code.svg){#fig-paper-summary-qr height="100px"}
 
-The code used for this section is available [here](https://olivier.amacker.dev/bachelor-thesis/site/notebooks/npvr-simulation/){target="_blank"}
+An interactive notebook for this simulation can be accessed [online](https://olivier.amacker.dev/bachelor-thesis/site/notebooks/npvr-simulation/){target="_blank"}, running entirely in the browser.
 
 ![NPVR notebook QR code](../assets/presentations/final-presentation/npvr-simulation/qr-code.svg){#fig-npvr-qr height="100px"}
 
@@ -125,11 +128,11 @@ The code used for this section is available [here](https://olivier.amacker.dev/b
 
 ![Relation between pop and num var (paper)](../assets/presentations/final-presentation/npvr-simulation-original/NPVR.png){#fig-original-npvr height="200px"}
 
-![Population distribution (mine)](../assets/presentations/final-presentation/npvr-simulation/populations_plot.png){#fig-npvr-populations height="200px"}
+![Population distribution (mine)](../assets/presentations/final-presentation/npvr-simulation/population.png){#fig-npvr-populations height="200px"}
 
-![Relation between the NPVR and the Cohen's $d$ (mine)](../assets/presentations/final-presentation/npvr-simulation/npvr_sample_size_cohens_delta_variation.png){#fig-npvr-sample-size height="200px"}
+![Relation between the NPVR and the Cohen's $d$ (mine)](../assets/presentations/final-presentation/npvr-simulation/cohens.png){#fig-npvr-sample-size height="200px"}
 
-![Relation between pop and num var (mine)](../assets/presentations/final-presentation/npvr-simulation/npvr_dpop_dnum_variation.png){#fig-dnum-variation height="200px"}
+![Relation between pop and num var (mine)](../assets/presentations/final-presentation/npvr-simulation/npvr.png){#fig-dnum-variation height="200px"}
 
 :::
 
@@ -157,10 +160,10 @@ Two global metrics:
   - Small-worldness
   - Average shortest path length
 
-  
+
 # Graph Metrics Reproduction Code
 
-The code used for this section is available [here](https://olivier.amacker.dev/bachelor-thesis/site/notebooks/fuzzy-fmriprep-graph-metrics-analysis.html){target="_blank"}
+The notebook code developed for this step and its outputs are available as a [static HTML page](https://olivier.amacker.dev/bachelor-thesis/site/notebooks/fuzzy-fmriprep-graph-metrics-analysis.html){target="_blank"}.
 
 ![Graph Metrics notebook QR code](../assets/presentations/final-presentation/graph-metrics/qr_code.svg){#fig-graph-metrics-qr height="100px"}
 
@@ -195,15 +198,6 @@ This reproduction differed from the original study in several ways:
 :::
 
 
-# Graph Metrics Results Comparison
-
-::: {layout="[1, 1]"}
-
-![NPVR values across brain regions and thresholds (paper)](../assets/presentations/final-presentation/graph-metrics-original/npvr_across_brain_regions.png){#fig-brain-region-npvr-paper height="550px"}
-
-![Degree centrality NPVR values across brain regions and thresholds (mine)](../assets/presentations/final-presentation/graph-metrics/npvr_across_brain_regions.png){#fig-brain-regions-npvr height="550px"}
-:::
-
 # Perturbed fMRIPrep Runs FC Matrices Analysis Goals
 
 The goal of this section was to take the numerically perturbed fMRIPrep runs and assess how the NPVR changes across the 4950 edges (upper triangle of the 100×100 FC matrix).
@@ -212,7 +206,7 @@ This looks into the FC matrices directly rather than derived graph metrics.
 
 # Perturbed fMRIPrep Runs FC Matrices Analysis Code
 
-The code used for this section is available [here](https://olivier.amacker.dev/bachelor-thesis/site/notebooks/fuzzy-fmriprep-fc-matrices-analysis.html){target="_blank"}
+A static HTML version of the analysis notebook, including both code and outputs, is available [here](https://olivier.amacker.dev/bachelor-thesis/site/notebooks/fuzzy-fmriprep-fc-matrices-analysis.html){target="_blank"}.
 
 ![Fuzzy FC matrices notebook QR code](../assets/presentations/final-presentation/fuzzy-fc-matrices/qr_code.svg){#fig-fuzzy-fc-matrices-qr height="100px"}
 
@@ -233,7 +227,7 @@ The code used for this section is available [here](https://olivier.amacker.dev/b
 # @10.1162/IMAG.a.1121 PCA Feature Selection Stability Analysis
 
 The goal of this paper is to develop a PCA-based feature selection method that robustly extracts reliable FC biomarkers
-for major depressive disorder (MDD), schizophrenia (SCZ), and autism spectrum disorder (ASD) across 
+for major depressive disorder (MDD), schizophrenia (SCZ), and autism spectrum disorder (ASD) across
 multiple independent datasets and imaging sites, overcoming the instability issues of conventional supervised feature selection approaches.
 
 # Original PCA Feature Selection Explanation
@@ -259,7 +253,7 @@ I made several changes to the PCA feature selection code:
 
 # PCA Feature Selection Stability Analysis Code
 
-The code used for this section is available [here](https://olivier.amacker.dev/bachelor-thesis/site/notebooks/fuzzy-pca-dim-reduction-analysis.html){target="_blank"}
+A browsable version of the analysis notebook is available [online](https://olivier.amacker.dev/bachelor-thesis/site/notebooks/fuzzy-pca-dim-reduction-analysis.html){target="_blank"}.
 
 ![Fuzzy PCA analysis notebook QR code](../assets/presentations/final-presentation/fuzzy-pca-analysis/fuzzy_pca_analysis_qr_code.svg){#fig-fuzzy-pca-qr height="100px"}
 
@@ -277,53 +271,57 @@ The PCA feature selection was applied to each perturbed run to assess stability
 
 ![Effect of the `np.corrcoef` perturbation on $\text{16 542 474 500}$ edges](../assets/presentations/final-presentation/fuzzy-pca-analysis/fuzzy-np-corrcoef-effect.png)
 
-# PCA Feature Selection Stability Results
+# PCA Feature Selection Stability Results (SRPB)
 
-:::{layout="[1, 1]"}
-
-![SRPB original diagnostic FC plot](../assets/presentations/final-presentation/fuzzy-pca-analysis/srpb_original_fc_plot.png){#fig-srpb-original-fc-graph height="500px"}
-
-![SRPB 100% consensus diagnostic fuzzy FC plot](../assets/presentations/final-presentation/fuzzy-pca-analysis/srpb_fc_100_consensus.png){#fig-srpb-fuzzy-consensus-fc-graph height="500px"}
-
+:::: {.columns}
+::: {.column width="50%"}
+![SRPB diagnostic FC (original)](../assets/presentations/final-presentation/fuzzy-pca-analysis/srpb_original_fc_plot.png){#fig-srpb-original-fc-graph height="250px"}
 :::
-
-# PCA Feature Selection Stability Results
-
-:::{layout="[[1, 1], [1, 1]]"}
-![SRPB original FC edge per network plot](../assets/presentations/final-presentation/fuzzy-pca-analysis/srpb_edge_per_network_original.png){#fig-srpb-original-fc-edge height="200px"}
-
-![SRPB 100% consensus FC edge per network plot](../assets/presentations/final-presentation/fuzzy-pca-analysis/srpb_edge_per_network_100_consensus.png){#fig-srpb-fuzzy-fc-edge height="200px"}
-
-
-![SRPB original FC inter connections plot](../assets/presentations/final-presentation/fuzzy-pca-analysis/srpb_inter_connections_original.png){#fig-srpb-original-fc-inter height="200px"}
-
-![SRPB 100% consensus FC inter connections plot](../assets/presentations/final-presentation/fuzzy-pca-analysis/srpb_inter_connections_100_consensus.png){#fig-srpb-fuzzy-consensus-fc-inter height="200px"}
-
+::: {.column width="50%"}
+![SRPB diagnostic FC (100% consensus)](../assets/presentations/final-presentation/fuzzy-pca-analysis/srpb_fc_100_consensus.png){#fig-srpb-fuzzy-consensus-fc-graph height="250px"}
 :::
+::::
 
-# PCA Feature Selection Stability Results
-
-:::{layout="[[1, 1], [1, 1]]"}
-
-![BMB original diagnostic FC plot](../assets/presentations/final-presentation/fuzzy-pca-analysis/bmb_original_fc_plot.png){#fig-bmb-original-fc-graph height="500px"}
-
-![BMB 100% consensus diagnostic fuzzy FC plot](../assets/presentations/final-presentation/fuzzy-pca-analysis/bmb_fc_100_consensus.png){#fig-bmb-fuzzy-consensus-fc-graph height="500px"}
-
+:::: {.columns}
+::: {.column width="25%"}
+![SRPB edges (original)](../assets/presentations/final-presentation/fuzzy-pca-analysis/srpb_edge_per_network_original.png){#fig-srpb-original-edges height="200px"}
 :::
-
-# PCA Feature Selection Stability Results
-
-:::{layout="[[1, 1], [1, 1]]"}
-![BMB original edge per network plot](../assets/presentations/final-presentation/fuzzy-pca-analysis/bmb_edge_per_network_original.png){#fig-bmb-original-edge-graph height="200px"}
-
-![BMB 100% consensus edge per network plot](../assets/presentations/final-presentation/fuzzy-pca-analysis/bmb_edge_per_network_100_consensus.png){#fig-bmb-fuzzy-consensus-edge-graph height="200px"}
-
-
-![BMB original FC inter connections plot](../assets/presentations/final-presentation/fuzzy-pca-analysis/bmb_inter_connections_original.png){#fig-bmb-original-inter height="200px"}
-
-![BMB 100% consensus FC inter connections plot](../assets/presentations/final-presentation/fuzzy-pca-analysis/bmb_inter_connections_100_consensus.png){#fig-bmb-fuzzy-consensus-inter height="200px"}
-
+::: {.column width="25%"}
+![SRPB edges (100% consensus)](../assets/presentations/final-presentation/fuzzy-pca-analysis/srpb_edge_per_network_100_consensus.png){#fig-srpb-consensus-edges height="200px"}
 :::
+::: {.column width="25%"}
+![SRPB inter connections (original)](../assets/presentations/final-presentation/fuzzy-pca-analysis/srpb_inter_connections_original.png){#fig-srpb-original-inter height="200px"}
+:::
+::: {.column width="25%"}
+![SRPB inter connections (100% consensus)](../assets/presentations/final-presentation/fuzzy-pca-analysis/srpb_inter_connections_100_consensus.png){#fig-srpb-consensus-inter height="200px"}
+:::
+::::
+
+# PCA Feature Selection Stability Results (BMB)
+
+:::: {.columns}
+::: {.column width="50%"}
+![BMB diagnostic FC (original)](../assets/presentations/final-presentation/fuzzy-pca-analysis/bmb_original_fc_plot.png){#fig-bmb-original-fc-graph height="250px"}
+:::
+::: {.column width="50%"}
+![BMB diagnostic FC (100% consensus)](../assets/presentations/final-presentation/fuzzy-pca-analysis/bmb_fc_100_consensus.png){#fig-bmb-fuzzy-consensus-fc-graph height="250px"}
+:::
+::::
+
+:::: {.columns}
+::: {.column width="25%"}
+![BMB edges (original)](../assets/presentations/final-presentation/fuzzy-pca-analysis/bmb_edge_per_network_original.png){#fig-bmb-original-edges height="200px"}
+:::
+::: {.column width="25%"}
+![BMB edges (100% consensus)](../assets/presentations/final-presentation/fuzzy-pca-analysis/bmb_edge_per_network_100_consensus.png){#fig-bmb-consensus-edges height="200px"}
+:::
+::: {.column width="25%"}
+![BMB inter connections (original)](../assets/presentations/final-presentation/fuzzy-pca-analysis/bmb_inter_connections_original.png){#fig-bmb-original-inter height="200px"}
+:::
+::: {.column width="25%"}
+![BMB inter connections (100% consensus)](../assets/presentations/final-presentation/fuzzy-pca-analysis/bmb_inter_connections_100_consensus.png){#fig-bmb-consensus-inter height="200px"}
+:::
+::::
 
 # Conclusion
 
@@ -352,14 +350,6 @@ I want to thank the following people and institution:
 - Dr Yohan Chatelain, for his help on the Fuzzy perturbations
 - The ATR, for providing the necessary resources and environment to carry out this work
 - My family and friends, for their emotional support and encouragement during this journey
-
-# Additional Resources
-
-This slide deck is available at this address: 
-<br>
-[https://olivier.amacker.dev/bachelor-thesis/site/presentations/cbi_presentation.html](https://olivier.amacker.dev/bachelor-thesis/site/presentations/cbi_presentation.html)
-
-![Slide deck QR code](../assets/presentations/final-presentation/slide_qr_code.svg){#fig-slide-qr height="100px"}
 
 # References
 
