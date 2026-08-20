@@ -60,15 +60,15 @@ Tools:
 - [Fuzzy](https://github.com/verificarlo/fuzzy){target="_blank"}(@greg_kiar_2026_20906259): pre-instrumented Docker (NumPy, SciPy)
 
 
-# Previous Work in Neuroimaging
+# Previous Studies Findings
 
-- Functional imaging: NPVR of graph metrics ranges from 0.1 to 0.2 (@Alizadeh2025.12.22.695524)
-- Structural imaging: numerical variation reaches one third of population variability (@Chatelain2026.01.09.698203)
-- Diffusion imaging: different environments produce different connectivity results (@kiar2021)
+Numerical instability confirmed across modalities:
 
-Perturbations can also serve as data augmentation for deep learning (@gonzalezpepe2026fuzzypytorchrapidnumerical)
+- Functional imaging: NPVR of graph metrics derived from FC matrices across correlation thresholds, ranging from 0.1 to 0.2 (@Alizadeh2025.12.22.695524)
+- Structural imaging: numerical variation in cortical thickness measures reaches 1/3 of population variability (@Chatelain2026.01.09.698203)
+- Diffusion imaging: different computational environments produce different structural connectivity results (@kiar2021)
 
-Heterogeneous methodologies mean each pipeline must be benchmarked individually.
+Heterogeneous methodologies prevent direct comparisons between studies.
 
 
 # Contributions
@@ -128,15 +128,17 @@ Paper summary: [GitHub](https://github.com/MadeInShineA/bachelor-thesis-project/
 
 ![Population distribution (paper)](../assets/presentations/final-presentation/npvr-simulation-original/population.png){#fig-original-population height="200px"}
 
-![Relation between the NPVR and the Cohen's $d$ (paper)](../assets/presentations/final-presentation/npvr-simulation-original/cohens.png){#fig-original-cohens height="200px"}
 
 ![Relation between pop and num var (paper)](../assets/presentations/final-presentation/npvr-simulation-original/NPVR.png){#fig-original-npvr height="200px"}
 
+![Relation between the NPVR and the Cohen's $d$ (paper)](../assets/presentations/final-presentation/npvr-simulation-original/cohens.png){#fig-original-cohens height="200px"}
+
+
 ![Population distribution (mine)](../assets/presentations/final-presentation/npvr-simulation/population.png){#fig-npvr-populations height="200px"}
 
-![Relation between the NPVR and the Cohen's $d$ (mine)](../assets/presentations/final-presentation/npvr-simulation/cohens.png){#fig-npvr-sample-size height="200px"}
-
 ![Relation between pop and num var (mine)](../assets/presentations/final-presentation/npvr-simulation/npvr.png){#fig-dnum-variation height="200px"}
+
+![Relation between the NPVR and the Cohen's $d$ (mine)](../assets/presentations/final-presentation/npvr-simulation/cohens.png){#fig-npvr-sample-size height="200px"}
 
 :::
 
@@ -144,7 +146,7 @@ Paper summary: [GitHub](https://github.com/MadeInShineA/bachelor-thesis-project/
 
 The original Cohen $d$ plot used hardcoded NPVR values instead of computed ones. A fix was submitted and merged into the paper repository ([PR](https://github.com/mina94az/Numerical-Variability-of-functional-MRI-Graph-Measures/pull/3){target="_blank"}).
 
-![Hard coded values for the 2nd graph](../assets/presentations/final-presentation/npvr-simulation/npvr_pr.png){#fig-npvr-pr height="100px"}
+![Hard coded values for the 3rd graph](../assets/presentations/final-presentation/npvr-simulation/npvr_pr.png){#fig-npvr-pr height="100px"}
 
 # @Alizadeh2025.12.22.695524 Graph Metrics
 
@@ -163,10 +165,10 @@ Global metrics:
 - Average shortest path length
 
 
-# Graph Metrics Reproduction Methodology
+# Differences from the Original Study
 
-- Dataset: BMB (@KOIKE2021102600) vs original PPMI (@marek2018)
-- Confounds: 15 vs 6 (added global signal, CSF, WM, 6 aCompCor)
+- Dataset: [BMB](https://mridata-brainminds-beyond.atr.jp/dataset/bmbpt/) (@KOIKE2021102600) vs original [PPMI](https://www.ppmi-info.org/access-data-specimens/download-data) (@marek2018)
+- Confounds: 15 vs 6 (added global signal, cerebrospinal fluid, white matter, 6 anatomical component correlation)
 - Container: custom fMRIPrep 25.2.5 vs Fuzzy's 23.2.1
 - Small-worldness excluded (computational constraints)
 
@@ -234,7 +236,7 @@ PCA-based feature selection for robust FC biomarkers (MDD, SCZ, ASD) across data
 
 # PCA Feature Selection Stability Analysis Procedure
 
-- Reproduced on full SRPB (@Tanaka2021) and BMB datasets
+- Reproduced on full [SRPB](https://bicr-resource.atr.jp/srpbsopen/) (@Tanaka2021) and [BMB](https://mridata-brainminds-beyond.atr.jp/dataset/bmbpt/) datasets
 - Perturbation 1: MCA-instrumented `np.corrcoef` (100 runs SRPB, 15 BMB)
 - Perturbation 2: PCA inputs 64-bit to 32-bit
 
@@ -303,8 +305,6 @@ PCA feature selection applied to each perturbed run.
 2. Edge-wise FC matrix NPVR: mean of 11 percent across 4950 edges. Doubles without global signal confound.
 
 3. PCA feature extraction: fully robust under MCA perturbation and 32-bit precision.
-
-Key takeaway: FC matrices and graph metrics show measurable variability, while the PCA biomarker extraction pipeline is highly stable.
 
 # Future Directions
 
