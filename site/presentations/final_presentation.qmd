@@ -312,14 +312,6 @@ PCA feature selection applied to each perturbed run.
 - Perturb the cross-site harmonization step
 - Perturb confound regression process itself
 
-# Acknowledgement
-
-- Prof. Dr Oscar Esteban for the opportunity to conduct this thesis abroad and for his supervision
-- Dr Okito Yamashita and Dr Ayumu Yamashita for their dedication and continuous feedback
-- Dr Yohan Chatelain for his help with Fuzzy perturbations
-- ATR for providing the necessary resources and environment
-- Family and friends for their emotional support
-
 # References
 
 ::: {#refs}
