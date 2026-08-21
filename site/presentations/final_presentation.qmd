@@ -24,6 +24,10 @@ This slide deck is available at this address:
 
 ![Slide deck QR code](../assets/presentations/final-presentation/slide_qr_code.svg){#fig-slide-qr height="100px"}
 
+#
+
+![fMRI processing pipeline overview (generated with ChatGPT).](../assets/presentations/final-presentation/fmri.png){#fig-fmri}
+
 # The Problem with Current fMRI Pipelines
 
 :::: {.columns}
