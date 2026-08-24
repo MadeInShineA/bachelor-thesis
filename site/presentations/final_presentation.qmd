@@ -93,23 +93,7 @@ Three complementary analyses:
 - Website: [olivier.amacker.dev/bachelor-thesis](https://olivier.amacker.dev/bachelor-thesis)
 - Docker: [hub.docker.com/r/madeinshinea/fuzzy-fmriprep](https://hub.docker.com/r/madeinshinea/fuzzy-fmriprep)
 
-Environment: [Nix](https://nixos.org/) and [uv](https://docs.astral.sh/uv/)
-
-
-:::: {.columns}
-::: {.column width="25%"}
-![[NPVR Simulation Notebook](https://olivier.amacker.dev/bachelor-thesis/site/notebooks/npvr-simulation/)](../assets/presentations/final-presentation/npvr-simulation/qr-code.svg){#fig-npvr-qr height="100px"}
-:::
-::: {.column width="25%"}
-![[Graph Metrics Notebook](https://olivier.amacker.dev/bachelor-thesis/site/notebooks/fuzzy-fmriprep-graph-metrics-analysis.html)](../assets/presentations/final-presentation/graph-metrics/qr_code.svg){#fig-graph-metrics-qr height="100px"}
-:::
-::: {.column width="25%"}
-![[FC Matrices Notebook](https://olivier.amacker.dev/bachelor-thesis/site/notebooks/fuzzy-fmriprep-fc-matrices-analysis.html)](../assets/presentations/final-presentation/fuzzy-fc-matrices/qr_code.svg){#fig-fuzzy-fc-matrices-qr height="100px"}
-:::
-::: {.column width="25%"}
-![[PCA Stability Notebook](https://olivier.amacker.dev/bachelor-thesis/site/notebooks/fuzzy-pca-dim-reduction-analysis.html)](../assets/presentations/final-presentation/fuzzy-pca-analysis/fuzzy_pca_analysis_qr_code.svg){#fig-fuzzy-pca-qr height="100px"}
-:::
-::::
+Environment managed with [Nix](https://nixos.org/) and [uv](https://docs.astral.sh/uv/)
 
 # @Alizadeh2025.12.22.695524 Paper Goals
 
@@ -121,12 +105,6 @@ Two goals:
 $$NPVR = \frac{\sigma_{num}}{\sigma_{pop}}$$
 
 $\sigma_{num}$ is numerical variability. $\sigma_{pop}$ is population variability.
-
-# Paper Summary
-
-Paper summary: [GitHub](https://github.com/MadeInShineA/bachelor-thesis-project/blob/7f64cf4d877eae5833f990eae917c7211c644841/resources/alizadeh-2025-paper-summary/Alizadeh2025_paper_summary.md){target="_blank"}
-
-![@Alizadeh2025.12.22.695524 paper summary QR code](../assets/presentations/final-presentation/paper_summary_qr_code.svg){#fig-paper-summary-qr height="100px"}
 
 # Artificial NPVR Results Comparison
 
@@ -179,23 +157,17 @@ Global metrics:
 - Small-worldness excluded (computational constraints)
 
 
-# Graph Metrics NPVR per Threshold
+# Graph Metrics Results
 
-::: {layout="[1, 1]"}
+::: {layout="[1, 1, 1, 1]"}
 
-![Graph metrics NPVR per threshold (paper)](../assets/presentations/final-presentation/graph-metrics-original/graph_metrics_npvr.png){#fig-original-graph-metrics-threshold height="550px"}
+![NPVR per threshold (paper)](../assets/presentations/final-presentation/graph-metrics-original/graph_metrics_npvr.png){#fig-original-graph-metrics-threshold height="550px"}
 
-![Graph metrics NPVR per threshold (reproduced)](../assets/presentations/final-presentation/graph-metrics/graph_metrics_npvr.png){#fig-graph-metrics-threshold height="550px"}
+![NPVR per threshold (reproduced)](../assets/presentations/final-presentation/graph-metrics/graph_metrics_npvr.png){#fig-graph-metrics-threshold height="550px"}
 
-:::
+![Confound regression effect (paper)](../assets/presentations/final-presentation/graph-metrics-original/graph_metrics_npvr_confound_difference.png){#fig-npvr-variation-paper height="550px"}
 
-# Graph Metrics Confound Regression Effect
-
-::: {layout="[1, 1]"}
-
-![Variation of the NPVR between without and with confound (paper)](../assets/presentations/final-presentation/graph-metrics-original/graph_metrics_npvr_confound_difference.png){#fig-npvr-variation-paper height="550px"}
-
-![Variation of the NPVR between without and with confound (reproduced)](../assets/presentations/final-presentation/graph-metrics/graph_metrics_npvr_confound_difference.png){#fig-npvr-variation height="550px"}
+![Confound regression effect (reproduced)](../assets/presentations/final-presentation/graph-metrics/graph_metrics_npvr_confound_difference.png){#fig-npvr-variation height="550px"}
 :::
 
 
