@@ -171,12 +171,12 @@ Global metrics:
 :::
 
 
-# Perturbed fMRIPrep Runs FC Matrices Analysis Goals
+# FC Matrix Stability Analysis Goals
 
 - Analyze FC matrices directly instead of derived graph metrics.
 - Assess global signal regression's effect on edge-wise NPVR.
 
-# Perturbed fMRIPrep Runs FC Matrices Analysis Results
+# FC Matrix Stability Analysis Results
 
 ::: {layout="[[1, 1], [1, 1]]"}
 
