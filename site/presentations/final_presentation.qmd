@@ -100,7 +100,7 @@ Environment managed with [Nix](https://nixos.org/) and [uv](https://docs.astral.
 Two goals:
 
 1. Show on artificial data that NPVR increases uncertainty in Cohen $d$ estimates, especially at small sample sizes
-2. Assess how Verificarlo perturbations of fMRIPrep runs impact graph metrics NPVR
+2. Assess how perturbations introduced by running fMRIPrep within a Fuzzy container impact graph metrics NPVR
 
 $$NPVR = \frac{\sigma_{num}}{\sigma_{pop}}$$
 
@@ -217,8 +217,6 @@ PCA-based feature selection for robust FC biomarkers (MDD, SCZ, ASD) across data
 - Reproduced on full [SRPB](https://bicr-resource.atr.jp/srpbsopen/) (@Tanaka2021) and [BMB](https://mridata-brainminds-beyond.atr.jp/dataset/bmbpt/) datasets
 - Perturbation 1: MCA-instrumented `np.corrcoef` (100 runs SRPB, 15 BMB)
 - Perturbation 2: PCA inputs 64-bit to 32-bit
-
-PCA feature selection applied to each perturbed run.
 
 # Effect of np.corrcoef Perturbation
 
