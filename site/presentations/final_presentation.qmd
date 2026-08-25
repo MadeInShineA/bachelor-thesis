@@ -218,10 +218,6 @@ PCA-based feature selection for robust FC biomarkers (MDD, SCZ, ASD) across data
 - Perturbation 1: MCA-instrumented `np.corrcoef` (100 runs SRPB, 15 BMB)
 - Perturbation 2: PCA inputs 64-bit to 32-bit
 
-# Effect of np.corrcoef Perturbation
-
-![Effect of the `np.corrcoef` perturbation on $\text{16 542 474 500}$ edges](../assets/presentations/final-presentation/fuzzy-pca-analysis/fuzzy-np-corrcoef-effect.png)
-
 # PCA Feature Selection Stability Results (SRPB)
 
 :::: {.columns}
