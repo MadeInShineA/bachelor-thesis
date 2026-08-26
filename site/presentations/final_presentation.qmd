@@ -28,7 +28,7 @@ This slide deck is available at this address:
 
 ![fMRI processing pipeline overview (generated with ChatGPT).](../assets/presentations/final-presentation/fmri.png){#fig-fmri}
 
-# The Problem with Current fMRI Pipelines
+# Numerical Variability and Reproducibility in fMRI pipelines
 
 :::: {.columns}
 
@@ -54,17 +54,17 @@ Sources of numerical instability:
 
 # Numerical Perturbation Methods
 
-Monte Carlo Arithmetic (MCA) (@Parker1997MonteCA): controlled random perturbations to floating-point operations.
+A way to test numerical variability is actually introducing controlled numerical variability in pipelines of interest, at steps of interest, and see how that variability cascades downstream and in the final results.
 
-Repeated runs quantify how numerical variability propagates.
+One such approach is Monte Carlo Arithmetic (MCA) (@Parker1997MonteCA), which applies controlled random perturbations to floating-point operations.
 
-Tools:
+Available libraries for pipeline instrumentation:
 
 - [Verificarlo](https://github.com/verificarlo/verificarlo){target="_blank"}(@denis2018verificarlocheckingfloatingpoint): LLVM-level FP instrumentation
 - [Fuzzy](https://github.com/verificarlo/fuzzy){target="_blank"}(@greg_kiar_2026_20906259): pre-instrumented Docker (NumPy, SciPy)
 
 
-# Previous Studies Findings
+# Previous Findings
 
 Numerical instability confirmed across modalities:
 
@@ -77,7 +77,7 @@ Controlled numerical perturbations can also expand training datasets and improve
 Heterogeneous methodologies prevent direct comparisons between studies.
 
 
-# Thesis Objectives
+# Objectives
 
 Collaboration with ATR to investigate numerical stability of fMRI connectivity biomarkers.
 
@@ -95,6 +95,11 @@ Three complementary analyses:
 
 Environment managed with [Nix](https://nixos.org/) and [uv](https://docs.astral.sh/uv/)
 
+# Datasets
+
+- [SRPB](https://bicr-resource.atr.jp/srpbsopen/) (@Tanaka2021): multi-site dataset (1,410 participants, 11 sites) for psychiatric biomarker research
+- [BMB](https://mridata-brainminds-beyond.atr.jp/dataset/bmbpt/) (@KOIKE2021102600): Brain-MINDS Beyond dataset (~7,000 sessions, 23 sites) covering psychiatric and neurological disorders
+
 # @Alizadeh2025.12.22.695524 Paper Goals
 
 Two goals:
@@ -106,29 +111,11 @@ $$NPVR = \frac{\sigma_{num}}{\sigma_{pop}}$$
 
 $\sigma_{num}$ is numerical variability. $\sigma_{pop}$ is population variability.
 
-# Artificial NPVR Results Comparison
+# Replication of @Alizadeh2025.12.22.695524's Artificial NPVR
 
-::: {layout="[ [1, 1, 1], [1, 1, 1] ]"}
+Broadly replicated the artificial NPVR simulation results.
 
-![Population distribution (paper)](../assets/presentations/final-presentation/npvr-simulation-original/population.png){#fig-original-population height="200px"}
-
-
-![Relation between pop and num var (paper)](../assets/presentations/final-presentation/npvr-simulation-original/NPVR.png){#fig-original-npvr height="200px"}
-
-![Relation between the NPVR and the Cohen's $d$ (paper)](../assets/presentations/final-presentation/npvr-simulation-original/cohens.png){#fig-original-cohens height="200px"}
-
-
-![Population distribution (reproduced)](../assets/presentations/final-presentation/npvr-simulation/population.png){#fig-npvr-populations height="200px"}
-
-![Relation between pop and num var (reproduced)](../assets/presentations/final-presentation/npvr-simulation/npvr.png){#fig-dnum-variation height="200px"}
-
-![Relation between the NPVR and the Cohen's $d$ (reproduced)](../assets/presentations/final-presentation/npvr-simulation/cohens.png){#fig-npvr-sample-size height="200px"}
-
-:::
-
-# NPVR Simulation Bug Fix
-
-The original Cohen $d$ plot used hardcoded NPVR values instead of computed ones. A fix was submitted and merged into the paper repository ([PR](https://github.com/mina94az/Numerical-Variability-of-functional-MRI-Graph-Measures/pull/3){target="_blank"}).
+Found an error in the original code: the Cohen $d$ plot used hardcoded NPVR values instead of computed ones. Hard to confirm as it was unclear whether the replication was wrong. Fix submitted and merged ([PR](https://github.com/mina94az/Numerical-Variability-of-functional-MRI-Graph-Measures/pull/3){target="_blank"}).
 
 ![Hard coded values for the 3rd graph](../assets/presentations/final-presentation/npvr-simulation/npvr_pr.png){#fig-npvr-pr height="100px"}
 
@@ -149,32 +136,39 @@ Global metrics:
 - Average shortest path length
 
 
-# Differences from the Original Study
+# Graph Metrics Results: NPVR per Threshold
+
+::: {layout="[[1, 1]]"}
+
+![NPVR per threshold (paper)](../assets/presentations/final-presentation/graph-metrics-original/sized_graph_metrics_npvr.png){#fig-original-graph-metrics-threshold height="550px"}
+
+![NPVR per threshold (reproduced)](../assets/presentations/final-presentation/graph-metrics/sized_graph_metrics_npvr.png){#fig-graph-metrics-threshold height="550px"}
+
+:::
+
+# Graph Metrics Results: Confound Regression Effect
+
+::: {layout="[[1, 1]]"}
+
+![Confound regression effect (paper)](../assets/presentations/final-presentation/graph-metrics-original/sized_graph_metrics_npvr_confound_difference.png){#fig-npvr-variation-paper height="550px"}
+
+![Confound regression effect (reproduced)](../assets/presentations/final-presentation/graph-metrics/sized_graph_metrics_npvr_confound_difference.png){#fig-npvr-variation height="550px"}
+
+:::
+
+# Methodological Differences from the Original Study
 
 - Dataset: [BMB](https://mridata-brainminds-beyond.atr.jp/dataset/bmbpt/) (@KOIKE2021102600) vs original [PPMI](https://www.ppmi-info.org/access-data-specimens/download-data) (@marek2018)
 - Confounds: 15 vs 6 (added global signal, cerebrospinal fluid, white matter, 6 anatomical component correlation)
 - Container: custom fMRIPrep 25.2.5 vs Fuzzy's 23.2.1
-- Small-worldness excluded (computational constraints)
-
-
-# Graph Metrics Results
-
-::: {layout="[1, 1, 1, 1]"}
-
-![NPVR per threshold (paper)](../assets/presentations/final-presentation/graph-metrics-original/graph_metrics_npvr.png){#fig-original-graph-metrics-threshold height="550px"}
-
-![NPVR per threshold (reproduced)](../assets/presentations/final-presentation/graph-metrics/graph_metrics_npvr.png){#fig-graph-metrics-threshold height="550px"}
-
-![Confound regression effect (paper)](../assets/presentations/final-presentation/graph-metrics-original/graph_metrics_npvr_confound_difference.png){#fig-npvr-variation-paper height="550px"}
-
-![Confound regression effect (reproduced)](../assets/presentations/final-presentation/graph-metrics/graph_metrics_npvr_confound_difference.png){#fig-npvr-variation height="550px"}
-:::
 
 
 # FC Matrix Stability Analysis Goals
 
 - Analyze FC matrices directly instead of derived graph metrics.
 - Assess global signal regression's effect on edge-wise NPVR.
+
+Global signal regression has been a contentious point in the field, with no settled agreement on whether it should or shouldn't be done.
 
 # FC Matrix Stability Analysis Results
 
