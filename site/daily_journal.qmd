@@ -345,3 +345,7 @@ title: Daily Journal
 - Added marek2018 reference and improved wording throughout thesis (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-report/commit/0bdbd83d84872e447f9e4ebbc09c991009d64e3f){target="_blank"})
 - Fixed upload workflow (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-report/commit/1111174f2394f37ae62705ce25e5971bfa54c423){target="_blank"})
 - Final cleaning of the report (see commit [here](https://github.com/MadeInShineA/bachelor-thesis-report/commit/cfcde97e27058bab20104b9fed217fb1a89a8750){target="_blank"})
+
+## 18-27.08.2026
+
+- Made the final presentation slides and several rehearsals (see slides [here](./presentations/final_presentation.qmd){target="_blank"})

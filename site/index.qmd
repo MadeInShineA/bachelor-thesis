@@ -121,7 +121,7 @@ gantt
     First code cleaning                 :done, p4t2, 2026-07-10, 1d
     Project first version               :done, p4t3, 2026-05-16, 2026-07-11
     Project second version              :done, p4t4, 2026-07-11, 2026-07-30
-    Project code submission             :done, milestone, p4t5, 2026-07-31, 0d
+    Project code submission             :done, milestone, crit, p4t5, 2026-07-31, 0d
     Report writing (abstract, intro)    :done, p4t6, 2026-07-27, 2026-07-28
     Report State of the Art             :done, p4t7, 2026-08-03, 2026-08-04
     Report Methodology                  :done, p4t8, 2026-08-04, 2026-08-11
@@ -130,8 +130,9 @@ gantt
     Report Executive Summary            :done, p4t11, 2026-08-14, 1d
     Report Abstract & Wording Refinement :done, p4t12, 2026-08-16, 2026-08-17
     Report Final Cleaning               :done, p4t13, 2026-08-17, 1d
-    Report Submission                   :done, milestone, m5, 2026-08-17, 0d
-    Milestone Final Defense             :milestone, m4, 2026-08-31, 0d
+    Report Submission                   :done, milestone, crit, m5, 2026-08-17, 0d
+    Final Presentation Slides           :done, p4t14, 2026-08-18, 2026-08-26
+    Milestone Final Defense             :milestone, crit, m4, 2026-08-27, 0d
 ```
 </div>
 
