@@ -326,6 +326,8 @@ $$
   NPVR = \frac{\sigma_{num}}{\sigma_{pop}}
 $$
 
+where $n$ is the number of MCA repetitions, $m$ is the number of subjects, $x_{i,j}$ is the FC edge value for subject $j$ in MCA run $i$, $\bar{x}_{.,j}$ is the mean across runs for subject $j$, and $\bar{x}_{i,.}$ is the mean across subjects for run $i$.
+
 
 # Confounds Used for the Fuzzy FC Matrices Analysis
 
