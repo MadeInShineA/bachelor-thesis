@@ -132,7 +132,7 @@ gantt
     Report Final Cleaning               :done, p4t13, 2026-08-17, 1d
     Report Submission                   :done, milestone, crit, m5, 2026-08-17, 0d
     Final Presentation Slides           :done, p4t14, 2026-08-18, 2026-08-26
-    Milestone Final Defense             :milestone, crit, m4, 2026-08-27, 0d
+      Milestone Final Defense             :milestone, done, crit, m4, 2026-08-27, 0d
 ```
 </div>
 
