@@ -72,7 +72,7 @@ The diagram below has been updated from the original proposed workplan to reflec
 <div id="gantt">
 ```{mermaid}
 gantt
-    title Updated Workplan (as of 17-08-2026)
+    title Updated Workplan (as of 27-08-2026)
     dateFormat  YYYY-MM-DD
     axisFormat  %d/%m
     excludes weekends
